@@ -13,5 +13,5 @@ And the open domain model of BAS includes 484 entities.
 In each dataset, include 4 files and 1 folder:  
 *.src.me.5hop.txt: The knowledge of injection.  
 *.src.no.me.txt: The keywords-set of input.  
-*.tgt.txt: The target of input.
+*.tgt.txt: The target of input.  
 *.structure.json: The semantic roles of keywords for syntax constrained decoding is provided by requirement analysts.
