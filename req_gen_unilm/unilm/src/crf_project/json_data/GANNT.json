@@ -1,0 +1,2603 @@
+[
+  {
+    "#": 1,
+    "*": "functional",
+    ":": "A class is used to represent the dependency between one task and one human resource.",
+    "operation": {
+      "operation": "use represent"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "class"
+        },
+        {
+          "entity": "dependency between one task and one human resource"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "class"
+        },
+        {
+          "entity": "dependency between one task and one human resource"
+        }
+      ]
+    }
+  },
+  {
+    "#": 2,
+    "*": "functional",
+    ":": "The dependency class provides functions to get the task and the human resource.",
+    "agent": {
+      "entity": "dependency class"
+    },
+    "operation": {
+      "operation": "get"
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "task"
+        },
+        {
+          "entity": "human resource"
+        }
+      ]
+    }
+  },
+  {
+    "#": 3,
+    "*": "functional",
+    ":": "A collection of resource assignments is used to manage the relationships between multiple human resources and a task.",
+    "agent": {
+      "entity": "collection of resource assignments"
+    },
+    "operation": {
+      "operation": "use manage"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "relationships between multiple human resources and a task"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "relationships between multiple human resources and a task"
+        }
+      ]
+    }
+  },
+  {
+    "#": 4,
+    "*": "functional",
+    ":": "A collection of resource assignments contains multiple objects of the human resource assignment class.",
+    "agent": {
+      "entity": "collection of resource assignments"
+    },
+    "operation": {
+      "operation": "contains"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "multiple objects of the human resource assignment class"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "multiple objects of the human resource assignment class"
+        }
+      ]
+    }
+  },
+  {
+    "#": 5,
+    "*": "functional",
+    ":": "A collection of resource assignments provides functions to add and remove human resource assignments.",
+    "agent": {
+      "entity": "collection of resource assignments"
+    },
+    "operation": {
+      "operation": "add remove"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "human resource assignments"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "human resource assignments"
+        }
+      ]
+    }
+  },
+  {
+    "#": 6,
+    "*": "functional",
+    ":": "The task class uses an object of the assignments collection class to manage its assignments.",
+    "agent": {
+      "entity": "task class"
+    },
+    "operation": {
+      "operation": "manage"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "object of the assignments collection class"
+        },
+        {
+          "entity": "its assignments"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "its assignments"
+        }
+      ]
+    }
+  },
+  {
+    "#": 7,
+    "*": "functional",
+    ":": "The human resource class can have objects of resource assignments which assigns this resource to tasks.",
+    "agent": {
+      "entity": "human resource class"
+    },
+    "operation": {
+      "operation": "can have"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "objects of resource assignments"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "objects of resource assignments"
+        }
+      ]
+    }
+  },
+  {
+    "#": 8,
+    "*": "functional",
+    ":": "The human resource class provides functions to get the list of objects of resource assignments which assigns this resource to tasks.",
+    "agent": {
+      "entity": "human resource class"
+    },
+    "operation": {
+      "operation": "get"
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "list of objects of resource assignments"
+        },
+        {
+          "entity": "resource"
+        }
+      ]
+    }
+  },
+  {
+    "#": 9,
+    "*": "functional",
+    ":": "Task property GUI class provides interface and functions to add and remove human resource assignments.",
+    "agent": {
+      "entity": "task property GUI class"
+    },
+    "operation": {
+      "operation": "add remove"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "human resource assignments"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "human resource assignment"
+        }
+      ]
+    }
+  },
+  {
+    "#": 10,
+    "*": "functional",
+    ":": "A GUI class uses an object of resource tree table model class to display the resource tree.",
+    "agent": {
+      "entity": "GUI class"
+    },
+    "operation": {
+      "operation": "use display"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "object of resource tree table model class"
+        },
+        {
+          "entity": "resource tree"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "the resource tree"
+        }
+      ]
+    }
+  },
+  {
+    "#": 11,
+    "*": "functional",
+    ":": "The resource tree table model provides functions to build subtrees based on dependencies.",
+    "agent": {
+      "entity": "resource tree table model"
+    },
+    "operation": {
+      "operation": "build"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "subtrees based on dependencies"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "subtrees based on dependencies"
+        }
+      ]
+    }
+  },
+  {
+    "#": 12,
+    "*": "functional",
+    ":": "A GUI class of human resource load distribution uses objects of a load distribution class to capture the hours each person is supposed to work.",
+    "agent": {
+      "entity": "GUI class of human resource load distribution"
+    },
+    "operation": {
+      "operation": "use"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "objects of a load distribution class"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "objects of a load distribution class"
+        },
+        {
+          "entity": "hours"
+        }
+      ]
+    }
+  },
+  {
+    "#": 13,
+    "*": "functional",
+    ":": "The load distribution class provides functions to calculate the distribution based on tasks and human resources using task manager.",
+    "agent": {
+      "entity": "load distribution class"
+    },
+    "operation": {
+      "operation": "calculate"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "distribution based on tasks and human resources using task manager"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "distribution based on tasks and human resources using task manager"
+        }
+      ]
+    }
+  },
+  {
+    "#": 14,
+    "*": "functional",
+    ":": "GUI needs to provide ability to change length of a task.",
+    "agent": {
+      "entity": "GUI"
+    },
+    "operation": {
+      "operation": "change"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "length of a task"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "length of a task"
+        }
+      ]
+    }
+  },
+  {
+    "#": 15,
+    "*": "functional",
+    ":": "User should be able to change the length of a task by dragging-and-dropping the bar on the GUI.",
+    "agent": {
+      "entity": "user"
+    },
+    "operation": {
+      "operation": "be able to change"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "length of a task"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "length of a task"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "by dragging-and-dropping the bar on the GUI"
+      ]
+    }
+  },
+  {
+    "#": 16,
+    "*": "functional",
+    ":": "User should be able to change the length of a task via date picker control.",
+    "agent": {
+      "entity": "user"
+    },
+    "operation": {
+      "operation": "be able to change"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "length of a task"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "length of a task"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "via date picker control"
+      ]
+    }
+  },
+  {
+    "#": 17,
+    "*": "functional",
+    ":": "A dependency class contains a dependant task and a dependee task.",
+    "agent": {
+      "entity": "dependency class"
+    },
+    "operation": {
+      "operation": "contains"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "dependant task"
+        },
+        {
+          "entity": "dependee task"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "dependant task"
+        },
+        {
+          "entity": "dependee task"
+        }
+      ]
+    }
+  },
+  {
+    "#": 18,
+    "*": "functional",
+    ":": "A dependency class provides functions to get the dependant task and the dependee task.",
+    "agent": {
+      "entity": "dependency class"
+    },
+    "operation": {
+      "operation": "get"
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "dependant task"
+        },
+        {
+          "entity": "dependee task"
+        }
+      ]
+    }
+  },
+  {
+    "#": 19,
+    "*": "functional",
+    ":": "The dependency class also contains constraint to show the start date of the dependee task.",
+    "agent": {
+      "entity": "dependency class"
+    },
+    "operation": {
+      "operation": "contains show"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "constraint"
+        },
+        {
+          "entity": "start date of the dependee task"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "constraint"
+        },
+        {
+          "entity": "start date of the dependee task"
+        }
+      ]
+    }
+  },
+  {
+    "#": 20,
+    "*": "functional",
+    ":": "A class is used to represent the constraint that the start date of the dependee task should not be earlier than the end date of the dependent task.",
+    "agent": {
+      "entity": "class"
+    },
+    "operation": {
+      "operation": "use represent"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "constraint"
+        },
+        {
+          "entity": "start date of the dependee task"
+        },
+        {
+          "entity": "end date of the dependent task"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "constraint"
+        },
+        {
+          "entity": "start date of the dependee task"
+        },
+        {
+          "entity": "end date of the dependent task"
+        }
+      ]
+    }
+  },
+  {
+    "#": 21,
+    "*": "functional",
+    ":": "A collection of dependency class is used to manage dependencies.",
+    "agent": {
+      "entity": "collection of dependency class"
+    },
+    "operation": {
+      "operation": "use manage"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "dependencies"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "dependencies"
+        }
+      ]
+    }
+  },
+  {
+    "#": 22,
+    "*": "functional",
+    ":": "A collection of dependency class contains objects of dependency classes.",
+    "agent": {
+      "entity": "collection of dependency class"
+    },
+    "operation": {
+      "operation": "contains"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "objects of dependency classes"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "objects of dependency classes"
+        }
+      ]
+    }
+  },
+  {
+    "#": 23,
+    "*": "functional",
+    ":": "A collection of dependency class provides functions to create, delete and get dependencies.",
+    "agent": {
+      "entity": "collection of dependency class"
+    },
+    "operation": {
+      "operation": "create delete get"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "dependencies"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "dependencies"
+        }
+      ]
+    }
+  },
+  {
+    "#": 24,
+    "*": "functional",
+    ":": "A collection of dependency class provides functions to create delete, and get dependencies.",
+    "agent": {
+      "entity": "collection of dependency class"
+    },
+    "operation": {
+      "operation": "create delete get"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "dependencies"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "dependencies"
+        }
+      ]
+    }
+  },
+  {
+    "#": 25,
+    "*": "functional",
+    ":": "A task property GUI class provides interface and functions to add and remove dependencies by using an object of the dependency collection.",
+    "agent": {
+      "entity": "task property GUI class"
+    },
+    "operation": {
+      "operation": "add remove"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "dependencies"
+        },
+        {
+          "entity": "object of the dependency collection"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "dependencies"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "by using an object of the dependency collection"
+      ]
+    }
+  },
+  {
+    "#": 26,
+    "*": "functional",
+    ":": "A graphic area GUI class uses an object of task manager to add dependencies.",
+    "agent": {
+      "entity": "graphic area GUI class"
+    },
+    "operation": {
+      "operation": "use add"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "object of task manager"
+        },
+        {
+          "entity": "dependencies"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "dependencies"
+        }
+      ]
+    }
+  },
+  {
+    "#": 27,
+    "*": "functional",
+    ":": "The task manager class uses an object of dependency collection class to manage dependencies.",
+    "agent": {
+      "entity": "task manager class"
+    },
+    "operation": {
+      "operation": "use manage"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "object of dependency collection class"
+        },
+        {
+          "entity": "dependencies"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "dependencies"
+        }
+      ]
+    }
+  },
+  {
+    "#": 28,
+    "*": "functional",
+    ":": "An object of the recalculating task schedule algorithm class is used to change the start/end date based on dependency changes.",
+    "operation": {
+      "operation": "use change"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "object of the recalculating task schedule algorithm class"
+        },
+        {
+          "entity": "start/end date based on dependency changes"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "start/end date based on dependency changes"
+        }
+      ]
+    }
+  },
+  {
+    "#": 29,
+    "*": "functional",
+    ":": "The algorithm class provides functions to fulfill the constraints.",
+    "agent": {
+      "entity": "algorithm class"
+    },
+    "operation": {
+      "operation": "fulfill"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "constraints"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "constraints"
+        }
+      ]
+    }
+  },
+  {
+    "#": 30,
+    "*": "functional",
+    ":": "The algorithm class provides functions to modify the start or end date of the tasks.",
+    "agent": {
+      "entity": "algorithm class"
+    },
+    "operation": {
+      "operation": "modify"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "start or end date of the tasks"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "start or end date of the tasks"
+        }
+      ]
+    }
+  },
+  {
+    "#": 31,
+    "*": "functional",
+    ":": "Application needs to keep track of the start and end times of the tasks.",
+    "agent": {
+      "entity": "application"
+    },
+    "operation": {
+      "operation": "keep track of"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "start and end times of the tasks"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "start and end times of the tasks"
+        }
+      ]
+    }
+  },
+  {
+    "#": 32,
+    "*": "functional",
+    ":": "Application needs to keep track of subtasks in a task.",
+    "agent": {
+      "entity": "application"
+    },
+    "operation": {
+      "operation": "keep track of"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "subtasks in a task"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "subtasks in a task"
+        }
+      ]
+    }
+  },
+  {
+    "#": 33,
+    "*": "functional",
+    ":": "Every time Start/End time of a subtask changes, the start/end time of the parent task need to change accordingly.",
+    "event": {
+      "()": [
+        {
+          "#": "52-condition",
+          "*": "condition",
+          "operation": {
+            "operation": "change"
+          },
+          "input": {
+            "()": [
+              {
+                "entity": "Start/End time"
+              },
+              {
+                "entity": "subtask"
+              }
+            ]
+          },
+          "output": {
+            "()": [
+              {
+                "entity": "Start/End time"
+              },
+              {
+                "entity": "subtask"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "operation": {
+      "operation": "change"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "start/end time of the parent task"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "start/end time of the parent task"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "accordingly"
+      ]
+    }
+  },
+  {
+    "#": 34,
+    "*": "functional",
+    ":": "Every time Start/End time for a task changes, the start/end time of one or more its subtasks need to change as well.",
+    "event": {
+      "()": [
+        {
+          "#": "54-condition",
+          "*": "condition",
+          "operation": {
+            "operation": "change"
+          },
+          "input": {
+            "()": [
+              {
+                "entity": "Start/End time for a task"
+              }
+            ]
+          },
+          "output": {
+            "()": [
+              {
+                "entity": "Start/End time for a task"
+              }
+            ]
+          },
+          "restriction": {
+            "()": [
+              "for a task"
+            ]
+          }
+        }
+      ]
+    },
+    "operation": {
+      "operation": "change"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "start/end time of one or more its subtasks"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "start/end time of one or more its subtasks"
+        }
+      ]
+    }
+  },
+  {
+    "#": 35,
+    "*": "functional",
+    ":": "A graphic area GUI class provides a function to draw dependency.",
+    "agent": {
+      "entity": "graphic area GUI class"
+    },
+    "operation": {
+      "operation": "draw"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "dependency"
+        }
+      ]
+    }
+  },
+  {
+    "#": 36,
+    "*": "functional",
+    ":": "The class of dependency collection provides a function to check if the new dependency will cause a loop, each time a object of dependency class is created.",
+    "event": {
+      "()": [
+        {
+          "#": "each time a object of dependency class is created",
+          "*": "condition",
+          "operation": {
+            "operation": "create"
+          },
+          "input": {
+            "()": [
+              {
+                "entity": "object of dependency class"
+              }
+            ]
+          },
+          "output": {
+            "()": [
+              {
+                "entity": "object of dependency class"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "agent": {
+      "entity": "class of dependency collection"
+    },
+    "operation": {
+      "operation": "check"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "new dependency"
+        },
+         {
+          "entity": "loop"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "new dependency"
+        },
+        {
+          "entity": "loop"
+        }
+      ]
+    }
+  },
+  {
+    "#": 37,
+    "*": "functional",
+    ":": "The class of dependency collection returns an exception if there is a loop.",
+    "event": {
+      "()": [
+        {
+          "#": "if there is a loop",
+          "*": "condition",
+          "agent": {
+            "entity": "loop"
+          },
+          "operation": {
+            "operation": "there be"
+          }
+        }
+      ]
+    },
+    "agent": {
+      "entity": "class of dependency collection"
+    },
+    "operation": {
+      "operation": "returns"
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "exception"
+        }
+      ]
+    }
+  },
+  {
+    "#": 38,
+    "*": "functional",
+    ":": "GUI needs to provide ability to display critical paths.",
+    "agent": {
+      "entity": "GUI"
+    },
+    "operation": {
+      "operation": "display"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "critical paths"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "critical paths"
+        }
+      ]
+    }
+  },
+  {
+    "#": 39,
+    "*": "functional",
+    ":": "GUI needs to provide ability to make the changes affecting critical path updated.",
+    "agent": {
+      "entity": "GUI"
+    },
+    "operation": {
+      "operation": "make update"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "changes affecting critical path"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "changes affecting critical path"
+        }
+      ]
+    }
+  },
+  {
+    "#": 40,
+    "*": "functional",
+    ":": "The system should be able to evaluate critical path in a project.",
+    "agent": {
+      "entity": "system"
+    },
+    "operation": {
+      "operation": "be able to evaluate"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "critical path"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "critical path"
+        }
+      ]
+    }
+  },
+  {
+    "#": 41,
+    "*": "functional",
+    ":": "The human resource class contains the variable holidays.",
+    "agent": {
+      "entity": "human resource class"
+    },
+    "operation": {
+      "operation": "contains"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "variable holidays"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "variable holidays"
+        }
+      ]
+    }
+  },
+  {
+    "#": 42,
+    "*": "functional",
+    ":": "The human resource class provides functions to change and to get holidays.",
+    "agent": {
+      "entity": "human resource class"
+    },
+    "operation": {
+      "operation": "change get"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "holidays"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "holidays"
+        }
+      ]
+    }
+  },
+  {
+    "#": 43,
+    "*": "functional",
+    ":": "There can be multiple holidays.",
+    "agent": {
+      "entity": "multiple holidays"
+    },
+    "operation": {
+      "operation": "there be"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "multiple holidays"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "multiple holidays"
+        }
+      ]
+    }
+  },
+  {
+    "#": 44,
+    "*": "functional",
+    ":": "The holiday class provides functions to set the start/end date of the holiday.",
+    "agent": {
+      "entity": "holiday class"
+    },
+    "operation": {
+      "operation": "set"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "start/end date of the holiday"
+        }
+      ]
+    }
+  },
+  {
+    "#": 45,
+    "*": "functional",
+    ":": "The holiday class provides functions to get the duration of the holiday.",
+    "agent": {
+      "entity": "holiday class"
+    },
+    "operation": {
+      "operation": "get"
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "duration of the holiday"
+        }
+      ]
+    }
+  },
+  {
+    "#": 46,
+    "*": "functional",
+    ":": "The human resource class provides a function to change the availability of the person based on holidays.",
+    "agent": {
+      "entity": "human resource class"
+    },
+    "operation": {
+      "operation": "change"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "availability of the person"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "availability of the person"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "based on holidays"
+      ]
+    }
+  },
+  {
+    "#": 47,
+    "*": "functional",
+    ":": "GUI needs to provide ability to assign tasks to people.",
+    "agent": {
+      "entity": "GUI"
+    },
+    "operation": {
+      "operation": "assign"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "tasks"
+        },
+        {
+          "entity": "people"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "tasks"
+        }
+      ]
+    }
+  },
+  {
+    "#": 48,
+    "*": "functional",
+    ":": "GUI needs to provide ability to assign people to tasks.",
+    "agent": {
+      "entity": "GUI"
+    },
+    "operation": {
+      "operation": "assign"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "people"
+        },
+        {
+          "entity": "tasks"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "people"
+        }
+      ]
+    }
+  },
+  {
+    "#": 49,
+    "*": "functional",
+    ":": "GUI needs to provide ability to show utilization of a person.",
+    "agent": {
+      "entity": "GUI"
+    },
+    "operation": {
+      "operation": "show"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "utilization of a person"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "utilization of a person"
+        }
+      ]
+    }
+  },
+  {
+    "#": 50,
+    "*": "functional",
+    ":": "GUI needs to provide ability to show whether a person is underutilized and overbooked.",
+    "agent": {
+      "entity": "GUI"
+    },
+    "operation": {
+      "operation": "show"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "person"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "whether a person is underutilized and overbooked"
+        }
+      ]
+    }
+  },
+  {
+    "#": 51,
+    "*": "functional",
+    ":": "To create a new task, an object of TaskManager class is passed to the class constructor.",
+    "operation": {
+      "operation": "pass"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "object of TaskManager class"
+        },
+        {
+          "entity": "class constructor"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "new task"
+        }
+      ]
+    }
+  },
+  {
+    "#": 52,
+    "*": "functional",
+    ":": "The TaskManager takes care of a resource allocation using ResourceAssignmentCollection class.",
+    "agent": {
+      "entity": "TaskManager"
+    },
+    "operation": {
+      "operation": "takes care of"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "resource allocation"
+        },
+        {
+          "entity": "ResourceAssignmentCollection class"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "resource allocation"
+        }
+      ]
+    }
+  },
+  {
+    "#": 53,
+    "*": "functional",
+    ":": "The task class provides a public method SetStart() which allows to specify starting date for the task. As input argument the method takes an object of GanttCalendar class.",
+    "agent": {
+      "entity": "task class"
+    },
+    "operation": {
+      "operation": "provide"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "public method"
+        },
+        {
+          "entity": "starting date for the task"
+        },
+        {
+          "entity": "object of GanttCalendar class"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "starting date for the task"
+        }
+      ]
+    }
+  },
+  {
+    "#": 54,
+    "*": "functional",
+    ":": "The task class provides a public method SetEnd() which allows to specify ending date for the task. As input argument the method takes an object of GanttCalendar class.",
+    "agent": {
+      "entity": "task class"
+    },
+    "operation": {
+      "operation": "provide"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "public method"
+        },
+        {
+          "entity": "object of GanttCalendar class"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "ending date for the task"
+        }
+      ]
+    }
+  },
+  {
+    "#": 55,
+    "*": "functional",
+    ":": "The Task class provides a public method SetDuration() which allows to specify the duration of the task. As input argument the method takes an object of TaskLength class.",
+    "agent": {
+      "entity": "task class"
+    },
+    "operation": {
+      "operation": "provide"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "public method"
+        },
+        {
+          "entity": "object of TaskLength class"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "duration of the task"
+        }
+      ]
+    }
+  },
+  {
+    "#": 56,
+    "*": "functional",
+    ":": "To delete a task from the Calendar, the GanttProject class call delete method and supplied Task Id parameter.",
+    "agent": {
+      "entity": "GanttProject class"
+    },
+    "operation": {
+      "operation": "call"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "delete method"
+        },
+        {
+          "entity": "Task Id parameter"
+        }
+      ]
+    }
+  },
+  {
+    "#": 57,
+    "*": "functional",
+    ":": "The adjustment of allocated resources and links to other tasks takes place through interfacing with the following classes DefaultMutableTreeNode, GanttTreeTableNode, TaskNode, and AdjustTaskBoundsAlgorithm.",
+    "agent": {
+      "entity": "adjustment of allocated resources and links to other tasks takes"
+    },
+    "operation": {
+      "operation": "takes place"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "DefaultMutableTreeNode"
+        },
+        {
+          "entity": "GanttTreeTableNode"
+        },
+        {
+          "entity": "TaskNode"
+        },
+        {
+          "entity": "AdjustTaskBoundsAlgorithm"
+        }
+      ]
+    }
+  },
+  {
+    "#": 58,
+    "*": "functional",
+    ":": "When deleting a task, the GanttProject class calls GanttTreeTableNode and DefaultMutableTreeNode classes to identify the parent of the deleted task.",
+    "event": {
+      "()": [
+        {
+          "#": "When deleting a task",
+          "*": "condition",
+          "operation": {
+            "operation": "delete"
+          },
+          "input": {
+            "()": [
+              {
+                "entity": "task"
+              }
+            ]
+          },
+          "output": {
+            "()": [
+              {
+                "entity": "task"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "agent": {
+      "entity": "GanttProject class"
+    },
+    "operation": {
+      "operation": "call identify"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "GanttTreeTableNode and DefaultMutableTreeNode classes"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "parent of the deleted task"
+        }
+      ]
+    }
+  },
+  {
+    "#": 59,
+    "*": "functional",
+    ":": "When deleting a task, the GanttProject class calls AdjustTaskBoundsAlgorithm and passes the parent of the deleted task as a parameter.",
+    "event": {
+      "()": [
+        {
+          "#": "When deleting a task",
+          "*": "condition",
+          "operation": {
+            "operation": "delete"
+          },
+          "input": {
+            "()": [
+              {
+                "entity": "task"
+              }
+            ]
+          },
+          "output": {
+            "()": [
+              {
+                "entity": "task"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "agent": {
+      "entity": "GanttProject class"
+    },
+    "operation": {
+      "operation": "call pass"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "AdjustTaskBoundsAlgorithm"
+        },
+        {
+          "entity": "parent of the deleted task"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "parent of the deleted task"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "as a parameter"
+      ]
+    }
+  },
+  {
+    "#": 60,
+    "*": "functional",
+    ":": "The AdjustTaskBoundsAlgorithm takes care of handling and releasing resources associated with the deleted task.",
+    "agent": {
+      "entity": "AdjustTaskBoundsAlgorithm"
+    },
+    "operation": {
+      "operation": "takes care of handle release"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "resources associated with the deleted task"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "resources associated with the deleted task"
+        }
+      ]
+    }
+  },
+  {
+    "#": 61,
+    "*": "functional",
+    ":": "GUI should able to provide ability to change task name.",
+    "agent": {
+      "entity": "GUI"
+    },
+    "operation": {
+      "operation": "change"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "task name"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "task name"
+        }
+      ]
+    }
+  },
+  {
+    "#": 62,
+    "*": "functional",
+    ":": "GUI should able to provide ability to change start/end date of a task.",
+    "agent": {
+      "entity": "GUI"
+    },
+    "operation": {
+      "operation": "change"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "start/end date of a task"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "start/end date of a task"
+        }
+      ]
+    }
+  },
+  {
+    "#": 63,
+    "*": "functional",
+    ":": "GUI should able to provide ability to set progress on a task.",
+    "agent": {
+      "entity": "GUI"
+    },
+    "operation": {
+      "operation": "set"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "progress on a task"
+        }
+      ]
+    }
+  },
+  {
+    "#": 64,
+    "*": "functional",
+    ":": "When the start/end date of a task are changed, the start/end dates of the subtasks need to change accordingly.",
+    "event": {
+      "()": [
+        {
+          "#": "When the start/end date of a task are changed",
+          "*": "condition",
+          "operation": {
+            "operation": "change"
+          },
+          "input": {
+            "()": [
+              {
+                "entity": "start/end date of a task"
+              }
+            ]
+          },
+          "output": {
+            "()": [
+              {
+                "entity": "start/end date of a task"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "operation": {
+      "operation": "change"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "start/end date of a task"
+        },
+        {
+          "entity": "start/end dates of the subtasks"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "start/end date of a task"
+        },
+        {
+          "entity": "start/end dates of the subtasks"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "accordingly"
+      ]
+    }
+  },
+  {
+    "#": 65,
+    "*": "functional",
+    ":": "To add tasks as subtasks, a method which indent the selected task nodes in GUI and change them to be subtasks is used.",
+    "agent": {
+      "entity": "method"
+    },
+    "operation": {
+      "operation": "use"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "tasks"
+        },
+        {
+          "entity": "selected task nodes"
+        }
+      ]
+    }
+  },
+  {
+    "#": 66,
+    "*": "functional",
+    ":": "A manager of task hierarchy provides functions to update the relationship between tasks.",
+    "agent": {
+      "entity": "manager of task hierarchy"
+    },
+    "operation": {
+      "operation": "update"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "relationship between tasks"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "relationship between tasks"
+        }
+      ]
+    }
+  },
+  {
+    "#": 67,
+    "*": "functional",
+    ":": "The manager of task hierarchy provides a method to move a task node to a specific position.",
+    "agent": {
+      "entity": "manager of task hierarchy"
+    },
+    "operation": {
+      "operation": "move"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "task node"
+        },
+        {
+          "entity": "specific position"
+        }
+      ]
+    }
+  },
+  {
+    "#": 68,
+    "*": "functional",
+    ":": "To remove tasks as subtasks, GanttTree2 class calls a method which dedent selected task nodes in GUI.",
+    "agent": {
+      "entity": "GanttTree2 class"
+    },
+    "operation": {
+      "operation": "call"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "tasks"
+        },
+        {
+          "entity": "method which dedent selected task nodes"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "tasks"
+        }
+      ]
+    }
+  },
+  {
+    "#": 69,
+    "*": "functional",
+    ":": "An object of a class is used to remove relationship between selected tasks and their original parents.",
+    "agent": {
+      "entity": "object of a class"
+    },
+    "operation": {
+      "operation": "use remove"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "relationship between selected tasks and their original parents"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "relationship between selected tasks and their original parents"
+        }
+      ]
+    }
+  },
+  {
+    "#": 70,
+    "*": "functional",
+    ":": "An object of a class is used to add relationship between selected tasks and their new parents.",
+    "operation": {
+      "operation": "use add"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "object of a class"
+        },
+        {
+          "entity": "relationship between selected tasks and their new parents"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "object of a class"
+        },
+        {
+          "entity": "relationship between selected tasks and their new parents"
+        }
+      ]
+    }
+  },
+  {
+    "#": 71,
+    "*": "functional",
+    ":": "To remove tasks as subtasks, a method which dedent selected task nodes in GUI is used.",
+    "agent": {
+      "entity": "method"
+    },
+    "operation": {
+      "operation": "use"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "selected task nodes"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "selected task nodes"
+        }
+      ]
+    }
+  },
+  {
+    "#": 72,
+    "*": "functional",
+    ":": "The task tree model provides methods to remove relationship between selected tasks and their original parents.",
+    "agent": {
+      "entity": "task tree model"
+    },
+    "operation": {
+      "operation": "remove"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "relationship between selected tasks and their original parents"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "relationship between selected tasks and their original parents"
+        }
+      ]
+    }
+  },
+  {
+    "#": 73,
+    "*": "functional",
+    ":": "The task tree model provides methods to add relationship between selected tasks and their new parents.",
+    "agent": {
+      "entity": "task tree model"
+    },
+    "operation": {
+      "operation": "add"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "relationship between selected tasks and their new parents"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "relationship between selected tasks and their new parents"
+        }
+      ]
+    }
+  },
+  {
+    "#": 74,
+    "*": "functional",
+    ":": "Milestone has only time point of occurrence.",
+    "agent": {
+      "entity": "Milestone"
+    },
+    "operation": {
+      "operation": "have"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "time point of occurrence"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "time point of occurrence"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "only"
+      ]
+    }
+  },
+  {
+    "#": 75,
+    "*": "functional",
+    ":": "User should be able to create milestones.",
+    "agent": {
+      "entity": "user"
+    },
+    "operation": {
+      "operation": "be able to create"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "milestones"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "milestones"
+        }
+      ]
+    }
+  },
+  {
+    "#": 76,
+    "*": "functional",
+    ":": "User interface should be able to provide an ability to specify whether a specific task in a milestone.",
+    "agent": {
+      "entity": "user interface"
+    },
+    "operation": {
+      "operation": "specify"
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "whether a specific task in a milestone"
+        }
+      ]
+    }
+  },
+  {
+    "#": 77,
+    "*": "functional",
+    ":": "Milestone should be displayed visually differently from regular tasks.",
+    "operation": {
+      "operation": "display"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "milestone"
+        },
+        {
+          "entity": "regular tasks"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "milestone"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "visually",
+        "differently"
+      ]
+    }
+  },
+  {
+    "#": 78,
+    "*": "functional",
+    ":": "A GUI of task property provides interface and functions to add and remove human resource assignments by using an object of the resource assignments collection class.",
+    "agent": {
+      "entity": "GUI of task property"
+    },
+    "operation": {
+      "operation": "add remove"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "human resource assignments"
+        },
+        {
+          "entity": "object of the resource assignments collection class"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "human resource assignments"
+        },
+        {
+          "entity": "object of the resource assignments collection class"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "by using an object of the resource assignments collection class"
+      ]
+    }
+  },
+  {
+    "#": 79,
+    "*": "functional",
+    ":": "The human resource class contains name, phone, email, and holidays.",
+    "agent": {
+      "entity": "human resource class"
+    },
+    "operation": {
+      "operation": "contains"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "name"
+        },
+        {
+          "entity": "phone"
+        },
+        {
+          "entity": "email"
+        },
+        {
+          "entity": "holidays"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "name"
+        },
+        {
+          "entity": "phone"
+        },
+        {
+          "entity": "email"
+        },
+        {
+          "entity": "holidays"
+        }
+      ]
+    }
+  },
+  {
+    "#": 80,
+    "*": "functional",
+    ":": "The human resource class provides functions to set and get name, phone, email, and holidays.",
+    "agent": {
+      "entity": "human resource class"
+    },
+    "operation": {
+      "operation": "set get"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "name"
+        },
+        {
+          "entity": "phone"
+        },
+        {
+          "entity": "email"
+        },
+        {
+          "entity": "holidays"
+        }
+      ]
+    }
+  },
+  {
+    "#": 81,
+    "*": "functional",
+    ":": "A class is used to represent the holidays.",
+    "operation": {
+      "operation": "use represent"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "holidays"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "holidays"
+        }
+      ]
+    }
+  },
+  {
+    "#": 82,
+    "*": "functional",
+    ":": "The class for holidays provides functions to get the start/end date.",
+    "agent": {
+      "entity": "class for holidays"
+    },
+    "operation": {
+      "operation": "get"
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "start/end date"
+        }
+      ]
+    }
+  },
+  {
+    "#": 83,
+    "*": "functional",
+    ":": "The class for holidays also provides a function to check if a special date is in holiday.",
+    "agent": {
+      "entity": "class for holidays"
+    },
+    "operation": {
+      "operation": "check"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "date"
+        }
+      ]
+    }
+  },
+  {
+    "#": 84,
+    "*": "functional",
+    ":": "A human resource assignment class is used to represent the relationship between one task and one human resource.",
+    "operation": {
+      "operation": "use represent"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "human resource assignment class"
+        },
+        {
+          "entity": "relationship between one task and one human resource"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "human resource assignment class"
+        },
+        {
+          "entity": "relationship between one task and one human resource"
+        }
+      ]
+    }
+  },
+  {
+    "#": 85,
+    "*": "functional",
+    ":": "The human resource assignment class provides functions to get the task and the human resource.",
+    "agent": {
+      "entity": "human resource assignment class"
+    },
+    "operation": {
+      "operation": "get"
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "task"
+        },
+        {
+          "entity": "human resource"
+        }
+      ]
+    }
+  },
+  {
+    "#": 86,
+    "*": "functional",
+    ":": "GUI needs to provide ability to delete resources from a project.",
+    "agent": {
+      "entity": "GUI"
+    },
+    "operation": {
+      "operation": "delete"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "resources from a project"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "resources from a project"
+        }
+      ]
+    }
+  },
+  {
+    "#": 87,
+    "*": "functional",
+    ":": "An assignment of a resource to a task is captured as a relationship.",
+    "operation": {
+      "operation": "capture"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "assignment of a resource to a task"
+        },
+        {
+          "entity": "relationship"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "assignment of a resource to a task"
+        },
+        {
+          "entity": "relationship"
+        }
+      ]
+    }
+  },
+  {
+    "#": 88,
+    "*": "functional",
+    ":": "When a resource is removed, all the tasks where the resource is assigned need to be updated.",
+    "event": {
+      "()": [
+        {
+          "#": "When a resource is removed",
+          "*": "condition",
+          "operation": {
+            "operation": "remove"
+          },
+          "input": {
+            "()": [
+              {
+                "entity": "resource"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "agent": {
+      "entity": "all the tasks"
+    },
+    "operation": {
+      "operation": "update"
+    },
+    "restriction": {
+      "()": [
+        "where the resource is assigned"
+      ]
+    }
+  },
+  {
+    "#": 89,
+    "*": "functional",
+    ":": "A GUI provides interface and functions to edit the properties of objects of the human resource class.",
+    "agent": {
+      "entity": "GUI"
+    },
+    "operation": {
+      "operation": "edit"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "properties of objects of the human resource class"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "properties of objects of the human resource class"
+        }
+      ]
+    }
+  },
+  {
+    "#": 90,
+    "*": "functional",
+    ":": "GUI needs to provide ability to link tasks in a project.",
+    "agent": {
+      "entity": "GUI"
+    },
+    "operation": {
+      "operation": "link"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "tasks in a project"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "tasks in a project"
+        }
+      ]
+    }
+  },
+  {
+    "#": 91,
+    "*": "functional",
+    ":": "The fact of linking of one task to another should be captured as dependency between two tasks.",
+    "operation": {
+      "operation": "capture"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "fact of linking of one task to another"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "fact of linking of one task to another"
+        },
+        {
+          "entity": "dependency between two tasks"
+        }
+      ]
+    }
+  },
+  {
+    "#": 92,
+    "*": "functional",
+    ":": "When two or more tasks are link, there should be a check conducted for potential collisions on the chart.",
+    "event": {
+      "()": [
+        {
+          "#": "When two or more tasks are link",
+          "*": "condition",
+          "input": {
+            "()": [
+              {
+                "entity": "tasks"
+              }
+            ]
+          },
+          "operation": {
+            "operation": "be link"
+          }
+        }
+      ]
+    },
+    "operation": {
+      "operation": "there be conduct"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "tasks"
+        },
+        {
+          "entity": "check"
+        },
+        {
+          "entity": "potential collisions"
+        },
+        {
+          "entity": "chart"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "check"
+        },
+        {
+          "entity": "potential collisions"
+        },
+        {
+          "entity": "chart"
+        }
+      ]
+    }
+  },
+  {
+    "#": 93,
+    "*": "functional",
+    ":": "The start/end dates for the graph can be either flexible or rigid.",
+    "agent": {
+      "entity": "start/end dates for the graph"
+    },
+    "operation": {
+      "operation": "be"
+    }
+  }
+]

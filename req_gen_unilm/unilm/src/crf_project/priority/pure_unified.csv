@@ -1,0 +1,204 @@
+id,req1_id,req1,req2_id,req2,label
+89,FR-4,Actual speed shall still be shown on the dmi.,FR-1,A special indication shall be shown on the dmi.,0
+30,FR-53,Partial supervision shall be indicated on the dmi.,FR-3,Actual speed shall be indicated on the dmi.,0
+182,FR-61,The current application level shall be indicated on the dmi.,FR-3,Actual speed shall be indicated on the dmi.,0
+187,FR-62,The current operational status shall be indicated to the driver on the dmi.,FR-3,Actual speed shall be indicated on the dmi.,0
+2,FR-100,The release speed shall be indicated on the dmi.,FR-3,Actual speed shall be indicated on the dmi.,0
+158,FR-103,The supervised shunting speed shall be indicated to the driver on request.,FR-3,Actual speed shall be indicated on the dmi.,0
+173,FR-3,Actual speed shall be indicated on the dmi.,FR-4,Actual speed shall still be shown on the dmi.,0
+70,FR-100,The release speed shall be indicated on the dmi.,FR-4,Actual speed shall still be shown on the dmi.,0
+154,FR-108,The train shall be supervised to a ceiling speed as a minimum.,FR-4,Actual speed shall still be shown on the dmi.,0
+118,FR-30,"If the train or the shunting movement exceeds the permitted ceiling speed by a certain harmonised margin, the trainborne equipment shall execute a brake intervention until the actual speed does not exceed permitted speed.",FR-6,"After the acknowledgement, the driver shall be able to continue the movement.",0
+94,FR-62,The current operational status shall be indicated to the driver on the dmi.,FR-6,"After the acknowledgement, the driver shall be able to continue the movement.",0
+189,FR-66,The driver shall acknowledge the level transitions if requested from trackside if the driver does not acknowledge after the transition.,FR-6,"After the acknowledgement, the driver shall be able to continue the movement.",0
+41,FR-69,The driver shall be able to override the function when the train is stationary.,FR-6,"After the acknowledgement, the driver shall be able to continue the movement.",0
+112,FR-74,The driver shall know the distance to the next point defining the indicated braking curve and the permitted speed allowed this shall be shown to the driver in a way that is understandable and logical.,FR-6,"After the acknowledgement, the driver shall be able to continue the movement.",0
+61,FR-77,The emergency stop shall be indicated to the driver on the dmi.,FR-6,"After the acknowledgement, the driver shall be able to continue the movement.",0
+96,FR-128,"When the traction unit has come to a standstill, the driver shall be able to release the emergency brake.",FR-6,"After the acknowledgement, the driver shall be able to continue the movement.",0
+163,FR-129,"When the traction unit is stationary, the driver shall be required to acknowledge the train trip condition.",FR-6,"After the acknowledgement, the driver shall be able to continue the movement.",1
+12,FR-23,"If the responsibility for the driver increases, the etcs shall seek an acknowledgement from the driver whether the train is stationary or not.",FR-18,"For transitions to and from national operation, the etcs shall request an acknowledgement by the driver.",2
+44,FR-30,"If the train or the shunting movement exceeds the permitted ceiling speed by a certain harmonised margin, the trainborne equipment shall execute a brake intervention until the actual speed does not exceed permitted speed.",FR-24,"If decided by a national value, the driver may release the etcs emergency brake when the actual speed is below the permitted speed.",0
+82,FR-66,The driver shall acknowledge the level transitions if requested from trackside if the driver does not acknowledge after the transition.,FR-30,"If the train or the shunting movement exceeds the permitted ceiling speed by a certain harmonised margin, the trainborne equipment shall execute a brake intervention until the actual speed does not exceed permitted speed.",0
+79,FR-108,The train shall be supervised to a ceiling speed as a minimum.,FR-30,"If the train or the shunting movement exceeds the permitted ceiling speed by a certain harmonised margin, the trainborne equipment shall execute a brake intervention until the actual speed does not exceed permitted speed.",1
+100,FR-36,Isolation of the etcs trainborne equipment shall disconnect the etcs trainborne equipment from the vehicle braking system.,FR-31,"If there are failures of the trainborne equipment which compromise the safety of train supervision, the etcs trainborne equipment shall immediately command the brake and bring the train to a stop.",1
+123,FR-49,"On lines fitted with rbc, the etcs trainborne equipment shall be able to transmit the location of the entire train to the rbc.",FR-31,"If there are failures of the trainborne equipment which compromise the safety of train supervision, the etcs trainborne equipment shall immediately command the brake and bring the train to a stop.",0
+29,FR-85,The etcs trainborne equipment shall be able to determine the location of the entire train.,FR-31,"If there are failures of the trainborne equipment which compromise the safety of train supervision, the etcs trainborne equipment shall immediately command the brake and bring the train to a stop.",1
+174,FR-1,A special indication shall be shown on the dmi.,FR-35,Information shall be shown on the dmi.,0
+179,FR-4,Actual speed shall still be shown on the dmi.,FR-35,Information shall be shown on the dmi.,0
+185,FR-100,The release speed shall be indicated on the dmi.,FR-35,Information shall be shown on the dmi.,0
+167,FR-104,The supervised speed shall not be shown on the dmi.,FR-35,Information shall be shown on the dmi.,0
+168,FR-105,The target distance shall not be shown on the dmi unless selected by the driver.,FR-35,Information shall be shown on the dmi.,0
+169,FR-115,This ceiling speed shall not be shown continually on the dmi but may be shown momentarily when selected by the driver.,FR-35,Information shall be shown on the dmi.,0
+137,FR-88,The etcs trainborne equipment shall be capable of supervising the following operational states.,FR-36,Isolation of the etcs trainborne equipment shall disconnect the etcs trainborne equipment from the vehicle braking system.,0
+184,FR-25,"If supervised by an rbc, it shall be possible to command an emergency stop to all trains in a particular area or to a specific train.",FR-38,It shall be possible to command an immediate train stop.,0
+0,FR-45,It shall be possible to send plain text messages from track to train.,FR-43,It shall be possible to send fixed text messages from track to train.,3
+9,FR-46,It shall be possible to use multiple traction units without isolating the etcs trainborne equipment on traction unit.,FR-47,It shall be possible to use tandem traction units without isolating the etcs trainborne equipment on the tandem traction unit.,0
+27,FR-50,"On request of the rbc, the driver shall have the possibility to confirm that the track ahead of him until the end of the on sight section is clear.",FR-48,On demand the position of the front end of the train at the time of the demand shall be indicated on the dmi this shall be possible while the train is moving or stationary.,0
+6,FR-52,Operation of the train trip shall be indicated on the dmi.,FR-48,On demand the position of the front end of the train at the time of the demand shall be indicated on the dmi this shall be possible while the train is moving or stationary.,0
+138,FR-61,The current application level shall be indicated on the dmi.,FR-48,On demand the position of the front end of the train at the time of the demand shall be indicated on the dmi this shall be possible while the train is moving or stationary.,0
+106,FR-62,The current operational status shall be indicated to the driver on the dmi.,FR-48,On demand the position of the front end of the train at the time of the demand shall be indicated on the dmi this shall be possible while the train is moving or stationary.,0
+86,FR-65,The dmi shall indicate the result of the self-test.,FR-48,On demand the position of the front end of the train at the time of the demand shall be indicated on the dmi this shall be possible while the train is moving or stationary.,0
+133,FR-69,The driver shall be able to override the function when the train is stationary.,FR-48,On demand the position of the front end of the train at the time of the demand shall be indicated on the dmi this shall be possible while the train is moving or stationary.,0
+67,FR-77,The emergency stop shall be indicated to the driver on the dmi.,FR-48,On demand the position of the front end of the train at the time of the demand shall be indicated on the dmi this shall be possible while the train is moving or stationary.,0
+75,FR-78,The entry of driver identification and the selection of the language shall be possible.,FR-48,On demand the position of the front end of the train at the time of the demand shall be indicated on the dmi this shall be possible while the train is moving or stationary.,0
+124,FR-85,The etcs trainborne equipment shall be able to determine the location of the entire train.,FR-48,On demand the position of the front end of the train at the time of the demand shall be indicated on the dmi this shall be possible while the train is moving or stationary.,0
+77,FR-100,The release speed shall be indicated on the dmi.,FR-48,On demand the position of the front end of the train at the time of the demand shall be indicated on the dmi this shall be possible while the train is moving or stationary.,0
+120,FR-107,The test shall require no action on the part of the driver.,FR-48,On demand the position of the front end of the train at the time of the demand shall be indicated on the dmi this shall be possible while the train is moving or stationary.,0
+72,FR-117,"To prevent unauthorised use of the function, permission shall be obtained from the rbc if the train is operating under the control of the rbc.",FR-48,On demand the position of the front end of the train at the time of the demand shall be indicated on the dmi this shall be possible while the train is moving or stationary.,0
+36,FR-130,"When the train is stationary, the release speed calculation shall be based on the distance to the danger point.",FR-48,On demand the position of the front end of the train at the time of the demand shall be indicated on the dmi this shall be possible while the train is moving or stationary.,0
+122,FR-50,"On request of the rbc, the driver shall have the possibility to confirm that the track ahead of him until the end of the on sight section is clear.",FR-49,"On lines fitted with rbc, the etcs trainborne equipment shall be able to transmit the location of the entire train to the rbc.",0
+3,FR-85,The etcs trainborne equipment shall be able to determine the location of the entire train.,FR-49,"On lines fitted with rbc, the etcs trainborne equipment shall be able to transmit the location of the entire train to the rbc.",3
+68,FR-117,"To prevent unauthorised use of the function, permission shall be obtained from the rbc if the train is operating under the control of the rbc.",FR-49,"On lines fitted with rbc, the etcs trainborne equipment shall be able to transmit the location of the entire train to the rbc.",1
+149,FR-65,The dmi shall indicate the result of the self-test.,FR-50,"On request of the rbc, the driver shall have the possibility to confirm that the track ahead of him until the end of the on sight section is clear.",0
+150,FR-71,The driver shall be able to select train data entry on the dmi.,FR-50,"On request of the rbc, the driver shall have the possibility to confirm that the track ahead of him until the end of the on sight section is clear.",0
+132,FR-78,The entry of driver identification and the selection of the language shall be possible.,FR-50,"On request of the rbc, the driver shall have the possibility to confirm that the track ahead of him until the end of the on sight section is clear.",0
+51,FR-107,The test shall require no action on the part of the driver.,FR-50,"On request of the rbc, the driver shall have the possibility to confirm that the track ahead of him until the end of the on sight section is clear.",0
+62,FR-117,"To prevent unauthorised use of the function, permission shall be obtained from the rbc if the train is operating under the control of the rbc.",FR-50,"On request of the rbc, the driver shall have the possibility to confirm that the track ahead of him until the end of the on sight section is clear.",1
+109,FR-3,Actual speed shall be indicated on the dmi.,FR-52,Operation of the train trip shall be indicated on the dmi.,0
+108,FR-53,Partial supervision shall be indicated on the dmi.,FR-52,Operation of the train trip shall be indicated on the dmi.,0
+110,FR-56,Route unsuitability shall be indicated on the dmi.,FR-52,Operation of the train trip shall be indicated on the dmi.,0
+65,FR-61,The current application level shall be indicated on the dmi.,FR-52,Operation of the train trip shall be indicated on the dmi.,0
+91,FR-62,The current operational status shall be indicated to the driver on the dmi.,FR-52,Operation of the train trip shall be indicated on the dmi.,0
+57,FR-77,The emergency stop shall be indicated to the driver on the dmi.,FR-52,Operation of the train trip shall be indicated on the dmi.,0
+26,FR-100,The release speed shall be indicated on the dmi.,FR-52,Operation of the train trip shall be indicated on the dmi.,0
+55,FR-61,The current application level shall be indicated on the dmi.,FR-53,Partial supervision shall be indicated on the dmi.,0
+141,FR-62,The current operational status shall be indicated to the driver on the dmi.,FR-53,Partial supervision shall be indicated on the dmi.,0
+140,FR-62,The current operational status shall be indicated to the driver on the dmi.,FR-54,Permission received shall be indicated to the driver.,0
+32,FR-3,Actual speed shall be indicated on the dmi.,FR-56,Route unsuitability shall be indicated on the dmi.,0
+31,FR-53,Partial supervision shall be indicated on the dmi.,FR-56,Route unsuitability shall be indicated on the dmi.,0
+56,FR-61,The current application level shall be indicated on the dmi.,FR-56,Route unsuitability shall be indicated on the dmi.,0
+142,FR-62,The current operational status shall be indicated to the driver on the dmi.,FR-56,Route unsuitability shall be indicated on the dmi.,0
+104,FR-77,The emergency stop shall be indicated to the driver on the dmi.,FR-56,Route unsuitability shall be indicated on the dmi.,0
+23,FR-100,The release speed shall be indicated on the dmi.,FR-56,Route unsuitability shall be indicated on the dmi.,0
+161,FR-102,The roll away/reverse movement intervention shall be indicated on the dmi.,FR-56,Route unsuitability shall be indicated on the dmi.,0
+198,FR-71,The driver shall be able to select train data entry on the dmi.,FR-58,Stored train data shall be offered to the driver to be confirmed when data entry starts.,3
+175,FR-61,The current application level shall be indicated on the dmi.,FR-62,The current operational status shall be indicated to the driver on the dmi.,0
+88,FR-107,The test shall require no action on the part of the driver.,FR-65,The dmi shall indicate the result of the self-test.,0
+19,FR-6,"After the acknowledgement, the driver shall be able to continue the movement.",FR-67,The driver shall be able to confirm the train integrity to the rbc manually.,0
+63,FR-26,"If the onboard fails to contact the rbc when awakening, the driver shall be asked to enter the rbc contact details.",FR-67,The driver shall be able to confirm the train integrity to the rbc manually.,1
+134,FR-30,"If the train or the shunting movement exceeds the permitted ceiling speed by a certain harmonised margin, the trainborne equipment shall execute a brake intervention until the actual speed does not exceed permitted speed.",FR-67,The driver shall be able to confirm the train integrity to the rbc manually.,0
+17,FR-49,"On lines fitted with rbc, the etcs trainborne equipment shall be able to transmit the location of the entire train to the rbc.",FR-67,The driver shall be able to confirm the train integrity to the rbc manually.,0
+84,FR-62,The current operational status shall be indicated to the driver on the dmi.,FR-67,The driver shall be able to confirm the train integrity to the rbc manually.,0
+35,FR-68,The driver shall be able to consult train data when the train is stationary or moving.,FR-67,The driver shall be able to confirm the train integrity to the rbc manually.,0
+193,FR-69,The driver shall be able to override the function when the train is stationary.,FR-67,The driver shall be able to confirm the train integrity to the rbc manually.,0
+45,FR-71,The driver shall be able to select train data entry on the dmi.,FR-67,The driver shall be able to confirm the train integrity to the rbc manually.,3
+105,FR-74,The driver shall know the distance to the next point defining the indicated braking curve and the permitted speed allowed this shall be shown to the driver in a way that is understandable and logical.,FR-67,The driver shall be able to confirm the train integrity to the rbc manually.,0
+47,FR-77,The emergency stop shall be indicated to the driver on the dmi.,FR-67,The driver shall be able to confirm the train integrity to the rbc manually.,0
+42,FR-85,The etcs trainborne equipment shall be able to determine the location of the entire train.,FR-67,The driver shall be able to confirm the train integrity to the rbc manually.,0
+129,FR-108,The train shall be supervised to a ceiling speed as a minimum.,FR-67,The driver shall be able to confirm the train integrity to the rbc manually.,3
+71,FR-117,"To prevent unauthorised use of the function, permission shall be obtained from the rbc if the train is operating under the control of the rbc.",FR-67,The driver shall be able to confirm the train integrity to the rbc manually.,0
+80,FR-128,"When the traction unit has come to a standstill, the driver shall be able to release the emergency brake.",FR-67,The driver shall be able to confirm the train integrity to the rbc manually.,0
+83,FR-129,"When the traction unit is stationary, the driver shall be required to acknowledge the train trip condition.",FR-67,The driver shall be able to confirm the train integrity to the rbc manually.,0
+99,FR-71,The driver shall be able to select train data entry on the dmi.,FR-68,The driver shall be able to consult train data when the train is stationary or moving.,3
+5,FR-68,The driver shall be able to consult train data when the train is stationary or moving.,FR-69,The driver shall be able to override the function when the train is stationary.,0
+111,FR-71,The driver shall be able to select train data entry on the dmi.,FR-69,The driver shall be able to override the function when the train is stationary.,0
+121,FR-74,The driver shall know the distance to the next point defining the indicated braking curve and the permitted speed allowed this shall be shown to the driver in a way that is understandable and logical.,FR-69,The driver shall be able to override the function when the train is stationary.,0
+125,FR-77,The emergency stop shall be indicated to the driver on the dmi.,FR-69,The driver shall be able to override the function when the train is stationary.,0
+131,FR-85,The etcs trainborne equipment shall be able to determine the location of the entire train.,FR-69,The driver shall be able to override the function when the train is stationary.,0
+199,FR-117,"To prevent unauthorised use of the function, permission shall be obtained from the rbc if the train is operating under the control of the rbc.",FR-69,The driver shall be able to override the function when the train is stationary.,1
+87,FR-128,"When the traction unit has come to a standstill, the driver shall be able to release the emergency brake.",FR-69,The driver shall be able to override the function when the train is stationary.,0
+60,FR-131,"When the train passes the stop signal, the train trip function shall be suppressed.",FR-69,The driver shall be able to override the function when the train is stationary.,0
+73,FR-62,The current operational status shall be indicated to the driver on the dmi.,FR-71,The driver shall be able to select train data entry on the dmi.,0
+97,FR-6,"After the acknowledgement, the driver shall be able to continue the movement.",FR-72,The driver shall be able to use the reversing function without needing to re-confirm the train data.,0
+7,FR-67,The driver shall be able to confirm the train integrity to the rbc manually.,FR-72,The driver shall be able to use the reversing function without needing to re-confirm the train data.,0
+148,FR-68,The driver shall be able to consult train data when the train is stationary or moving.,FR-72,The driver shall be able to use the reversing function without needing to re-confirm the train data.,3
+195,FR-69,The driver shall be able to override the function when the train is stationary.,FR-72,The driver shall be able to use the reversing function without needing to re-confirm the train data.,3
+76,FR-71,The driver shall be able to select train data entry on the dmi.,FR-72,The driver shall be able to use the reversing function without needing to re-confirm the train data.,0
+90,FR-62,The current operational status shall be indicated to the driver on the dmi.,FR-74,The driver shall know the distance to the next point defining the indicated braking curve and the permitted speed allowed this shall be shown to the driver in a way that is understandable and logical.,0
+147,FR-103,The supervised shunting speed shall be indicated to the driver on request.,FR-74,The driver shall know the distance to the next point defining the indicated braking curve and the permitted speed allowed this shall be shown to the driver in a way that is understandable and logical.,0
+201,FR-54,Permission received shall be indicated to the driver.,FR-75,The driver shall select an override control according to the permission received.,3
+103,FR-3,Actual speed shall be indicated on the dmi.,FR-77,The emergency stop shall be indicated to the driver on the dmi.,0
+102,FR-53,Partial supervision shall be indicated on the dmi.,FR-77,The emergency stop shall be indicated to the driver on the dmi.,0
+101,FR-54,Permission received shall be indicated to the driver.,FR-77,The emergency stop shall be indicated to the driver on the dmi.,0
+25,FR-61,The current application level shall be indicated on the dmi.,FR-77,The emergency stop shall be indicated to the driver on the dmi.,0
+171,FR-62,The current operational status shall be indicated to the driver on the dmi.,FR-77,The emergency stop shall be indicated to the driver on the dmi.,0
+39,FR-71,The driver shall be able to select train data entry on the dmi.,FR-77,The emergency stop shall be indicated to the driver on the dmi.,0
+52,FR-74,The driver shall know the distance to the next point defining the indicated braking curve and the permitted speed allowed this shall be shown to the driver in a way that is understandable and logical.,FR-77,The emergency stop shall be indicated to the driver on the dmi.,0
+11,FR-100,The release speed shall be indicated on the dmi.,FR-77,The emergency stop shall be indicated to the driver on the dmi.,0
+107,FR-102,The roll away/reverse movement intervention shall be indicated on the dmi.,FR-77,The emergency stop shall be indicated to the driver on the dmi.,0
+20,FR-103,The supervised shunting speed shall be indicated to the driver on request.,FR-77,The emergency stop shall be indicated to the driver on the dmi.,0
+127,FR-104,The supervised speed shall not be shown on the dmi.,FR-77,The emergency stop shall be indicated to the driver on the dmi.,0
+64,FR-105,The target distance shall not be shown on the dmi unless selected by the driver.,FR-77,The emergency stop shall be indicated to the driver on the dmi.,0
+58,FR-106,The target distance to be displayed on the dmi shall be based on the most restrictive braking curve.,FR-77,The emergency stop shall be indicated to the driver on the dmi.,0
+78,FR-108,The train shall be supervised to a ceiling speed as a minimum.,FR-77,The emergency stop shall be indicated to the driver on the dmi.,0
+196,FR-128,"When the traction unit has come to a standstill, the driver shall be able to release the emergency brake.",FR-77,The emergency stop shall be indicated to the driver on the dmi.,3
+13,FR-82,The etcs on-board shall be capable of receiving track description from the trackside.,FR-79,The etcs on-board shall be capable of receiving information about pantograph and power supply from the trackside.,0
+10,FR-79,The etcs on-board shall be capable of receiving information about pantograph and power supply from the trackside.,FR-80,The etcs on-board shall be capable of receiving information regarding air tightness from the trackside.,0
+4,FR-82,The etcs on-board shall be capable of receiving track description from the trackside.,FR-80,The etcs on-board shall be capable of receiving information regarding air tightness from the trackside.,0
+85,FR-81,The etcs on-board shall be capable of receiving national values from the trackside to adapt to national requirements.,FR-82,The etcs on-board shall be capable of receiving track description from the trackside.,0
+139,FR-80,The etcs on-board shall be capable of receiving information regarding air tightness from the trackside.,FR-83,The etcs on-board shall be capable of sending to the trackside train integrity information detected by a system outside etcs.,0
+166,FR-82,The etcs on-board shall be capable of receiving track description from the trackside.,FR-83,The etcs on-board shall be capable of sending to the trackside train integrity information detected by a system outside etcs.,0
+93,FR-36,Isolation of the etcs trainborne equipment shall disconnect the etcs trainborne equipment from the vehicle braking system.,FR-85,The etcs trainborne equipment shall be able to determine the location of the entire train.,0
+114,FR-87,The etcs trainborne equipment shall be capable of receiving information from the national train control systems by means of the stm.,FR-85,The etcs trainborne equipment shall be able to determine the location of the entire train.,3
+136,FR-88,The etcs trainborne equipment shall be capable of supervising the following operational states.,FR-85,The etcs trainborne equipment shall be able to determine the location of the entire train.,0
+33,FR-88,The etcs trainborne equipment shall be capable of supervising the following operational states.,FR-86,The etcs trainborne equipment shall be capable of being isolated.,0
+144,FR-36,Isolation of the etcs trainborne equipment shall disconnect the etcs trainborne equipment from the vehicle braking system.,FR-87,The etcs trainborne equipment shall be capable of receiving information from the national train control systems by means of the stm.,0
+156,FR-86,The etcs trainborne equipment shall be capable of being isolated.,FR-87,The etcs trainborne equipment shall be capable of receiving information from the national train control systems by means of the stm.,0
+146,FR-88,The etcs trainborne equipment shall be capable of supervising the following operational states.,FR-87,The etcs trainborne equipment shall be capable of receiving information from the national train control systems by means of the stm.,0
+200,FR-79,The etcs on-board shall be capable of receiving information about pantograph and power supply from the trackside.,FR-89,"The etcs trainborne equipment shall indicate on the dmi the information regarding pantograph and power supply.
+",3
+24,FR-49,"On lines fitted with rbc, the etcs trainborne equipment shall be able to transmit the location of the entire train to the rbc.",FR-90,The etcs trainborne equipment shall transmit its own train identification to the rbc.,0
+135,FR-85,The etcs trainborne equipment shall be able to determine the location of the entire train.,FR-90,The etcs trainborne equipment shall transmit its own train identification to the rbc.,0
+176,FR-91,The following data may be entered manually by the driver or from train memory.,FR-92,The following data may be entered manually by the driver provided by external sources.,0
+151,FR-48,On demand the position of the front end of the train at the time of the demand shall be indicated on the dmi this shall be possible while the train is moving or stationary.,FR-93,The following train data shall be sent from the on board to the trackside.,0
+59,FR-67,The driver shall be able to confirm the train integrity to the rbc manually.,FR-93,The following train data shall be sent from the on board to the trackside.,0
+197,FR-71,The driver shall be able to select train data entry on the dmi.,FR-93,The following train data shall be sent from the on board to the trackside.,3
+126,FR-77,The emergency stop shall be indicated to the driver on the dmi.,FR-93,The following train data shall be sent from the on board to the trackside.,0
+152,FR-82,The etcs on-board shall be capable of receiving track description from the trackside.,FR-93,The following train data shall be sent from the on board to the trackside.,0
+180,FR-97,The on board shall be capable of sending train data to the trackside after confirmation by the driver or when entering the rbc area.,FR-93,The following train data shall be sent from the on board to the trackside.,3
+43,FR-48,On demand the position of the front end of the train at the time of the demand shall be indicated on the dmi this shall be possible while the train is moving or stationary.,FR-96,The occurrence of a failure shall be displayed on the dmi.,0
+66,FR-52,Operation of the train trip shall be indicated on the dmi.,FR-96,The occurrence of a failure shall be displayed on the dmi.,0
+128,FR-77,The emergency stop shall be indicated to the driver on the dmi.,FR-96,The occurrence of a failure shall be displayed on the dmi.,0
+113,FR-100,The release speed shall be indicated on the dmi.,FR-96,The occurrence of a failure shall be displayed on the dmi.,0
+74,FR-106,The target distance to be displayed on the dmi shall be based on the most restrictive braking curve.,FR-96,The occurrence of a failure shall be displayed on the dmi.,0
+164,FR-6,"After the acknowledgement, the driver shall be able to continue the movement.",FR-97,The on board shall be capable of sending train data to the trackside after confirmation by the driver or when entering the rbc area.,0
+95,FR-48,On demand the position of the front end of the train at the time of the demand shall be indicated on the dmi this shall be possible while the train is moving or stationary.,FR-97,The on board shall be capable of sending train data to the trackside after confirmation by the driver or when entering the rbc area.,0
+153,FR-49,"On lines fitted with rbc, the etcs trainborne equipment shall be able to transmit the location of the entire train to the rbc.",FR-97,The on board shall be capable of sending train data to the trackside after confirmation by the driver or when entering the rbc area.,0
+190,FR-50,"On request of the rbc, the driver shall have the possibility to confirm that the track ahead of him until the end of the on sight section is clear.",FR-97,The on board shall be capable of sending train data to the trackside after confirmation by the driver or when entering the rbc area.,0
+188,FR-67,The driver shall be able to confirm the train integrity to the rbc manually.,FR-97,The on board shall be capable of sending train data to the trackside after confirmation by the driver or when entering the rbc area.,0
+155,FR-69,The driver shall be able to override the function when the train is stationary.,FR-97,The on board shall be capable of sending train data to the trackside after confirmation by the driver or when entering the rbc area.,0
+162,FR-77,The emergency stop shall be indicated to the driver on the dmi.,FR-97,The on board shall be capable of sending train data to the trackside after confirmation by the driver or when entering the rbc area.,0
+165,FR-117,"To prevent unauthorised use of the function, permission shall be obtained from the rbc if the train is operating under the control of the rbc.",FR-97,The on board shall be capable of sending train data to the trackside after confirmation by the driver or when entering the rbc area.,2
+22,FR-53,Partial supervision shall be indicated on the dmi.,FR-100,The release speed shall be indicated on the dmi.,0
+15,FR-61,The current application level shall be indicated on the dmi.,FR-100,The release speed shall be indicated on the dmi.,0
+177,FR-62,The current operational status shall be indicated to the driver on the dmi.,FR-100,The release speed shall be indicated on the dmi.,0
+49,FR-103,The supervised shunting speed shall be indicated to the driver on request.,FR-100,The release speed shall be indicated on the dmi.,0
+119,FR-106,The target distance to be displayed on the dmi shall be based on the most restrictive braking curve.,FR-100,The release speed shall be indicated on the dmi.,0
+48,FR-108,The train shall be supervised to a ceiling speed as a minimum.,FR-100,The release speed shall be indicated on the dmi.,0
+160,FR-3,Actual speed shall be indicated on the dmi.,FR-102,The roll away/reverse movement intervention shall be indicated on the dmi.,0
+159,FR-53,Partial supervision shall be indicated on the dmi.,FR-102,The roll away/reverse movement intervention shall be indicated on the dmi.,0
+115,FR-61,The current application level shall be indicated on the dmi.,FR-102,The roll away/reverse movement intervention shall be indicated on the dmi.,0
+143,FR-62,The current operational status shall be indicated to the driver on the dmi.,FR-102,The roll away/reverse movement intervention shall be indicated on the dmi.,0
+50,FR-100,The release speed shall be indicated on the dmi.,FR-102,The roll away/reverse movement intervention shall be indicated on the dmi.,0
+157,FR-54,Permission received shall be indicated to the driver.,FR-103,The supervised shunting speed shall be indicated to the driver on request.,0
+37,FR-62,The current operational status shall be indicated to the driver on the dmi.,FR-103,The supervised shunting speed shall be indicated to the driver on request.,0
+54,FR-1,A special indication shall be shown on the dmi.,FR-104,The supervised speed shall not be shown on the dmi.,0
+53,FR-3,Actual speed shall be indicated on the dmi.,FR-104,The supervised speed shall not be shown on the dmi.,0
+16,FR-4,Actual speed shall still be shown on the dmi.,FR-104,The supervised speed shall not be shown on the dmi.,0
+14,FR-100,The release speed shall be indicated on the dmi.,FR-104,The supervised speed shall not be shown on the dmi.,0
+116,FR-103,The supervised shunting speed shall be indicated to the driver on request.,FR-104,The supervised speed shall not be shown on the dmi.,3
+21,FR-105,The target distance shall not be shown on the dmi unless selected by the driver.,FR-104,The supervised speed shall not be shown on the dmi.,0
+170,FR-108,The train shall be supervised to a ceiling speed as a minimum.,FR-104,The supervised speed shall not be shown on the dmi.,0
+34,FR-115,This ceiling speed shall not be shown continually on the dmi but may be shown momentarily when selected by the driver.,FR-104,The supervised speed shall not be shown on the dmi.,0
+98,FR-62,The current operational status shall be indicated to the driver on the dmi.,FR-105,The target distance shall not be shown on the dmi unless selected by the driver.,0
+81,FR-106,The target distance to be displayed on the dmi shall be based on the most restrictive braking curve.,FR-105,The target distance shall not be shown on the dmi unless selected by the driver.,3
+8,FR-108,The train shall be supervised to a ceiling speed as a minimum.,FR-105,The target distance shall not be shown on the dmi unless selected by the driver.,0
+38,FR-115,This ceiling speed shall not be shown continually on the dmi but may be shown momentarily when selected by the driver.,FR-105,The target distance shall not be shown on the dmi unless selected by the driver.,0
+92,FR-62,The current operational status shall be indicated to the driver on the dmi.,FR-106,The target distance to be displayed on the dmi shall be based on the most restrictive braking curve.,0
+172,FR-33,In partial supervision the train shall be supervised according to train speed and distance data available.,FR-109,The train shall be supervised according to train speed data available.,0
+117,FR-62,The current operational status shall be indicated to the driver on the dmi.,FR-108,The train shall be supervised to a ceiling speed as a minimum.,0
+18,FR-103,The supervised shunting speed shall be indicated to the driver on request.,FR-108,The train shall be supervised to a ceiling speed as a minimum.,0
+186,FR-110,The train shall have the capability of being supervised to a ceiling speed.,FR-108,The train shall be supervised to a ceiling speed as a minimum.,3
+181,FR-115,This ceiling speed shall not be shown continually on the dmi but may be shown momentarily when selected by the driver.,FR-108,The train shall be supervised to a ceiling speed as a minimum.,3
+192,FR-111,The train shall leave partial supervision when the trainborne equipment is not operative any longer when shunting is selected or when full supervision is available.,FR-113,The trainborne equipment shall remain in full supervision until the trainborne equipment is not active any longer when shunting is selected or when partial supervision information is received.,0
+1,FR-125,"When changing to a lower speed level, the front end of the train shall respect the dynamic train speed profile.",FR-124,"When changing to a higher speed level, the rear end of the train shall respect the static train speed profile.",3
+69,FR-62,The current operational status shall be indicated to the driver on the dmi.,FR-127,"When the plain text message appears on the dmi, the driver shall be alerted.",1
+40,FR-77,The emergency stop shall be indicated to the driver on the dmi.,FR-127,"When the plain text message appears on the dmi, the driver shall be alerted.",1
+145,FR-100,The release speed shall be indicated on the dmi.,FR-127,"When the plain text message appears on the dmi, the driver shall be alerted.",1
+130,FR-105,The target distance shall not be shown on the dmi unless selected by the driver.,FR-127,"When the plain text message appears on the dmi, the driver shall be alerted.",2
+183,FR-80,The etcs on-board shall be capable of receiving information regarding air tightness from the trackside.,FR-128,"When the traction unit has come to a standstill, the driver shall be able to release the emergency brake.",0
+28,FR-69,The driver shall be able to override the function when the train is stationary.,FR-129,"When the traction unit is stationary, the driver shall be required to acknowledge the train trip condition.",2
+46,FR-76,The emergency brake shall be applied until the traction unit is stationary.,FR-129,"When the traction unit is stationary, the driver shall be required to acknowledge the train trip condition.",0
+191,FR-77,The emergency stop shall be indicated to the driver on the dmi.,FR-129,"When the traction unit is stationary, the driver shall be required to acknowledge the train trip condition.",0
+178,FR-128,"When the traction unit has come to a standstill, the driver shall be able to release the emergency brake.",FR-129,"When the traction unit is stationary, the driver shall be required to acknowledge the train trip condition.",0
+194,FR-123,Visual and acoustic warnings to the driver about possible intervention from etcs shall be given to enable the driver to react and avoid intervention.,FR-133,"Within the braking curve area, a warning shall be given to the driver to enable him to react and avoid intervention from etcs equipment at least 5 sec before the intervention.",3

@@ -1,0 +1,3620 @@
+[
+  {
+    "#": "FR-1",
+    "*": "functional",
+    ":": "When requested, the _VehicleCore_ shall transition the UAV between states according to allowed state transitions as depicted in the UAV state transition diagram.",
+    "event": {
+      "()": [
+        {
+          "#": "1-condition",
+          "*": "condition",
+          "operation": {
+            "operation": "request"
+          }
+        }
+      ]
+    },
+    "agent": {
+      "entity": "_VehicleCore_"
+    },
+    "operation": {
+      "operation": "transition"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "UAV"
+        },
+        {
+          "entity": "allowed state transitions"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "UAV"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "according to allowed state transitions as depicted in the UAV state transition diagram"
+      ]
+    }
+  },
+  {
+    "#": "FR-2",
+    "*": "functional",
+    ":": "If a client registers for notifications, the _UIMiddleware_ shall send notifications for specific events.",
+    "event": {
+      "()": [
+        {
+          "#": "2-condition",
+          "*": "condition",
+          "agent": {
+            "entity": "client"
+          },
+          "operation": {
+            "operation": "register"
+          },
+          "restriction": {
+            "()": [
+              "for notifications"
+            ]
+          }
+        }
+      ]
+    },
+    "agent": {
+      "entity": "_UIMiddleware_"
+    },
+    "operation": {
+      "operation": "send"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "notifications"
+        },
+        {
+          "entity": "specific events"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "notifications"
+        },
+        {
+          "entity": "specific events"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "for specific events"
+      ]
+    }
+  },
+  {
+    "#": "FR-3",
+    "*": "functional",
+    ":": "The _VehicleCore_ shall assign a unique ID to each activated UAV.",
+    "agent": {
+      "entity": "_VehicleCore_"
+    },
+    "operation": {
+      "operation": "assign"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "unique ID"
+        },
+        {
+          "entity": "activated UAV"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "unique ID"
+        },
+        {
+          "entity": "activated UAV"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-4",
+    "*": "functional",
+    ":": "The _SingleUAVFlightPlanScheduler_ shall only execute one flight plan at a time for each UAV.",
+    "agent": {
+      "entity": "_SingleUAVFlightPlanScheduler_"
+    },
+    "operation": {
+      "operation": "execute"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "flight plan"
+        },
+        {
+          "entity": "each UAV"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "only one at a time",
+        "for each UAV"
+      ]
+    }
+  },
+  {
+    "#": "FR-5",
+    "*": "functional",
+    ":": "The _UAVActivationManager_ shall ensure that only one instance of each registered drone is active at any time.",
+    "agent": {
+      "entity": "_UAVActivationManager_"
+    },
+    "operation": {
+      "operation": "ensure be active"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "registered drone"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "registered drone"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "only one instance of each registered drone is active at any time"
+      ]
+    }
+  },
+  {
+    "#": "FR-6",
+    "*": "functional",
+    ":": "The _VehicleCore_ shall associate a UAV_TYPE for each UAV defining its basic attributes.",
+    "agent": {
+      "entity": "_VehicleCore_"
+    },
+    "operation": {
+      "operation": "associate"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "UAV_TYPE for each UAV"
+        },
+        {
+          "entity": "its basic attributes"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-7",
+    "*": "functional",
+    ":": "Each waypoint shall be specified using coordinates that include longitude, latitude and altitude.",
+    "operation": {
+      "operation": "specify"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "each waypoint"
+        },
+        {
+          "entity": "coordinates that include longitude, latitude and altitude"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "each waypoint"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-8",
+    "*": "functional",
+    ":": "When a flight plan is executed, the _VehicleCore_ shall send the next waypoint to the UAV.",
+    "event": {
+      "()": [
+        {
+          "#": "8-condition",
+          "*": "condition",
+          "operation": {
+            "operation": "execute"
+          },
+          "input": {
+            "()": [
+              {
+                "entity": "flight plan"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "agent": {
+      "entity": "_VehicleCore_"
+    },
+    "operation": {
+      "operation": "send"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "next waypoint"
+        },
+        {
+          "entity": "UAV"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "next waypoint"
+        },
+        {
+          "entity": "UAV"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-9",
+    "*": "functional",
+    ":": "The _SingleUAVFlightPlanScheduler_ shall maintain a managed list of pending flight plans for each UAV.",
+    "agent": {
+      "entity": "_SingleUAVFlightPlanScheduler_"
+    },
+    "operation": {
+      "operation": "maintain"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "managed list of pending flight plans"
+        },
+        {
+          "entity": "UAV"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "managed list of pending flight plans"
+        },
+        {
+          "entity": "UAV"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-10",
+    "*": "functional",
+    ":": "If requested, the _SingleUAVFlightPlanScheduler_ shall not assign the flight plan assigned to a UAV that is awaiting execution.",
+    "event": {
+      "()": [
+        {
+          "#": "10-condition",
+          "*": "condition",
+          "operation": {
+            "operation": "request"
+          }
+        }
+      ]
+    },
+    "agent": {
+      "entity": "_SingleUAVFlightPlanScheduler_"
+    },
+    "operation": {
+      "operation": "not assign"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "flight plan"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "flight plan"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-11",
+    "*": "functional",
+    ":": "If a UAV has pending flight plans, then when it reaches the final waypoint of its current flight plan, the _SingleUAVFlightPlanScheduler_ shall execute the next assigned flight plan.",
+    "event": {
+      "()": [
+        {
+          "#": "11-condition-1",
+          "*": "condition",
+          "agent": {
+            "entity": "UAV"
+          },
+          "operation": {
+            "operation": "have"
+          },
+          "input": {
+            "()": [
+              {
+                "entity": "pending flight plans"
+              }
+            ]
+          }
+        },
+        {
+          "#": "11-condition-2",
+          "*": "condition",
+          "agent": {
+            "entity": "UAV"
+          },
+          "operation": {
+            "operation": "reach"
+          },
+          "input": {
+            "()": [
+              {
+                "entity": "final waypoint of its current flight plan"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "agent": {
+      "entity": "_SingleUAVFlightPlanScheduler_"
+    },
+    "operation": {
+      "operation": "execute"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "next assigned flight plan"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "next assigned flight plan"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-12",
+    "*": "functional",
+    ":": "When a UAV's current flight is cancelled, the _SingleUAVFlightPlanScheduler_ shall in turn cancel all scheduled flight plans for that UAV.",
+    "event": {
+      "()": [
+        {
+          "#": "12-condition",
+          "*": "condition",
+          "operation": {
+            "operation": "cancel"
+          },
+          "input": {
+            "()": [
+              {
+                "entity": "UAV's current flight"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "agent": {
+      "entity": "_SingleUAVFlightPlanScheduler_"
+    },
+    "operation": {
+      "operation": "cancel"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "scheduled flight plans"
+        },
+        {
+          "entity": "UAV"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "scheduled flight plans"
+        },
+        {
+          "entity": "UAV"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "in turn"
+      ]
+    }
+  },
+  {
+    "#": "FR-13",
+    "*": "functional",
+    ":": "The _UIMiddleware_ shall provide an interface for registering UI clients.",
+    "agent": {
+      "entity": "_UIMiddleware_"
+    },
+    "operation": {
+      "operation": "provide"
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "interface for registering UI clients"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-14",
+    "*": "functional",
+    ":": "The _UIMiddleware_ shall only assign one control-client at a time for each UAV.",
+    "agent": {
+      "entity": "_UIMiddleware_"
+    },
+    "operation": {
+      "operation": "assign"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "control-client"
+        },
+        {
+          "entity": "each UAV"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "control-client"
+        },
+        {
+          "entity": "each UAV"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "only",
+        "one control-client at a time for each UAV"
+      ]
+    }
+  },
+  {
+    "#": "FR-15",
+    "*": "functional",
+    ":": "If a command is issued by the _VaadinUI_ for an UAV, the _VaadinUI_ shall request control of that UAV.",
+    "event": {
+      "()": [
+        {
+          "#": "15-condition",
+          "*": "condition",
+          "operation": {
+            "operation": "issue"
+          },
+          "input": {
+            "()": [
+              {
+                "entity": "command"
+              }
+            ]
+          },
+          "output": {
+            "()": [
+              {
+                "entity": "command"
+              }
+            ]
+          },
+          "restriction": {
+            "()": [
+              "for an UAV"
+            ]
+          }
+        }
+      ]
+    },
+    "agent": {
+      "entity": "_VaadinUI_"
+    },
+    "operation": {
+      "operation": "request"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "control of that UAV"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-16",
+    "*": "functional",
+    ":": "When the _RealTimeFlightUI_ is loaded, a map shall be displayed.",
+    "event": {
+      "()": [
+        {
+          "#": "16-condition",
+          "*": "condition",
+          "operation": {
+            "operation": "load"
+          },
+          "input": {
+            "()": [
+              {
+                "entity": "_RealTimeFlightUI_"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "operation": {
+      "operation": "display"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "map"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "map"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-17",
+    "*": "functional",
+    ":": "The _RealTimeFlightUI_ shall display the location of active UAVs as icons on the map.",
+    "agent": {
+      "entity": "_RealTimeFlightUI_"
+    },
+    "operation": {
+      "operation": "display"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "location of active UAVs"
+        },
+        {
+          "entity": "map"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "location of active UAVs"
+        },
+        {
+          "entity": "map"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "as icons on the map"
+      ]
+    }
+  },
+  {
+    "#": "FR-18",
+    "*": "functional",
+    ":": "When a stationary or moving object is within the proximity of a UAV, the _ObjectAvoidance_ system shall issue evasive directives to the UAV.",
+    "event": {
+      "()": [
+        {
+          "#": "18-condition",
+          "*": "condition",
+          "agent": {
+            "entity": "stationary or moving object"
+          },
+          "operation": {
+            "operation": "be within"
+          },
+          "restriction": {
+             "()": [
+        "within the proximity of a UAV"
+      ]
+          }
+        }
+      ]
+    },
+    "agent": {
+      "entity": "_ObjectAvoidance_"
+    },
+    "operation": {
+      "operation": "issue"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "evasive directives"
+        },
+        {
+          "entity": "UAV"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "evasive directives"
+        },
+        {
+          "entity": "UAV"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-19",
+    "*": "functional",
+    ":": "If a UAV takes evasive actions, the system will ensure that it will eventually reach its destination.",
+    "event": {
+      "()": [
+        {
+          "#": "19-condition",
+          "*": "condition",
+          "agent": {
+            "entity": "UAV"
+          },
+          "operation": {
+            "operation": "take"
+          },
+          "input": {
+            "()": [
+              {
+                "entity": "evasive actions"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "agent": {
+      "entity": "system"
+    },
+    "operation": {
+      "operation": "ensure reach"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "its destination"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "its destination"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-20",
+    "*": "functional",
+    ":": "The _ObjectAvoidance_ system only issues commands within the capabilities of the UAV.",
+    "agent": {
+      "entity": "_ObjectAvoidance_"
+    },
+    "operation": {
+      "operation": "issue"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "commands"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "commands"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "within the capabilities of the UAV"
+      ]
+    }
+  },
+  {
+    "#": "FR-21",
+    "*": "functional",
+    ":": "When a UAV has an active onboard Obstacle Avoidance, the _ObstacleAvoidance_ shall not issue directives.",
+    "event": {
+      "()": [
+        {
+          "#": "21-condition",
+          "*": "condition",
+          "agent": {
+            "entity": "UAV"
+          },
+          "operation": {
+            "operation": "have"
+          },
+          "input": {
+            "()": [
+              {
+                "entity": "active onboard Obstacle Avoidance"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "agent": {
+      "entity": "_ObstacleAvoidance_"
+    },
+    "operation": {
+      "operation": "not issue"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "directives"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "directives"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-22",
+    "*": "functional",
+    ":": "When a _GCS_ requests activation of a newly detected UAV, the _GCSMiddleware_ shall forward the request to Dronology.",
+    "event": {
+      "()": [
+        {
+          "#": "22-condition",
+          "*": "condition",
+          "agent": {
+            "entity": "_GCS_"
+          },
+          "operation": {
+            "operation": "request"
+          },
+          "input": {
+            "()": [
+              {
+                "entity": "activation of a newly detected UAV"
+              }
+            ]
+          },
+          "restriction": {
+            "()": [
+              "newly"
+            ]
+          }
+        }
+      ]
+    },
+    "agent": {
+      "entity": "_GCSMiddleware_"
+    },
+    "operation": {
+      "operation": "forward"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "request to Dronology"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "request to Dronology"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-23",
+    "*": "functional",
+    ":": "The _UAVActivationManager_ shall only activate UAVs that are registered.",
+    "agent": {
+      "entity": "_UAVActivationManager_"
+    },
+    "operation": {
+      "operation": "activate"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "UAVs that are registered"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "UAVs that are registered"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "only"
+      ]
+    }
+  },
+  {
+    "#": "FR-24",
+    "*": "functional",
+    ":": "When the _GCS_ loses the connection to an UAV, the _GCS_ shall attempt to reconnect.",
+    "event": {
+      "()": [
+        {
+          "#": "24-condition",
+          "*": "condition",
+          "agent": {
+            "entity": "_GCS_"
+          },
+          "operation": {
+            "operation": "lose"
+          },
+          "input": {
+            "()": [
+              {
+                "entity": "connection"
+              },
+              {
+                "entity": "UAV"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "agent": {
+      "entity": "_GCS_"
+    },
+    "operation": {
+      "operation": "attempt reconnect"
+    }
+  },
+  {
+    "#": "FR-25",
+    "*": "functional",
+    ":": "When the return to home command is issued, the _FlightManager_ shall return the UAV to its original launch location without issuing any additional waypoint or routing commands.",
+    "event": {
+      "()": [
+        {
+          "#": "25-condition",
+          "*": "condition",
+          "operation": {
+            "operation": "issue"
+          },
+          "input": {
+            "()": [
+              {
+                "entity": "return to home command"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "agent": {
+      "entity": "_FlightManager_"
+    },
+    "operation": {
+      "operation": "return"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "UAV"
+        },
+        {
+          "entity": "its original launch location"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "without issuing any additional waypoint or routing commands"
+      ]
+    }
+  },
+  {
+    "#": "FR-26",
+    "*": "functional",
+    ":": "The _FlightRouteManager_ shall define flight routes as an ordered sequence of waypoints in which the first waypoint represents the first target location and the final waypoint represents the final target location.",
+    "agent": {
+      "entity": "_FlightRouteManager_"
+    },
+    "operation": {
+      "operation": "define"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "flight routes"
+        },
+        {
+          "entity": "ordered sequence of waypoints"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "flight routes"
+        },
+        {
+          "entity": "ordered sequence of waypoints"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-27",
+    "*": "functional",
+    ":": "The _FlightRouteManager_ shall ensure that all flight routes represent a VALID_FLIGHT_ROUTE.",
+    "agent": {
+      "entity": "_FlightRouteManager_"
+    },
+    "operation": {
+      "operation": "ensure represent"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "flight routes"
+        },
+        {
+          "entity": "VALID_FLIGHT_ROUTE"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-28",
+    "*": "functional",
+    ":": "The _FlightRouteManager_ shall persist flight routes.",
+    "agent": {
+      "entity": "_FlightRouteManager_"
+    },
+    "operation": {
+      "operation": "persist"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "flight routes"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "flight routes"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-29",
+    "*": "functional",
+    ":": "When a flight route requires a customized takeoff altitude that differs from the system's default takeoff altitude, it shall be specified in the flight route.",
+    "event": {
+      "()": [
+        {
+          "#": "29-condition",
+          "*": "condition",
+          "agent": {
+            "entity": "flight route"
+          },
+          "operation": {
+            "operation": "require"
+          },
+          "input": {
+            "()": [
+              {
+                "entity": "customized takeoff altitude"
+              }
+            ]
+          },
+          "restriction": {
+            "()": [
+              "that differs from the system's default takeoff altitude"
+            ]
+          }
+        }
+      ]
+    },
+    "operation": {
+      "operation": "specify"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "customized takeoff altitude"
+        },
+        {
+          "entity": "flight route"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-30",
+    "*": "functional",
+    ":": "When requested, the _CoordinateSystem_ shall transform coordinates to alternate formats.",
+    "event": {
+      "()": [
+        {
+          "#": "-condition",
+          "*": "condition",
+          "operation": {
+            "operation": "request"
+          }
+        }
+      ]
+    },
+    "agent": {
+      "entity": "_CoordinateSystem_"
+    },
+    "operation": {
+      "operation": "transform"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "coordinates"
+        },
+        {
+          "entity": "alternate formats"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "coordinates"
+        },
+        {
+          "entity": "alternate formats"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-31",
+    "*": "functional",
+    ":": "When given two coordinates, the _CoordinateSystem_ shall compute the distance between them.",
+    "event": {
+      "()": [
+        {
+          "#": "31-condition",
+          "*": "condition",
+          "operation": {
+            "operation": "give"
+          },
+          "input": {
+            "()": [
+              {
+                "entity": "two coordinates"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "agent": {
+      "entity": "_CoordinateSystem_"
+    },
+    "operation": {
+      "operation": "compute"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "distance between them"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "distance between them"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-32",
+    "*": "functional",
+    ":": "When given two coordinates, the _CoordinateSystem_ shall compute the direction from the first coordinate to the second coordinate.",
+    "event": {
+      "()": [
+        {
+          "#": "32-condition",
+          "*": "condition",
+          "operation": {
+            "operation": "give"
+          },
+          "input": {
+            "()": [
+              {
+                "entity": "two coordinates"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "agent": {
+      "entity": "_CoordinateSystem_"
+    },
+    "operation": {
+      "operation": "compute"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "direction from the first coordinate to the second coordinate"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "direction from the first coordinate to the second coordinate"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-33-1",
+    "*": "functional",
+    ":": "When the hover in place command is issued, the _FlightManager_ shall halt the UAV in place and maintain its current position.",
+    "event": {
+      "()": [
+        {
+          "#": "-condition",
+          "*": "condition",
+          "operation": {
+            "operation": "issue"
+          },
+          "input": {
+            "()": [
+              {
+                "entity": "hover in place command"
+              }
+            ]
+          },
+          "restriction": {
+            "()": [
+              "in place"
+            ]
+          }
+        }
+      ]
+    },
+    "agent": {
+      "entity": "_FlightManager_"
+    },
+    "operation": {
+      "operation": "halt maintain"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "UAV"
+        },
+        {
+          "entity": "its current position"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "UAV"
+        },
+        {
+          "entity": "its current position"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "in place"
+      ]
+    }
+  },
+  {
+    "#": "FR-34-1",
+    "*": "functional",
+    ":": "If a flight route is assigned to a UAV which is currently hovering in place, the _FlightManager_ shall assign the route and maintain the hover in place mode.",
+    "event": {
+      "()": [
+        {
+          "#": "-condition",
+          "*": "condition",
+          "operation": {
+            "operation": "assign"
+          },
+          "input": {
+            "()": [
+              {
+                "entity": "flight route"
+              },
+              {
+                "entity": "UAV"
+              }
+            ]
+          },
+          "output": {
+            "()": [
+              {
+                "entity": "flight route"
+              },
+              {
+                "entity": "UAV"
+              }
+            ]
+          },
+          "restriction": {
+            "()": [
+              "currently"
+            ]
+          }
+        }
+      ]
+    },
+    "agent": {
+      "entity": "_FlightManager_"
+    },
+    "operation": {
+      "operation": "assign maintain"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "route"
+        },
+        {
+          "entity": "hover in place mode"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "route"
+        },
+        {
+          "entity": "hover in place mode"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-35",
+    "*": "functional",
+    ":": "If a flight plan is active and the hover in place command is rescinded, the _FlightManager_ shall notify the UAV to continue to the originally designated waypoint.",
+    "event": {
+      "()": [
+        {
+          "#": "35-condition-1",
+          "*": "condition",
+          "agent": {
+            "entity": "flight plan"
+          },
+          "operation": {
+            "operation": "be active"
+          }
+        },
+        {
+          "#": "35-condition-2",
+          "*": "condition",
+          "operation": {
+            "operation": "rescind"
+          },
+          "input": {
+            "()": [
+              {
+                "entity": "hover in place command"
+              }
+            ]
+          },
+          "restriction": {
+            "()": [
+              "in place command"
+            ]
+          }
+        }
+      ]
+    },
+    "agent": {
+      "entity": "_FlightManager_"
+    },
+    "operation": {
+      "operation": "notify to continue"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "UAV"
+        },
+        {
+          "entity": "originally designated waypoint"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "UAV"
+        },
+        {
+          "entity": "originally designated waypoint"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-36",
+    "*": "functional",
+    ":": "When a flight plan is activated for a UAV currently on the ground, the _FlightSchedulingandExecution_ shall notify the UAV to takeoff vertically until it reaches the prescribed altitude.",
+    "event": {
+      "()": [
+        {
+          "#": "36-condition",
+          "*": "condition",
+          "operation": {
+            "operation": "activate"
+          },
+          "input": {
+            "()": [
+              {
+                "entity": "flight plan"
+              },
+              {
+                "entity": "UAV currently on the ground"
+              }
+            ]
+          },
+          "restriction": {
+            "()": [
+              "currently",
+              "on the ground"
+            ]
+          }
+        }
+      ]
+    },
+    "agent": {
+      "entity": "_FlightSchedulingandExecution_"
+    },
+    "operation": {
+      "operation": "notify to takeoff"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "the UAV"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "the UAV"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "vertically",
+        "until it reaches the prescribed altitude"
+      ]
+    }
+  },
+  {
+    "#": "FR-37",
+    "*": "functional",
+    ":": "The _MissionPlanner_ shall manage predefined FlightPatterns.",
+    "agent": {
+      "entity": "_MissionPlanner_"
+    },
+    "operation": {
+      "operation": "manage"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "predefined FlightPatterns"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "predefined FlightPatterns"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-38",
+    "*": "functional",
+    ":": "When requested, if a mission is currently active, the _MissionPlanner_ shall cancel the active mission.",
+    "event": {
+      "()": [
+        {
+          "#": "38-condition-1",
+          "*": "condition",
+          "operation": {
+            "operation": "request"
+          }
+        },
+        {
+          "#": "38-condition-2",
+          "*": "condition",
+          "agent": {
+            "entity": "mission"
+          },
+          "operation": {
+            "operation": "be currently active"
+          },
+          "restriction": {
+            "()": [
+              "currently"
+            ]
+          }
+        }
+      ]
+    },
+    "agent": {
+      "entity": "_MissionPlanner_"
+    },
+    "operation": {
+      "operation": "cancel"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "active mission"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "active mission"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-39",
+    "*": "functional",
+    ":": "When requested, the _SingleUAVFlightPlanScheduler_ shall schedule a route for execution.",
+    "event": {
+      "()": [
+        {
+          "#": "39-condition",
+          "*": "condition",
+          "operation": {
+            "operation": "request"
+          }
+        }
+      ]
+    },
+    "agent": {
+      "entity": "_SingleUAVFlightPlanScheduler_"
+    },
+    "operation": {
+      "operation": "schedule"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "route for execution"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "route for execution"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-40",
+    "*": "functional",
+    ":": "If a route contains a specific UAV_ID, the _SingleUAVFlightPlanScheduler_ shall assign the route to the given UAV.",
+    "event": {
+      "()": [
+        {
+          "#": "-condition",
+          "*": "condition",
+          "agent": {
+            "entity": "route"
+          },
+          "operation": {
+            "operation": "contain"
+          },
+          "input": {
+            "()": [
+              {
+                "entity": "specific UAV_ID"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "agent": {
+      "entity": "_SingleUAVFlightPlanScheduler_"
+    },
+    "operation": {
+      "operation": "assign"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "route to the given UAV"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "route to the given UAV"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-41",
+    "*": "functional",
+    ":": "If a scheduled flight is not manually assigned to a UAV, the _SingleUAVFlightPlanScheduler_ shall assign the route automatically to an UAV.",
+    "event": {
+      "()": [
+        {
+          "#": "41-condition",
+          "*": "condition",
+          "agent": {
+            "entity": "scheduled flight"
+          },
+          "operation": {
+            "operation": "not manually assign"
+          },
+          "restriction": {
+            "()": [
+              "manually"
+            ]
+          }
+        }
+      ]
+    },
+    "agent": {
+      "entity": "_SingleUAVFlightPlanScheduler_"
+    },
+    "operation": {
+      "operation": "assign"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "route"
+        },
+        {
+          "entity": "UAV"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "route"
+        },
+        {
+          "entity": "UAV"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "automatically"
+      ]
+    }
+  },
+  {
+    "#": "FR-42",
+    "*": "functional",
+    ":": "If a UAV does not have any pending flight plans, then when it reaches the final waypoint of its current flight plan, the _SingleUAVFlightPlanScheduler_ shall notify the UAV to hover in place.",
+    "event": {
+      "()": [
+        {
+          "#": "42-condition-1",
+          "*": "condition",
+          "agent": {
+            "entity": "UAV"
+          },
+          "operation": {
+            "operation": "not have"
+          },
+          "input": {
+            "()": [
+              {
+                "entity": "pending flight plans"
+              }
+            ]
+          }
+        },
+        {
+          "#": "42-condition-2",
+          "*": "condition",
+          "agent": {
+            "entity": "UAV"
+          },
+          "operation": {
+            "operation": "reach"
+          },
+          "input": {
+            "()": [
+              {
+                "entity": "final waypoint of its current flight plan"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "agent": {
+      "entity": "_SingleUAVFlightPlanScheduler_"
+    },
+    "operation": {
+      "operation": "notify to hover"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "the UAV"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "the UAV"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "in place"
+      ]
+    }
+  },
+  {
+    "#": "FR-43",
+    "*": "functional",
+    ":": "If requested, the _SingleUAVFlightPlanScheduler_ shall abort the currently executing flight plan of an UAV.",
+    "event": {
+      "()": [
+        {
+          "#": "43-condition",
+          "*": "condition",
+          "operation": {
+            "operation": "request"
+          }
+        }
+      ]
+    },
+    "agent": {
+      "entity": "_SingleUAVFlightPlanScheduler_"
+    },
+    "operation": {
+      "operation": "abort"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "currently executing flight plan"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "currently executing flight plan"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-44",
+    "*": "functional",
+    ":": "A flight pattern shall document the longitude, latitude and altitude of waypoints in a flight route as offsets from the starting position of the UAV.",
+    "agent": {
+      "entity": "flight pattern"
+    },
+    "operation": {
+      "operation": "document"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "longitude, latitude and altitude of waypoints"
+        },
+        {
+          "entity": "flight route"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "longitude, latitude and altitude of waypoints"
+        },
+        {
+          "entity": "flight route"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "in a flight route as offsets from the starting position of the UAV"
+      ]
+    }
+  },
+  {
+    "#": "FR-45",
+    "*": "functional",
+    ":": "When a group of UAVs are assigned flight patterns as part of a mission, the system shall provide a warning if any paths overlap.",
+    "event": {
+      "()": [
+        {
+          "#": "45-condition-1",
+          "*": "condition",
+          "operation": {
+            "operation": "assign"
+          },
+          "input": {
+            "()": [
+              {
+                "entity": "group of UAVs"
+              },
+              {
+                "entity": "flight patterns"
+              }
+            ]
+          },
+          "restriction": {
+            "()": [
+              "as part of a mission"
+            ]
+          }
+        },
+        {
+          "#": "45-condition-1",
+          "*": "condition",
+          "agent": {
+            "entity": "any paths"
+          },
+          "operation": {
+            "operation": "overlap"
+          }
+        }
+      ]
+    },
+    "agent": {
+      "entity": "system"
+    },
+    "operation": {
+      "operation": "provide"
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "warning"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-46",
+    "*": "functional",
+    ":": "The _VehicleCore_ shall support UAVs connected via the _GCS_.",
+    "agent": {
+      "entity": "_VehicleCore_"
+    },
+    "operation": {
+      "operation": "support"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "UAVs"
+        },
+        {
+          "entity": "_GCS_"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-47",
+    "*": "functional",
+    ":": "The _VehicleCore_ shall support virtual UAVs.",
+    "agent": {
+      "entity": "_VehicleCore_"
+    },
+    "operation": {
+      "operation": "support"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "virtual UAVs"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "virtual UAVs"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-48",
+    "*": "functional",
+    ":": "When a UAV is deactivated, the _UAVActivationManager_ shall cancel all current and scheduled flight plans.",
+    "event": {
+      "()": [
+        {
+          "#": "48-condition",
+          "*": "condition",
+          "operation": {
+            "operation": "deactivate"
+          },
+          "input": {
+            "()": [
+              {
+                "entity": "UAV"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "agent": {
+      "entity": "_UAVActivationManager_"
+    },
+    "operation": {
+      "operation": "cancel"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "current and scheduled flight plans"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "current and scheduled flight plans"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-49",
+    "*": "functional",
+    ":": "When the maximum numbers of allowed activated UAVs has been reached, the _UAVActivationManager_ shall reject any further activation requests.",
+    "event": {
+      "()": [
+        {
+          "#": "49-condition",
+          "*": "condition",
+          "agent": {
+            "entity": "maximum numbers of allowed activated UAVs"
+          },
+          "operation": {
+            "operation": "reach"
+          }
+        }
+      ]
+    },
+    "agent": {
+      "entity": "_UAVActivationManager_"
+    },
+    "operation": {
+      "operation": "reject"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "further activation requests"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "further activation requests"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-50",
+    "*": "functional",
+    ":": "The _UAVRegistrationManager_ shall store UAV meta-data information such as the UAV's technical characteristics.",
+    "agent": {
+      "entity": "_UAVRegistrationManager_"
+    },
+    "operation": {
+      "operation": "store"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "UAV meta-data information"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-51",
+    "*": "functional",
+    ":": "The _InternalSimulator_ shall approximate the behavior of a UAV.",
+    "agent": {
+      "entity": "_InternalSimulator_"
+    },
+    "operation": {
+      "operation": "approximate"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "behavior of a UAV"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "behavior of a UAV"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-52",
+    "*": "functional",
+    ":": "When given a takeoff command, the _InternalSimulator_ shall move the UAV to the takeoff altitude corresponding to its current longitude and latitude.",
+    "event": {
+      "()": [
+        {
+          "#": "52-condition",
+          "*": "condition",
+          "operation": {
+            "operation": "give"
+          },
+          "input": {
+            "()": [
+              {
+                "entity": "takeoff command"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "agent": {
+      "entity": "_InternalSimulator_"
+    },
+    "operation": {
+      "operation": "move"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "UAV"
+        },
+        {
+          "entity": "takeoff altitude"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-53",
+    "*": "functional",
+    ":": "When given a goto command, the _InternalSimulator_ shall update the location of the UAV at increments of SIMULATION_STEP_SIZE meters moving it towards the target destination until the destination is reached.",
+    "event": {
+      "()": [
+        {
+          "#": "53-condition",
+          "*": "condition",
+          "operation": {
+            "operation": "give"
+          },
+          "input": {
+            "()": [
+              {
+                "entity": "goto command"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "agent": {
+      "entity": "_InternalSimulator_"
+    },
+    "operation": {
+      "operation": "update"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "location of the UAV"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "location of the UAV"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "at increments of SIMULATION_STEP_SIZE"
+      ]
+    }
+  },
+  {
+    "#": "FR-54",
+    "*": "functional",
+    ":": "When given a landing command, the _InternalSimulator_ shall move the UAV to the ground altitude corresponding to its current longitude and latitude.",
+    "event": {
+      "()": [
+        {
+          "#": "54-condition",
+          "*": "condition",
+          "operation": {
+            "operation": "give"
+          },
+          "input": {
+            "()": [
+              {
+                "entity": "landing command"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "agent": {
+      "entity": "_InternalSimulator_"
+    },
+    "operation": {
+      "operation": "move"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "UAV"
+        },
+        {
+          "entity": "ground altitude"
+        },
+        {
+          "entity": "its current longitude and latitude"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-55",
+    "*": "functional",
+    ":": "The _InternalSimulator_ shall approximate the state of the battery.",
+    "agent": {
+      "entity": "_InternalSimulator_"
+    },
+    "operation": {
+      "operation": "approximate"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "state of the battery"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "state of the battery"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-56",
+    "*": "functional",
+    ":": "The _ActivityLogger_ shall log all flight plan related events.",
+    "agent": {
+      "entity": "_ActivityLogger_"
+    },
+    "operation": {
+      "operation": "log"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "flight plan related events"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "flight plan related events"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-57",
+    "*": "functional",
+    ":": "The _ActivityLogger_ shall log all commands sent to and messages received from a _CGS_.",
+    "agent": {
+      "entity": "_ActivityLogger_"
+    },
+    "operation": {
+      "operation": "log"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "commands sent to and messages received from a _cgs_"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "commands sent to and messages received from a _cgs_"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-58",
+    "*": "functional",
+    ":": "The _UIMiddleware_ shall provide a list of all active UAVs.",
+    "agent": {
+      "entity": "_UIMiddleware_"
+    },
+    "operation": {
+      "operation": "provide"
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "list of all active UAVs"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-59",
+    "*": "functional",
+    ":": "The _UIMiddleware_ shall provide a list of all existing routes.",
+    "agent": {
+      "entity": "_UIMiddleware_"
+    },
+    "operation": {
+      "operation": "provide"
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "list of all existing routes"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-60",
+    "*": "functional",
+    ":": "The _UIMiddleware_ accepts commands from UIs and forwards to Dronology.",
+    "agent": {
+      "entity": "_UIMiddleware_"
+    },
+    "operation": {
+      "operation": "accept"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "commands from UIs and forwards to Dronology"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "commands from UIs and forwards to Dronology"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-61",
+    "*": "functional",
+    ":": "The _UIMiddleware_ shall enable the creation and modification of flight routes.",
+    "agent": {
+      "entity": "_UIMiddleware_"
+    },
+    "operation": {
+      "operation": "enable"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "creation and modification of flight routes"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "creation and modification of flight routes"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-62",
+    "*": "functional",
+    ":": "The _UIMiddleware_ shall enable an existing route to be assigned to an active UAV.",
+    "agent": {
+      "entity": "_UIMiddleware_"
+    },
+    "operation": {
+      "operation": "enable"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "existing route"
+        },
+        {
+          "entity": "active UAV"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "existing route"
+        },
+        {
+          "entity": "active UAV"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-63-1",
+    "*": "functional",
+    ":": "The _UIMiddleware_ shall accept and activate a mission plan upon request.",
+    "agent": {
+      "entity": "_UIMiddleware_"
+    },
+    "operation": {
+      "operation": "accept activate"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "mission plan upon request"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "mission plan upon request"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-64",
+    "*": "functional",
+    ":": "When the _VaadinUI_ is activated, the _VaadinUI_ shall be configured according to stored configuration parameters.",
+    "event": {
+      "()": [
+        {
+          "#": "64-condition",
+          "*": "condition",
+          "operation": {
+            "operation": "activate"
+          },
+          "input": {
+            "()": [
+              {
+                "entity": "_VaadinUI_"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "operation": {
+      "operation": "configure"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "stored configuration parameters"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-65",
+    "*": "functional",
+    ":": "When loading the map view, it shall be positioned at the pre-defined location.",
+    "event": {
+      "()": [
+        {
+          "#": "65-condition",
+          "*": "condition",
+          "operation": {
+            "operation": "load"
+          },
+          "input": {
+            "()": [
+              {
+                "entity": "map view"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "operation": {
+      "operation": "position"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "pre-defined location"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "at the pre-defined location"
+      ]
+    }
+  },
+  {
+    "#": "FR-66-1",
+    "*": "functional",
+    ":": "The _RouteAssignmentUI_ shall provide means to select an existing routes and assign them to a UAV.",
+    "agent": {
+      "entity": "_RouteAssignmentUI_"
+    },
+    "operation": {
+      "operation": "select assign"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "existing routes"
+        },
+        {
+          "entity": "UAV"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "means"
+        },
+        {
+          "entity": "existing routes"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-67",
+    "*": "functional",
+    ":": "When a route is assigned or removed from a UAV, the _RouteAssignmentUI_ shall notify Dronology.",
+    "event": {
+      "()": [
+        {
+          "#": "67-condition-1",
+          "*": "condition",
+          "operation": {
+            "operation": "assign"
+          },
+          "input": {
+            "()": [
+              {
+                "entity": "route"
+              },
+              {
+                "entity": "UAV"
+              }
+            ]
+          },
+          "output": {
+            "()": [
+              {
+                "entity": "route"
+              }
+            ]
+          },
+          "restriction": {
+            "()": [
+              "from a UAV"
+            ]
+          }
+        },
+        {
+          "#": "67-condition-2",
+          "*": "condition",
+          "operation": {
+            "operation": "remove"
+          },
+          "input": {
+            "()": [
+              {
+                "entity": "route"
+              },
+              {
+                "entity": "UAV"
+              }
+            ]
+          },
+          "output": {
+            "()": [
+              {
+                "entity": "route"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "agent": {
+      "entity": "_RouteAssignmentUI_"
+    },
+    "operation": {
+      "operation": "notify"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "UAV"
+        },
+        {
+          "entity": "Dronology"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-68",
+    "*": "functional",
+    ":": "When requested by the user, the _RouteAssignmentUI_ shall display details about the selected UAV and its flight plans.",
+    "event": {
+      "()": [
+        {
+          "#": "68-condition",
+          "*": "condition",
+          "agent": {
+            "entity": "user"
+          },
+          "operation": {
+            "operation": "request"
+          }
+        }
+      ]
+    },
+    "agent": {
+      "entity": "_RouteAssignmentUI_"
+    },
+    "operation": {
+      "operation": "display"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "details about the selected uav and its flight plans"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-69",
+    "*": "functional",
+    ":": "When a UAV is selected, the _RouteAssignmentUI_ shall display its active flight plans.",
+    "event": {
+      "()": [
+        {
+          "#": "69-condition",
+          "*": "condition",
+          "operation": {
+            "operation": "select"
+          },
+          "input": {
+            "()": [
+              {
+                "entity": "UAV"
+              }
+            ]
+          },
+          "output": {
+            "()": [
+              {
+                "entity": "UAV"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "agent": {
+      "entity": "_RouteAssignmentUI_"
+    },
+    "operation": {
+      "operation": "display"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "its active flight plans"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-70-1",
+    "*": "functional",
+    ":": "A user may reorder routes or remove flight plans assigned to a UAV, as long as the flight has not started execution.",
+    "event": {
+      "()": [
+        {
+          "#": "70-condition",
+          "*": "condition",
+          "agent": {
+            "entity": "flight"
+          },
+          "operation": {
+            "operation": "has not started"
+          },
+          "input": {
+            "()": [
+              {
+                "entity": "execution"
+              }
+            ]
+          },
+          "output": {
+            "()": [
+              {
+                "entity": "execution"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "agent": {
+      "entity": "user"
+    },
+    "operation": {
+      "operation": "reorder remove"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "routes"
+        },
+        {
+          "entity": "flight plans"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "routes"
+        },
+        {
+          "entity": "flight plans"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-71",
+    "*": "functional",
+    ":": "When a user cancels a pending flight plan, the _RouteAssignmentUI_ shall notify Dronology.",
+    "event": {
+      "()": [
+        {
+          "#": "71-condition",
+          "*": "condition",
+          "agent": {
+            "entity": "user"
+          },
+          "operation": {
+            "operation": "cancel"
+          },
+          "input": {
+            "()": [
+              {
+                "entity": "pending flight plan"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "agent": {
+      "entity": "_RouteAssignmentUI_"
+    },
+    "operation": {
+      "operation": "notify"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "Dronology"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-72",
+    "*": "functional",
+    ":": "The _RouteCreationUI_ shall distinguish between starting, ending and intermediate waypoint markers.",
+    "agent": {
+      "entity": "_RouteCreationUI_"
+    },
+    "operation": {
+      "operation": "distinguish"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "starting"
+        },
+        {
+          "entity": "ending"
+        },
+        {
+          "entity": "intermediate waypoint markers"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-73",
+    "*": "functional",
+    ":": "The _RouteCreationUI_ shall only accept valid altitude and speed values for waypoint.",
+    "agent": {
+      "entity": "_RouteCreationUI_"
+    },
+    "operation": {
+      "operation": "accept"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "valid altitude and speed values for waypoint"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "only",
+        "for waypoint"
+      ]
+    }
+  },
+  {
+    "#": "FR-74",
+    "*": "functional",
+    ":": "Each route shall include a unique ID, a textual description and a set of waypoints all of which are editable in the UI.",
+    "agent": {
+      "entity": "each route"
+    },
+    "operation": {
+      "operation": "include"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "unique ID"
+        },
+        {
+          "entity": "textual description"
+        },
+        {
+          "entity": "waypoints"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-75",
+    "*": "functional",
+    ":": "When requested, the _RouteCreationUI_ shall send a newly created or modified route to dronology.",
+    "event": {
+      "()": [
+        {
+          "#": "75-condition",
+          "*": "condition",
+          "operation": {
+            "operation": "request"
+          }
+        }
+      ]
+    },
+    "agent": {
+      "entity": "_RouteCreationUI_"
+    },
+    "operation": {
+      "operation": "send"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "newly created or modified route"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-76",
+    "*": "functional",
+    ":": "The _RouteCreationUI_ shall allow the user to create and modify a route.",
+    "agent": {
+      "entity": "_RouteCreationUI_"
+    },
+    "operation": {
+      "operation": "allow to create and modify"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "route"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "route"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-77",
+    "*": "functional",
+    ":": "The _RouteCreationUI_ shall allow a user to delete a route.",
+    "agent": {
+      "entity": "_RouteCreationUI_"
+    },
+    "operation": {
+      "operation": "allow to delete"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "route"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "route"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-78",
+    "*": "functional",
+    ":": "When the _RouteCreationUI_ is loaded, a list of all existing routes shall be displayed.",
+    "event": {
+      "()": [
+        {
+          "#": "78-condition",
+          "*": "condition",
+          "operation": {
+            "operation": "load"
+          },
+          "input": {
+            "()": [
+              {
+                "entity": "_RouteCreationUI_"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "operation": {
+      "operation": "display"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "existing routes"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "existing routes"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-79",
+    "*": "functional",
+    ":": "The _RealTimeFlightUI_ shall display the name and status of all currently activated UAVs.",
+    "agent": {
+      "entity": "_RealTimeFlightUI_"
+    },
+    "operation": {
+      "operation": "display"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "name and status of all currently activated UAVs"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "name and status of all currently activated UAVs"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-80",
+    "*": "functional",
+    ":": "The _RealTimeFlightUI_ shall display all currently active flight plans on the map.",
+    "agent": {
+      "entity": "_RealTimeFlightUI_"
+    },
+    "operation": {
+      "operation": "display"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "currently active flight plans"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "currently active flight plans"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "on the map"
+      ]
+    }
+  },
+  {
+    "#": "FR-81",
+    "*": "functional",
+    ":": "The _RealTimeFlightUI_ shall allow users to apply flight operations to one or more selected UAVs.",
+    "agent": {
+      "entity": "_RealTimeFlightUI_"
+    },
+    "operation": {
+      "operation": "allow to apply"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "flight operations"
+        },
+        {
+          "entity": "one or more selected UAVs"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "flight operations"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-82",
+    "*": "functional",
+    ":": "The _RealTimeFlightUI_ shall allow users to perform emergency operations to a group of UAVs.",
+    "agent": {
+      "entity": "_RealTimeFlightUI_"
+    },
+    "operation": {
+      "operation": "allow to perform"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "emergency operations"
+        },
+        {
+          "entity": "UAVs"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "emergency operations"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-83",
+    "*": "functional",
+    ":": "The _RealTimeFlightUI_ shall allow users to follow one or multiple UAVs on the map.",
+    "agent": {
+      "entity": "_RealTimeFlightUI_"
+    },
+    "operation": {
+      "operation": "allow to follow"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "one or multiple UAVs"
+        },
+        {
+          "entity": "map"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "on the map"
+      ]
+    }
+  },
+  {
+    "#": "FR-84",
+    "*": "functional",
+    ":": "The _RealTimeFlightUI_ shall notify users when an emergency occurs.",
+    "event": {
+      "()": [
+        {
+          "#": "84-condition",
+          "*": "condition",
+          "agent": {
+            "entity": "emergency"
+          },
+          "operation": {
+            "operation": "occur"
+          }
+        }
+      ]
+    },
+    "agent": {
+      "entity": "_RealTimeFlightUI_"
+    },
+    "operation": {
+      "operation": "notify"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "users"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "users"
+        },
+        {
+          "entity": "emergency"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-85-1",
+    "*": "functional",
+    ":": "The _DronologyRuntimeMonitor_ shall provide functionality to retrieve monitoring messages and distribute them to clients.",
+    "agent": {
+      "entity": "_DronologyRuntimeMonitor_"
+    },
+    "operation": {
+      "operation": "retrieve distribute"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "monitoring messages"
+        },
+        {
+          "entity": "clients"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "monitoring messages"
+        },
+        {
+          "entity": "clients"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-86",
+    "*": "functional",
+    ":": "When a new monitoring message is received, the _DronologyRuntimeMonitor_ shall forward the message to all subscribed clients.",
+    "event": {
+      "()": [
+        {
+          "#": "86-condition",
+          "*": "condition",
+          "operation": {
+            "operation": "receive"
+          },
+          "input": {
+            "()": [
+              {
+                "entity": "new monitoring message"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "agent": {
+      "entity": "_DronologyRuntimeMonitor_"
+    },
+    "operation": {
+      "operation": "forward"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "message to all subscribed clients"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "message to all subscribed clients"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-87",
+    "*": "functional",
+    ":": "The _DronologyRuntimeMonitor_ shall be able to receive messages from any Dronology component.",
+    "agent": {
+      "entity": "_DronologyRuntimeMonitor_"
+    },
+    "operation": {
+      "operation": "be able to receive"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "messages"
+        },
+        {
+          "entity": "any Dronology component"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-88",
+    "*": "functional",
+    ":": "The _GCSMiddleware_ shall handle multiple _GCS_.",
+    "agent": {
+      "entity": "_GCSMiddleware_"
+    },
+    "operation": {
+      "operation": "handle"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "multiple _GCS_"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "multiple _GCS_"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-89",
+    "*": "functional",
+    ":": "The _GCSMiddleware_ shall follow a predefined set of steps to establish a connection between a _GCS_ and Dronology.",
+    "agent": {
+      "entity": "_GCSMiddleware_"
+    },
+    "operation": {
+      "operation": "follow establish"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "predefined set of steps"
+        },
+        {
+          "entity": "_GCS_"
+        },
+        {
+          "entity": "Dronology"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "predefined set of steps"
+        },
+        {
+          "entity": "connection between a _GCS_ and Dronology"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-90",
+    "*": "functional",
+    ":": "The _GCSMiddleware_ shall handle state messages monitoring messages and mode change messages received from an _GCS_.",
+    "agent": {
+      "entity": "_GCSMiddleware_"
+    },
+    "operation": {
+      "operation": "handle"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "state messages monitoring messages and mode change messages received from an _GCS_"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "state messages monitoring messages and mode change messages received from an _GCS_"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-91",
+    "*": "functional",
+    ":": "The _GCSMiddleware_ shall forward commands sent from Dronology to a _GCS_.",
+    "agent": {
+      "entity": "_GCSMiddleware_"
+    },
+    "operation": {
+      "operation": "forward"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "commands sent from Dronology"
+        },
+        {
+          "entity": "_GCS_"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "commands sent from Dronology"
+        },
+        {
+          "entity": "_GCS_"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-92-1",
+    "*": "functional",
+    ":": "When the connection to the _GCS_ from the _GCSMiddleware_ is lost, the _GCSMiddleware_ shall notify Dronology and deactivate all associated UAVs.",
+    "event": {
+      "()": [
+        {
+          "#": "92-condition",
+          "*": "condition",
+          "operation": {
+            "operation": "be lost"
+          },
+          "input": {
+            "()": [
+              {
+                "entity": "_GCS_"
+              },
+              {
+                "entity": "_GCSMiddleware_"
+              }
+            ],
+            "restriction": {
+              "()": [
+                "from the _GCSMiddleware_"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "agent": {
+      "entity": "_GCSMiddleware_"
+    },
+    "operation": {
+      "operation": "notify deactivate"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "Dronology"
+        },
+        {
+          "entity": "all associated UAVs"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "Dronology"
+        },
+        {
+          "entity": "all associated UAVs"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-93",
+    "*": "functional",
+    ":": "When the _GCS_ receives a UAV command from the _GCSMiddleware_, the _GCS_ shall forward the command to the respective UAV.",
+    "event": {
+      "()": [
+        {
+          "#": "93-condition",
+          "*": "condition",
+          "agent": {
+            "entity": "_GCS_"
+          },
+          "operation": {
+            "operation": "receive"
+          },
+          "input": {
+            "()": [
+              {
+                "entity": "UAV command"
+              }
+            ]
+          },
+          "restriction": {
+            "()": [
+              "from the _GCSMiddleware_"
+            ]
+          }
+        }
+      ]
+    },
+    "agent": {
+      "entity": "_GCS_"
+    },
+    "operation": {
+      "operation": "forward"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "command"
+        },
+        {
+          "entity": "respective UAV"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "command"
+        },
+        {
+          "entity": "respective UAV"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-94",
+    "*": "functional",
+    ":": "The _GCS_ shall assign a message frequency for all UAVs.",
+    "agent": {
+      "entity": "_GCS_"
+    },
+    "operation": {
+      "operation": "assign"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "message frequency"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "message frequency"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-95",
+    "*": "functional",
+    ":": "The _GCS_ shall report newly connected UAVs to the _GCSMiddleware_.",
+    "agent": {
+      "entity": "_GCS_"
+    },
+    "operation": {
+      "operation": "report"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "newly connected UAVs"
+        },
+        {
+          "entity": "_GCSMiddleware_"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "newly connected UAVs"
+        },
+        {
+          "entity": "_GCSMiddleware_"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-96",
+    "*": "functional",
+    ":": "The _GCS_ shall transmit the UAV's current location to the _GCSMiddleware_.",
+    "agent": {
+      "entity": "_GCS_"
+    },
+    "operation": {
+      "operation": "transmit"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "UAV's current location"
+        },
+        {
+          "entity": "_GCSMiddleware_"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "UAV's current location"
+        },
+        {
+          "entity": "_GCSMiddleware_"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-97",
+    "*": "functional",
+    ":": "The _GCS_ shall transmit the UAV's properties to the _GCSMiddleware_.",
+    "agent": {
+      "entity": "_GCS_"
+    },
+    "operation": {
+      "operation": "transmit"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "UAV's properties"
+        },
+        {
+          "entity": "_GCSMiddleware_"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "UAV's properties"
+        },
+        {
+          "entity": "_GCSMiddleware_"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-98",
+    "*": "functional",
+    ":": "The _MissionPlanner_ shall execute flight plans for multiple UAVs concurrently.",
+    "agent": {
+      "entity": "_MissionPlanner_"
+    },
+    "operation": {
+      "operation": "execute"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "flight plans"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "flight plans"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "concurrently"
+      ]
+    }
+  },
+  {
+    "#": "FR-99",
+    "*": "functional",
+    ":": "The _MapComponent_ shall support different types of map layers.",
+    "agent": {
+      "entity": "_MapComponent_"
+    },
+    "operation": {
+      "operation": "support"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "different types of map layers"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "different types of map layers"
+        }
+      ]
+    }
+  }
+]

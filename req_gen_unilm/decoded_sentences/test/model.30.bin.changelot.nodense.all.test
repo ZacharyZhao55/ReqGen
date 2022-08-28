@@ -1,0 +1,30 @@
+
+
+
+The Route Creation UI shall enable an existing routes to be assigned to an UAV .
+The Real Time Flight UI shall display the status of active UAV
+
+
+
+The Real Time Flight UI shall display the map of active UAV
+
+
+
+The Dronology Run time shall store messages messages messages
+
+
+The GCS Middleware shall approximate the state of the UAV
+The GCS Middleware shall support Dronology
+The connection Middleware shall provide a connection to Dronology
+
+When a GCS is activated the GCS shall assign the UAV to a UAV .
+The Middleware shall enable a UAV to be connected to an UAV .
+The location of a UAV is specified in the UAV Middleware .
+The Property Middleware shall provide a means to enable and activate a UAV .
+When requested the Single UAV Flight Planner shall assign a flight plan to each UAV .
+The map Component shall compute the map of a map .
+When given a command the UAV Assignment UI shall notify
+
+The Vehicle Core shall provide a waypoint for each UAV .
+When requested the Single UAV Flight Plan Scheduler shall assign a flight plan to a UAV .
+The UI Middleware shall register specific events for each UAV .

@@ -1,0 +1,417 @@
+controller is subclass of distributioncontrolelement controller is subclass of stand voltage 
+ 
+bas base controller is subclass of distributioncontrolelement controller is subclass of stand power 
+controller is subclass of distributioncontrolelement controller is subclass of stand battery is subclass of electricflowstoragedevice 
+controller is subclass of distributioncontrolelement controller is subclass of stand power 
+controller is subclass of distributioncontrolelement controller is subclass of stand sequence power 
+controller is subclass of distributioncontrolelement controller is subclass of stand power failure 
+use user port ows ability 
+device is subclass of actuator device is subclass of building device is subclass of facility device is subclass of designedartifact device is subclass of controller device is subclass of bot#element device is subclass of bacnet device is subclass of couple device is subclass of halt device is subclass of normal device is subclass of application device is subclass of asc port modem is subclass of communicationsappliance ability report mode 
+equipment building is subclass of facility building is subclass of bot#building building is subclass of designedartifact 
+controller is subclass of distributioncontrolelement controller is subclass of stand input 
+controller is subclass of distributioncontrolelement controller is subclass of stand input contact duration 
+device is subclass of actuator device is subclass of building device is subclass of facility device is subclass of designedartifact device is subclass of controller device is subclass of bot#element device is subclass of bacnet device is subclass of couple device is subclass of halt device is subclass of normal device is subclass of application device is subclass of asc input 
+input contact 
+controller is subclass of distributioncontrolelement controller is subclass of stand input power contact 
+requirement input 
+input thermistor 
+device is subclass of actuator device is subclass of building device is subclass of facility device is subclass of designedartifact device is subclass of controller device is subclass of bot#element device is subclass of bacnet device is subclass of couple device is subclass of halt device is subclass of normal device is subclass of application device is subclass of asc input field 
+
+controller is subclass of distributioncontrolelement controller is subclass of stand building is subclass of facility building is subclass of bot#building building is subclass of designedartifact 
+ 
+device is subclass of actuator device is subclass of building device is subclass of facility device is subclass of designedartifact device is subclass of controller device is subclass of bot#element device is subclass of bacnet device is subclass of couple device is subclass of halt device is subclass of normal device is subclass of application device is subclass of asc 
+controller is subclass of distributioncontrolelement controller is subclass of stand building is subclass of facility building is subclass of bot#building building is subclass of designedartifact pot 
+ 
+use input section 
+power transformer is subclass of energyconversiondevice 
+requirement power voltage 
+rectifier is subclass of transformer 
+ 
+voltage protection failure 
+ 
+ 
+ulc csa voltage 
+actuator is subclass of distributioncontrolelement actuator is subclass of stand protection rotation 
+actuator is subclass of distributioncontrolelement actuator is subclass of stand power failure ups is subclass of electricflowstoragedevice 
+actuator is subclass of distributioncontrolelement actuator is subclass of stand 
+actuator is subclass of distributioncontrolelement actuator is subclass of stand 
+actuator is subclass of distributioncontrolelement actuator is subclass of stand 
+actuator is subclass of distributioncontrolelement actuator is subclass of stand release 
+thermostat is subclass of unitarycontrolelement 
+thermostat is subclass of unitarycontrolelement 
+thermostat is subclass of unitarycontrolelement 
+ 
+section 
+thermostat is subclass of unitarycontrolelement 
+device is subclass of actuator device is subclass of building device is subclass of facility device is subclass of designedartifact device is subclass of controller device is subclass of bot#element device is subclass of bacnet device is subclass of couple device is subclass of halt device is subclass of normal device is subclass of application device is subclass of asc sensor is subclass of actuator sensor is subclass of distributioncontrolelement sensor is subclass of building sensor is subclass of controller sensor is subclass of networkhub sensor is subclass of bacnet sensor is subclass of work sensor is subclass of advance sensor is subclass of application sensor is subclass of aac sensor is subclass of asc sensor is subclass of smart sensor is subclass of employ sensor is subclass of object sensor is subclass of oriented sensor is subclass of technology sensor is subclass of oot sensor is subclass of data sensor is subclass of annex temperaturesensor is subclass of sensor thermistor 
+sensor is subclass of actuator sensor is subclass of distributioncontrolelement sensor is subclass of building sensor is subclass of controller sensor is subclass of networkhub sensor is subclass of bacnet sensor is subclass of work sensor is subclass of advance sensor is subclass of application sensor is subclass of aac sensor is subclass of asc sensor is subclass of smart sensor is subclass of employ sensor is subclass of object sensor is subclass of oriented sensor is subclass of technology sensor is subclass of oot sensor is subclass of data sensor is subclass of annex 
+sensor is subclass of actuator sensor is subclass of distributioncontrolelement sensor is subclass of building sensor is subclass of controller sensor is subclass of networkhub sensor is subclass of bacnet sensor is subclass of work sensor is subclass of advance sensor is subclass of application sensor is subclass of aac sensor is subclass of asc sensor is subclass of smart sensor is subclass of employ sensor is subclass of object sensor is subclass of oriented sensor is subclass of technology sensor is subclass of oot sensor is subclass of data sensor is subclass of annex 
+ 
+ 
+sensor is subclass of actuator sensor is subclass of distributioncontrolelement sensor is subclass of building sensor is subclass of controller sensor is subclass of networkhub sensor is subclass of bacnet sensor is subclass of work sensor is subclass of advance sensor is subclass of application sensor is subclass of aac sensor is subclass of asc sensor is subclass of smart sensor is subclass of employ sensor is subclass of object sensor is subclass of oriented sensor is subclass of technology sensor is subclass of oot sensor is subclass of data sensor is subclass of annex port display is subclass of audiovisualappliance 
+sensor is subclass of actuator sensor is subclass of distributioncontrolelement sensor is subclass of building sensor is subclass of controller sensor is subclass of networkhub sensor is subclass of bacnet sensor is subclass of work sensor is subclass of advance sensor is subclass of application sensor is subclass of aac sensor is subclass of asc sensor is subclass of smart sensor is subclass of employ sensor is subclass of object sensor is subclass of oriented sensor is subclass of technology sensor is subclass of oot sensor is subclass of data sensor is subclass of annex 
+sensor is subclass of actuator sensor is subclass of distributioncontrolelement sensor is subclass of building sensor is subclass of controller sensor is subclass of networkhub sensor is subclass of bacnet sensor is subclass of work sensor is subclass of advance sensor is subclass of application sensor is subclass of aac sensor is subclass of asc sensor is subclass of smart sensor is subclass of employ sensor is subclass of object sensor is subclass of oriented sensor is subclass of technology sensor is subclass of oot sensor is subclass of data sensor is subclass of annex chamber 
+sensor is subclass of actuator sensor is subclass of distributioncontrolelement sensor is subclass of building sensor is subclass of controller sensor is subclass of networkhub sensor is subclass of bacnet sensor is subclass of work sensor is subclass of advance sensor is subclass of application sensor is subclass of aac sensor is subclass of asc sensor is subclass of smart sensor is subclass of employ sensor is subclass of object sensor is subclass of oriented sensor is subclass of technology sensor is subclass of oot sensor is subclass of data sensor is subclass of annex humiditysensor is subclass of sensor 
+sensor is subclass of actuator sensor is subclass of distributioncontrolelement sensor is subclass of building sensor is subclass of controller sensor is subclass of networkhub sensor is subclass of bacnet sensor is subclass of work sensor is subclass of advance sensor is subclass of application sensor is subclass of aac sensor is subclass of asc sensor is subclass of smart sensor is subclass of employ sensor is subclass of object sensor is subclass of oriented sensor is subclass of technology sensor is subclass of oot sensor is subclass of data sensor is subclass of annex humiditysensor is subclass of sensor 
+ 
+ 
+ 
+
+indicator 
+voltage contact 
+ 
+ 
+voltage contact 
+voltage contact 
+transformer is subclass of energyconversiondevice rectifier is subclass of transformer transmitter amplifier is subclass of audiovisualappliance transmit 
+span 
+ 
+ansi transmitter isa transmit 
+requirement csa 
+installation 
+csa terminal transformer is subclass of energyconversiondevice term 
+transformer is subclass of energyconversiondevice 
+voltage transmitter span transmit 
+ 
+ 
+ansi transmitter isa transmit 
+use csa voltage transformer is subclass of energyconversiondevice protection 
+transformer is subclass of energyconversiondevice 
+terminal winding term 
+power voltage transformer is subclass of energyconversiondevice 
+power 
+input power 
+ 
+span 
+span 
+ 
+valve is subclass of flowcontroller valve is subclass of induce valve is subclass of work 
+ 
+
+bcs lan 
+bcs ows 
+equipment failure 
+
+sync 
+use controller is subclass of distributioncontrolelement controller is subclass of stand user bcs port lan building is subclass of facility building is subclass of bot#building building is subclass of designedartifact enterprise workstation 
+connection lan 
+connection building is subclass of facility building is subclass of bot#building building is subclass of designedartifact 
+ 
+ability building is subclass of facility building is subclass of bot#building building is subclass of designedartifact 
+building is subclass of facility building is subclass of bot#building building is subclass of designedartifact sync 
+site is subclass of facility site is subclass of physicalplace internet sync 
+device is subclass of actuator device is subclass of building device is subclass of facility device is subclass of designedartifact device is subclass of controller device is subclass of bot#element device is subclass of bacnet device is subclass of couple device is subclass of halt device is subclass of normal device is subclass of application device is subclass of asc field building is subclass of facility building is subclass of bot#building building is subclass of designedartifact 
+building is subclass of facility building is subclass of bot#building building is subclass of designedartifact 
+
+building is subclass of facility building is subclass of bot#building building is subclass of designedartifact content 
+ 
+bas base alarm is subclass of distributioncontrolelement alarm is subclass of controller ability building is subclass of facility building is subclass of bot#building building is subclass of designedartifact archive 
+archive frequency 
+alarm is subclass of distributioncontrolelement alarm is subclass of controller building is subclass of facility building is subclass of bot#building building is subclass of designedartifact 
+
+process 
+bas basc contract 
+ 
+contract 
+installation contract 
+interfere building is subclass of facility building is subclass of bot#building building is subclass of designedartifact approval contract 
+ 
+installation 
+voltage raceway 
+requirement 
+location wire raceway 
+equipment transformer is subclass of energyconversiondevice relay is subclass of electrictimecontrol span 
+raceway ceil 
+raceway 
+interfere equipment power frequency contract surge 
+equipment contract floor is subclass of facility floor is subclass of designedartifact floor is subclass of bot#storey conduit 
+ 
+permission 
+ 
+ 
+ 
+
+
+connection terminal field term 
+power protection 
+ 
+ 
+ 
+ 
+ulc csa equipment 
+ 
+bas basc contract 
+equipment contract term 
+site is subclass of facility site is subclass of physicalplace perform equipment contract model size mode 
+ 
+bas lan 
+connection 
+bas test field 
+test day 
+test equipment approval release 
+test perform contract 
+requirement installation test contract 
+test completion 
+test contract 
+test contract inspection 
+test approval 
+site is subclass of facility site is subclass of physicalplace test equipment process contract 
+test 
+ows pot 
+device is subclass of actuator device is subclass of building device is subclass of facility device is subclass of designedartifact device is subclass of controller device is subclass of bot#element device is subclass of bacnet device is subclass of couple device is subclass of halt device is subclass of normal device is subclass of application device is subclass of asc test input alarm is subclass of distributioncontrolelement alarm is subclass of controller field approval 
+ows indicator isa 
+sensor is subclass of actuator sensor is subclass of distributioncontrolelement sensor is subclass of building sensor is subclass of controller sensor is subclass of networkhub sensor is subclass of bacnet sensor is subclass of work sensor is subclass of advance sensor is subclass of application sensor is subclass of aac sensor is subclass of asc sensor is subclass of smart sensor is subclass of employ sensor is subclass of object sensor is subclass of oriented sensor is subclass of technology sensor is subclass of oot sensor is subclass of data sensor is subclass of annex temperaturesensor is subclass of sensor 
+sensor is subclass of actuator sensor is subclass of distributioncontrolelement sensor is subclass of building sensor is subclass of controller sensor is subclass of networkhub sensor is subclass of bacnet sensor is subclass of work sensor is subclass of advance sensor is subclass of application sensor is subclass of aac sensor is subclass of asc sensor is subclass of smart sensor is subclass of employ sensor is subclass of object sensor is subclass of oriented sensor is subclass of technology sensor is subclass of oot sensor is subclass of data sensor is subclass of annex temperaturesensor is subclass of sensor alarm is subclass of distributioncontrolelement alarm is subclass of controller 
+device is subclass of actuator device is subclass of building device is subclass of facility device is subclass of designedartifact device is subclass of controller device is subclass of bot#element device is subclass of bacnet device is subclass of couple device is subclass of halt device is subclass of normal device is subclass of application device is subclass of asc 
+equipment belt 
+device is subclass of actuator device is subclass of building device is subclass of facility device is subclass of designedartifact device is subclass of controller device is subclass of bot#element device is subclass of bacnet device is subclass of couple device is subclass of halt device is subclass of normal device is subclass of application device is subclass of asc 
+device is subclass of actuator device is subclass of building device is subclass of facility device is subclass of designedartifact device is subclass of controller device is subclass of bot#element device is subclass of bacnet device is subclass of couple device is subclass of halt device is subclass of normal device is subclass of application device is subclass of asc field ows pws 
+test span 
+device is subclass of actuator device is subclass of building device is subclass of facility device is subclass of designedartifact device is subclass of controller device is subclass of bot#element device is subclass of bacnet device is subclass of couple device is subclass of halt device is subclass of normal device is subclass of application device is subclass of asc requirement alarm is subclass of distributioncontrolelement alarm is subclass of controller field 
+ability 
+device is subclass of actuator device is subclass of building device is subclass of facility device is subclass of designedartifact device is subclass of controller device is subclass of bot#element device is subclass of bacnet device is subclass of couple device is subclass of halt device is subclass of normal device is subclass of application device is subclass of asc field 
+test span 
+conform requirement csa standard equipment 
+standard test contract 
+standard 
+test perform completion 
+bas contract 
+ 
+text 
+hardback 
+test equipment 
+content 
+site is subclass of facility site is subclass of physicalplace present equipment contract subcontractor 
+content 
+graph 
+requirement term 
+term terminology computer is subclass of communicationsappliance 
+equipment mode 
+place hardware 
+test port report 
+result 
+sensor is subclass of actuator sensor is subclass of distributioncontrolelement sensor is subclass of building sensor is subclass of controller sensor is subclass of networkhub sensor is subclass of bacnet sensor is subclass of work sensor is subclass of advance sensor is subclass of application sensor is subclass of aac sensor is subclass of asc sensor is subclass of smart sensor is subclass of employ sensor is subclass of object sensor is subclass of oriented sensor is subclass of technology sensor is subclass of oot sensor is subclass of data sensor is subclass of annex hardware 
+requirement equipment contract 
+ 
+ 
+day 
+trainee 
+equipment contract 
+equipment contract 
+completion 
+installation equipment contract 
+ 
+sequence 
+ 
+device is subclass of actuator device is subclass of building device is subclass of facility device is subclass of designedartifact device is subclass of controller device is subclass of bot#element device is subclass of bacnet device is subclass of couple device is subclass of halt device is subclass of normal device is subclass of application device is subclass of asc ows 
+ows 
+bas basc contract computer is subclass of communicationsappliance 
+bas base alarm is subclass of distributioncontrolelement alarm is subclass of controller ows 
+csa controller is subclass of distributioncontrolelement controller is subclass of stand building is subclass of facility building is subclass of bot#building building is subclass of designedartifact 
+ 
+ 
+bas ows lan computer is subclass of communicationsappliance 
+ 
+bas requirement basc perform workstation contract hardware computer is subclass of communicationsappliance 
+bas interface connection lan 
+hardware 
+sequence year 
+workstation 
+site is subclass of facility site is subclass of physicalplace printer is subclass of communicationsappliance 
+printer is subclass of communicationsappliance jet 
+ 
+ 
+lan 
+lan 
+ 
+bas lan fortran 
+environment process feature 
+use 
+ 
+result 
+input 
+ 
+ 
+ 
+lan root 
+ 
+day year 
+day 
+lan 
+controller is subclass of distributioncontrolelement controller is subclass of stand result section 
+ability display is subclass of audiovisualappliance 
+feature 
+use user ability predict window 
+utility sync 
+use user equipment day predict shed 
+use user alarm is subclass of distributioncontrolelement alarm is subclass of controller equipment 
+use user equipment shed 
+equipment 
+equipment protection effect comfort 
+use user interface creation 
+use user interface graph 
+use user interface process 
+link 
+link connection 
+monitor ability mode 
+monitor ability mode 
+use user input monitor mode 
+ 
+bas base download 
+bas base duplication 
+link hardware duplication 
+use place user 
+ 
+controller is subclass of distributioncontrolelement controller is subclass of stand 
+test mode 
+use user test display is subclass of audiovisualappliance mode 
+use user realtime 
+input 
+device is subclass of actuator device is subclass of building device is subclass of facility device is subclass of designedartifact device is subclass of controller device is subclass of bot#element device is subclass of bacnet device is subclass of couple device is subclass of halt device is subclass of normal device is subclass of application device is subclass of asc animation 
+bas 
+bas base ows windows window 
+task bar 
+graph 
+use 
+use picture 
+link ability text animation graph 
+layer graph 
+layer 
+
+day 
+ 
+text 
+ 
+
+use text 
+ 
+use user 
+ 
+ability 
+
+use activity 
+ 
+ 
+controller is subclass of distributioncontrolelement controller is subclass of stand connection modem is subclass of communicationsappliance workstation mode printer is subclass of communicationsappliance 
+device is subclass of actuator device is subclass of building device is subclass of facility device is subclass of designedartifact device is subclass of controller device is subclass of bot#element device is subclass of bacnet device is subclass of couple device is subclass of halt device is subclass of normal device is subclass of application device is subclass of asc failure 
+alarm is subclass of distributioncontrolelement alarm is subclass of controller window console 
+alarm is subclass of distributioncontrolelement alarm is subclass of controller ows windows pop window console 
+alarm is subclass of distributioncontrolelement alarm is subclass of controller ows windows window 
+controller is subclass of distributioncontrolelement controller is subclass of stand display is subclass of audiovisualappliance workstation 
+controller is subclass of distributioncontrolelement controller is subclass of stand input ability 
+port report graph 
+ows windows graph window 
+graph 
+display is subclass of audiovisualappliance console 
+display is subclass of audiovisualappliance console 
+device is subclass of actuator device is subclass of building device is subclass of facility device is subclass of designedartifact device is subclass of controller device is subclass of bot#element device is subclass of bacnet device is subclass of couple device is subclass of halt device is subclass of normal device is subclass of application device is subclass of asc use interface approach 
+ows 
+bas 
+bas 
+bas ows 
+protection 
+ows console 
+printer is subclass of communicationsappliance 
+device is subclass of actuator device is subclass of building device is subclass of facility device is subclass of designedartifact device is subclass of controller device is subclass of bot#element device is subclass of bacnet device is subclass of couple device is subclass of halt device is subclass of normal device is subclass of application device is subclass of asc 
+ 
+alarm is subclass of distributioncontrolelement alarm is subclass of controller 
+ 
+tolerance 
+use user 
+use user 
+use user 
+use user 
+use user 
+use user display is subclass of audiovisualappliance 
+use user 
+controller is subclass of distributioncontrolelement controller is subclass of stand equipment field workstation archive 
+year years 
+size 
+ 
+ 
+archive 
+ 
+ 
+graph 
+graph 
+ 
+ 
+equipment field workstation archive 
+ 
+archive year archived years 
+size 
+archive 
+ 
+graph 
+use bas base 
+ 
+ 
+ 
+ 
+workstation 
+ows windows window 
+graph 
+present equipment 
+ 
+ 
+display is subclass of audiovisualappliance text 
+ 
+use user display is subclass of audiovisualappliance 
+use bas user 
+ 
+display is subclass of audiovisualappliance 
+display is subclass of audiovisualappliance 
+ 
+contract graph factory 
+text 
+use user 
+alarm is subclass of distributioncontrolelement alarm is subclass of controller display is subclass of audiovisualappliance 
+sequence 
+position 
+ 
+isa creation 
+ 
+use text 
+display is subclass of audiovisualappliance 
+ 
+display is subclass of audiovisualappliance 
+display is subclass of audiovisualappliance 
+use display is subclass of audiovisualappliance pointer 
+terminal term 
+alarm is subclass of distributioncontrolelement alarm is subclass of controller 
+alarm is subclass of distributioncontrolelement alarm is subclass of controller processor process 
+port alarm is subclass of distributioncontrolelement alarm is subclass of controller printout 
+alarm is subclass of distributioncontrolelement alarm is subclass of controller 
+terminal alarm is subclass of distributioncontrolelement alarm is subclass of controller term 
+alarm is subclass of distributioncontrolelement alarm is subclass of controller 
+alarm is subclass of distributioncontrolelement alarm is subclass of controller lan text 
+display is subclass of audiovisualappliance 
+day 
+ 
+use user year 
+use user 
+port report display is subclass of audiovisualappliance bar 
+use user port report display is subclass of audiovisualappliance frequency 
+use user port report display is subclass of audiovisualappliance 
+ 
+ 
+use user ows internet 
+ows machine 
+ows 
+ows term graph 
+ 
+use user 
+use user 
+ 
+ows 
+interface ows 
+graph 
+use user 
+graph machine 
+ 
+use user 
+day 
+ 
+use user ability 
+link 
+location site is subclass of facility site is subclass of physicalplace link ows internet text graph uniform locator 

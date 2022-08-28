@@ -1,0 +1,47 @@
+devices ULC UL FM application
+BAS NFPA 90A Air Conditioning 90B Heating
+requirements CSA emissions standards locations computers
+Communication lines wiring transients
+Bus devices AC failure communication
+Contractor site
+License name City Toronto
+Installer working Control System Manufacturer
+Installer Control System Manufacturer system training
+request Installer record training course
+BAS locations installations computer systems
+system network Building Controllers BC Advanced Application AAC ASC Smart Actuators SA
+Building Automation System software OOT representation data devices system
+data BAS server database access
+Systems proprietary database interface programs
+Systems architecture
+Maximum response time occurrence point origin annunciation seconds network interfaces
+Maximum response time occurrence point origin annunciation seconds interfaces
+BC BACnet Building Controller B-BC profile ANSI/ASHRAE Annex Testing Laboratories BTL Product Listing
+AAC BACnet Advanced Application Controller B-AAC profile ANSI/ASHRAE Annex Testing Laboratories BTL Product Listing
+ASC BACnet Application Controller BASC profile ANSI/ASHRAE Annex B-ASC Testing Laboratories BTL Product Listing
+SA BACnet Actuator B-SA profile ANSI/ASHRAE Annex Testing Laboratories BTL Product Listing
+SS BACnet Smart Sensor B-SS profile ANSI/ASHRAE Annex Testing Laboratories BTL Product Listing
+BC BACnet network ISO Ethernet Data protocol BACnet/IP
+BACnet BCs routers networks AACs ASCs
+AAC BACnet network ISO Ethernet Data protocol BACnet/IP MS/TP
+ASC BACnet network MS/TP Data protocol
+SA BACnet network MS/TP Data protocol
+SS BACnet network ISO Ethernet Data protocol BACnet/IP MS/TP
+service communication connection Portable Operator Terminal
+Connection space temperature ports drawings
+BC ASC systems output communication signals controllers object information monitoring alarms
+BC AAC data
+piece sequence operation control event communication
+I/O points piece controller
+ENVIRONMENT Controller conditions
+Controllers outdoors conditions enclosures operation
+Controllers space enclosures operation
+Controllers scheduling clock
+Controllers LEDs communication
+Wires strip termination card ribbon cable
+BC AAC memory circuit status operation
+System network
+Controller memory system database programming requirements
+BC AAC BIOS programming hours event loss
+ASC SA memory BIOS programming event loss
+System parameters loss

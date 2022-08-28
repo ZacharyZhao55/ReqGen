@@ -1,0 +1,417 @@
+Controllers rating shutdown
+Operation noise
+event loss shutdown controllers database operating system software
+memory configuration data clock minimum hours
+restoration controller operation intervention
+controllers start sequences spike
+Controller memory failure
+capability software OWS
+operator devices network resident modems access point status report data functions area
+Access data identification equipment
+output point ground damage
+Input output point duration damage
+inputs signal
+inputs current mA bounce noise
+inputs closure power
+Pulse accumulation inputs requirements pulses second
+Analog inputs Vdc mA resistance RTD signals
+Analog inputs devices
+outputs signal
+Building Controller outputs override status lights
+Outputs operation
+Analog outputs Vdc mA signal output devices
+Building Controller analog output switch potentiometer status lights
+Analog outputs
+Inputs outputs analog software provisions use
+Power Supplies Control transformers UL
+DC supply output requirements
+Unit type output ripple
+Regulation
+Unit over-voltage overload seconds
+Unit
+EM/RF FCC Class VDE MILSTD 810C shock vibration
+Line units UL CSA
+actuator damage
+Actuators power-failure safety applications mechanism supply UPS
+actuators Vdc mA signal operating range
+Vac Vdc actuators Class wiring
+Operators
+actuators gear
+space thermostats mercury-switch type anticipation heater setpoint adjustment range maximum ABS plastic cover
+space thermostats type heat anticipator UL rating setpoint adjustment range maximum ABS plastic cover
+thermostats UL vapor pressure type
+Element ft
+Element temperature cm ft
+reset
+Temperature sensors Resistance Device RTD
+Duct sensors point averaging
+sensors minimum
+pressure rating system
+pipe design flow velocities
+Space sensors adjustment override switch communication
+Duct room sensors range
+Duct sensors sampling
+air humidity sensors range RH conditions
+Humidity sensors scale
+switches paddle water service pressure type air
+Switches UL SPDT pilot duty VA minimum
+Paddle sensitivity NEMA enclosure
+pressure scale range NEMA enclosure
+Control type UL dust cover
+Contact rating configuration coil application
+Time delay type UL time
+setpoint
+Contact rating configuration coil application
+software override timers line UL Listed rating configuration
+AC transmitters combination split-core type servo mA output
+unit adjustment
+Unit accuracy ohm maximum burden
+Transmitter ANSI/ISA S50
+requirements UL/CSA
+Unit type wiring
+AC transformers UL/CSA terminals plastic material
+Transformers ratios accuracy output
+AC transmitters type mA output adjustment
+unit Vac
+Unit accuracy ohm maximum burden
+Transmitters ANSI/ISA S50
+AC transformers UL/CSA Vac fuse
+Transformers temperatures
+Windings terminals metal plastic
+Power type switch assembly UL transformers
+Power output rate pulse kWh reading mA kW
+Power inputs maximum error
+switches trip current
+Transducers output signal
+operating conditions pressure transducer elements
+Water pressure transducer diaphragm steel proof kPa psi
+Transducer mA output provisions block valves
+Water pressure transducer diaphragm steel proof kPa psi
+pressure switches air water service UL SPDT pilot duty VA minimum scale range NEMA enclosure
+network LAN BACnet/IP ASHRAE SPC-135A-2004 Annex communication BCs
+OWS BCs Ethernet IEEE
+network provisions functions event failures
+components system applications office automation
+Synchronization clocks BC panels
+BC LAN Megabits/sec Ethernet network BACnet Java XML HTTP CORBA IIOP maximum flexibility integration data information systems support Building Controllers BCs workstations server
+connections Ethernet LAN
+access Building Control Units BC server
+Global Data Access server access data system
+Control server control strategies data objects Building Unit BC network
+server master clock service subsystems time synchronization Building Control Units BC
+server time synchronization messages precision Clock Internet sites master clock data
+server scheduling Building Control Units control devices
+server demand Building Control Units
+demand program lists
+server BACnet Command Prioritization scheme levels contention resolution commands Building Control Units
+Systems prioritization
+Building Control Unit server archive log data database
+options time
+server management Building Control Units
+server management log data Network Control Units
+data logs runtime event audit error
+BAS police clearance certificates project
+work times Engineer/Construction Manager
+staff sub-contractors
+cooperation sub-contractors installations delays work
+judgment Engineer/Construction Manager work operations contractor owner
+personnel Owner company identification
+Control interlock wiring codes manufacturer recommendations
+CEC Class line wiring UL
+wiring CEC Class requirements
+CEC Class wires locations return air plenums UL
+Boxes panels wiring purpose relays transformers
+Raceways boxes raceways piping ceiling suspension systems
+metal raceways liquid-tight ft length end
+systems Contract interruption event radio interference RFI EMI surges/dips anomalies
+responsibility Contractor Sub-contractor coring holes walls floors conduits cables floor slabs
+action Project Manager penetrations cost
+coring Project Manager
+Communication wiring Class Article Work
+run communication wiring length splices
+lengths splices
+panels NEMA construction door key-lock sub-panels
+key panel sub-panel
+Field terminals UL service interlock drawings clearance wiring
+panel power source switch
+Labels lettering type background
+Warning labels
+Labels lettering type background
+Warning labels
+Manufacturers nameplates UL CSA labels
+Label identifiers record documents
+BAS design document review
+Information material contractor terms work
+Submittals item manufacturer literature specification drawings diagrams performance curves catalog cuts name trade number nameplate data layout dimension capacity reference references information compliance
+BC minimum resource capacity
+BC throughput BAS LAN data seconds
+AAC ASC minimum capacity point type
+work testing adjustment BAS acceptance
+Engineer days advance dates tests discretion
+Engineer witnesses tests release
+Engineer witness tests performance certification
+Acceptance tests Engineer Project Manager responsibility system requirements specifications
+testing system Component Test Sheets
+Test Sheets shop review stage
+Component Test Sheets testing verification procedure request
+Component Test Sheets Engineer review
+Contractor test verification
+procedures
+DI status POT OWS ON OFF
+inputs conditions testing Engineer
+Verification OWS ON OFF status software DISABLE OVERRIDEN
+temperature sensors hand meter accuracy
+temperature sensors Engineer spray means response condition
+pressure devices analog output feedback accuracy calibration
+CTs motor status belts equipment
+devices accuracy
+AI points command PWS OWS stroke device CLOSED OPEN signal
+increments output
+feedback field alarm
+output capability panel
+Field hysteresis minimum output levels direction travel
+Output increments test
+materials requirements standards organizations Standards Association CSA label listing method compliance proof conformance specification
+lieu label listing certificate testing organization services Engineer item accordance methods code
+materials compliance standards specifications organization listing label proof certificate manufacturer Engineer material specification
+acceptance start-up verification performance period
+Contractor system operation BAS date Acceptance
+Documentation copies copy information
+copy files MS-Word
+instruction reference ring binders Engineer
+set manuals time system tests acceptance
+identification manual contents cover spine
+manuals names addresses telephone numbers equipment systems representatives item system
+manuals table contents tab sheets instructions subject
+manual index manuals accordance paragraph
+Requirements document terms requirements system functions
+operation staff knowledge computers electronics theory
+instructions system startup operation execution modes
+calibration maintenance repair replacement system
+Test Procedures Reports implementation description exercise script events procedures
+procedures record results exercises
+information coordination software changes data message control event system modification configurations
+Contractor services instructors instruction personnel adjustment operation maintenance safety requirements system
+training system course
+Instructors aspects matter
+number person-days hours instruction minimum
+training detail data program
+material classroom training
+Contractor warranty parts labor materials Manufacturer arrangements
+Warranty date Engineers issuance Certificate Completion
+Contractor expense workmanship defect
+repairs convenience Engineer hours emergency
+log loop sequence owner
+Response emergency call hours maximum Mon
+Conditions OWS devices conditions deg
+OWS City department
+BAS cost pricing project
+OWS system information management data functions
+time functions Building Control Unit BC controllers AACs ASCs
+City department
+City project manager district operation manager/supervisor laptop
+BAS LAN systems format web browser
+Screen refresh
+BAS City department project manager minimum workstation hardware software operating system performance specifications
+Connection BAS LAN network Ethernet card Mbps
+DDC system manufacturer specifications
+disk memory store system software data points conusltant operation list
+Workstations minimum
+printer City department desktop
+Printer Specifications Guidance bubble inkjet x1440 dpi resolution MB buffer memory minimum ppm
+Operator custom programs
+System custom programs
+Language language
+language function blocks logic diagram flow
+Function functions operators custom compound function
+language syntax BASIC FORTRAN PASCAL programming
+Tool full-screen programming word processing features cut
+Operators custom programming code copy blocks file library reuse programs
+Operator program modules data
+Operator program values results
+Operator variables operating conditions
+Operator step time increment
+Debugger error messages syntax execution errors
+Operator program logic compound Boolean OR NOT LESS THAN GREATER EQUAL comparisons
+Language addition subtraction multiplication division operations value calculation selection minimum maximum values list
+Variables Operator values program statements functions
+Operator variables time week month date
+variables logic time seconds minutes hours days
+Operator time variables program language
+Operator variables status results Controller Software setpoints
+software system programming engineering part package
+Access programming functions features software password access system administrator
+object capability demand value window prediction algorithm end period minutes
+object meter time pulse interval demand
+prediction demand limit supply minimum object commands loads points energy reduction
+list demand set point message users screen user actions
+lists order
+reductions demand object order
+object minimum maximum time property equipment occupant
+library application objects applications interface screens
+Graphical User Interface screens fashion
+Systems software tools processes applications interface
+bjects scheme object
+objects connections page identification links pages
+software logic mode
+mode logic time diagnosis execution
+debug mode values inputs logic execution system
+programming
+Systems uploading editing downloading database objects
+system object customer database
+links duplication
+function block menu screen
+Programming tools lines function
+Function reentry data
+programming tools mode
+Test user data top function blocks
+Data interaction
+Function status data inputs outputs
+Animation change status logic devices countdown timer format
+BAS software functionality ease navigation
+tree view Windows Explorer viewing access structure database
+addition downs toolbars buttons commands navigation operator tasks knowledge HVAC Control System computing skills
+Graphic screens package GIF BMP JPG file format
+Use file formats
+addition lieu background GUI pictures
+Graphic screens capability objects values colour spectrum logs graphs HTML XML document links schedule hyperlinks URLs
+Graphics layering object assignment
+minimum layers
+objects schedules calendars points manner
+Holidays calendar keyboard entry operator
+Commands objects object command menu
+entry
+object slider value adjustments analog objects points
+help applications data screen
+help information hypertext
+system documentation help files HTML format
+operator system name password order data
+System security operator
+system administrator passwords security levels operators
+operator password operators access system screen editor object
+operator system keyboard mouse
+auto log-off time operator password
+system security data format
+system operation workstations printers modems network connections management panels controllers
+device operator
+system window
+Alarm Console notification windows desktop operator
+Alarm notification banners operator
+Operator software system configuration controllers management controller programming
+system capability analog inputs/outputs
+system programs things spreadsheet analysis graphing custom generation graphics design packages
+Graphics generation Windows packages
+graphics generation software
+operator facilities entries displays information system logs
+requests status analog displays logs operator
+operator use typewriter style keyboard mouse point click selection
+OWS operator analog output commands
+BAS software outputs provision operator output analog command
+provision operator analog output command BAS software
+OWS operator system setpoint basis value
+functions password system
+descriptions OWS system
+operator request system condition point area CRT
+output operator choice
+Analog values status CRT
+Points video colour means points
+System values accuracy Table
+Control loops setpoint tolerances Table
+Access operator functions
+User ID Password
+User ID characters Password
+system assignment functions menu items access
+passwords names access assignments online operators
+set security level access displays objects
+System security levels assignment users
+System samples object data equipment controllers information operator server disk
+files sample data samples
+Systems data file
+data spreadsheet format
+Operator trendlog data
+System files data operator scrolls
+trendlog information engineering units
+Software trend object data
+Software graphs object types time colours
+Graphs object type value time
+Operator trend log setup information
+operations password
+System energy log data equipment information operator disk
+data values
+Archive data
+Systems data file
+System files data operator scrolls
+System software energy log data
+Software data time
+data file format spreadsheet database programs
+Operation system operation
+words
+Operator energy log setup information
+operations password
+operator data project
+operator software Windows BITMAP
+Graphic colour photographs system
+Operator data representations
+points data seconds
+points data seconds
+System file object data
+Information descriptors engineering units
+information action
+BAS functions project setpoints schedules exception
+reference addresses indications
+displays manner project
+displays
+English labelling readout
+factory dependency assistance graphics DDC programming
+objects ON/OFF/NULL
+left right centre
+object manner bitmap files point ON OFF
+objects bitmaps motion
+operator object OFF ON
+System library bitmaps operator
+Systems customisation bitmap objects operator software
+Analog objects operator units
+Analog output objects mouse dialog box
+Selection type object
+editing area assignment online icon tools
+menu label selection
+Menu items penetration level displays menus
+mouse form digitizer arrow item selection operator changes data
+system dependency operator
+Operator means indication
+dialog box word
+Printout alarms
+System log messages
+Alarm log disk system operator
+entry description object time date occurrence state return acknowledgement
+Alarm messages English language operator communication
+Operator schedules information format schedule
+Exception schedules holidays events dates exception
+speciality schedules operator format data entry
+User months minimum
+operator system information exception schedule security access
+output CRT scroll bars movement
+Dynamic Reports operator value points status time request
+Summary Report value points status time CLM
+Data Collection Provision data
+run time reset means operator selection
+system users Web browser Internet Explorer
+Systems software client Web browser browsers
+Web browser software operating system configuration
+Web browser view system terms graphics schedules calendars logs
+Systems views means objects schedules logs
+User log-on identification password
+attempts access web page
+Security Java authentication encryption techniques access
+screens GUI Web browser client
+objects Software Web browser
+HTML programming system graphics data Web page
+HTML editing Web page desires look format
+Storage screens Network Control Unit NCU graphics client
+values Web page refresh
+User access privileges
+Holidays calendar keyboard entry operator
+Commands objects object command menu
+system capability home page logon identification
+home page links views pages system administrator
+Graphic screens Web Browser client hypertext links locations Internet Intranet sites Uniform Resource Locator URL

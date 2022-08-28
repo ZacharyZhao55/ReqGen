@@ -1,0 +1,89 @@
+Object system commands capabilities
+Obstacle system directives
+GCS requests activation GCS Middleware Dronology
+Activation Manager registered
+GCS connection reconnect
+Vehicle Core unique ID activated
+Flight Plan time
+Activation Manager one instance registered drone
+Vehicle Core UAVTYPE basic attributes
+home Flight Manager original launch location additional routing 
+Flight Route Manager ordered sequence first target location final
+Flight Route Manager ensure VALID FLIGHT ROUTE
+Flight Route Manager persist
+flight route customized takeoff altitude system's default takeoff
+Coordinate System coordinates alternate formats
+Coordinate System distance
+Coordinate System direction first second
+hover place command Flight Manager halt current position
+flight route currently hovering place Flight Manager mode
+flight plan active hover place Flight Manager originally designated waypoint
+flight plan activated ground Flight Execution takeoff vertically until prescribed altitude
+Mission Planner predefined Flight Patterns
+mission currently active Mission Planner
+Flight Plan route execution
+route ID Flight Plan 
+flight Plan route automatically
+pending flight plans reaches final current flight plan Scheduler hover place
+executing flight plan
+flight pattern document longitude flight route starting position
+flight patterns mission warning paths overlap
+Vehicle Core GCS
+Vehicle Core virtual
+deactivated Activation Manager flight plans
+maximum numbers allowed activated Activation Manager further activation 
+Registration Manager meta-data information technical characteristics
+Internal Simulator approximate
+takeoff Internal Simulator takeoff corresponding longitude latitude
+goto Internal Simulator location SIMULATION STEP SIZE meters target destination
+landing Internal Simulator ground longitude latitude
+Internal Simulator state
+Activity flight plan events
+Activity CGS
+UI Middleware active list UAVs
+UI Middleware list existing routes
+UI Middleware UIs Dronology
+UI Middleware creation modification flight routes
+UI Middleware existing route
+UI Middleware accept activate plan
+configuration parameters
+map view pre-defined
+means existing routes
+route Dronology
+user details flight plans
+active flight plans
+user reorder routes started execution
+user pending flight plan Dronology
+Route Creation UI starting ending markers
+Route Creation UI valid speed values
+route unique ID textual description
+requested Route Creation UI created modified route dronology
+Route Creation UI user create modify route
+Route Creation UI user delete route
+Route Creation UI list existing routes
+Real Time Flight UI name status currently activated UAVs
+Real Time Flight UI currently active flight plans map
+Real Time Flight UI users flight operations
+Real Time Flight UI users emergency operations
+Real Time Flight UI users map
+Real Time Flight UI users emergency occurs
+Dronology Runtime Monitor monitoring messages clients
+monitoring message Dronology Runtime Monitor message subscribed clients
+Dronology Runtime Monitor messages Dronology component
+GCS Middleware multiple GCS
+GCS Middleware steps connection GCS Dronology
+GCS Middleware state messages mode GCS
+GCS Middleware commands Dronology
+connection GCS Middleware Dronology associated UAVs
+GCS UAV command Middleware
+GCS message frequency
+GCS connected UAVs Middleware
+GCS location Middleware
+GCS properties Middleware
+Mission Planner flight plans multiple UAVs
+Map Component map layers
+waypoint coordinates longitude latitude altitude
+Vehicle Core UAV state transition diagram
+flight plan Vehicle Core next waypoint
+Flight Plan Scheduler managed list
+client registers UI Middleware notifications specific events

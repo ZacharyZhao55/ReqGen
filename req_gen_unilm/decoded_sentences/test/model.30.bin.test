@@ -1,0 +1,9 @@
+The GCS shall report the location of a UAV to the GCS
+The GCS Middleware shall handle all GCS properties
+The Mission Planner shall manage multiple UAVs at a time .
+When loading a map the map Component shall be loaded .
+When given a waypoint the UAV shall update the longitude and latitude of the waypoint .
+The Vehicle Core shall associate a state transition diagram .
+When a flight plan is assigned to a UAV the UAV Core shall assign the next waypoint to its current waypoint .
+The Single UAV Flight Plan Scheduler shall manage a list of all selected UAVs
+The UI Middleware shall notify a client to notify the UI .

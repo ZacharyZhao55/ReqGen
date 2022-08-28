@@ -1,0 +1,47 @@
+All devices shall be ULC, UL or FM listed and labeled for the specific use, application and environment to which they are applied.
+The BAS shall comply with NFPA 90A Air Conditioning and 90B Warm Air Heating, Air Conditioning.
+All electronic equipment shall conform to the requirements of CSA for electromagnetic emissions standards and placed in approved locations such that it does not interfere with building equipment or computers.
+Communication lines shall be protected against incorrect wiring, static transients and induced magnetic interference.
+Bus connected devices shall be AC coupled, or equivalent so that any single device failure will not disrupt or halt bus communication.
+Contractor shall provide license for the site.
+License shall be OPEN and on the name of the City of Toronto.
+Installer shall have an established working relationship with Control System Manufacturer.
+Installer shall have successfully completed Control System Manufacturer's control system training.
+Upon request, Installer shall present record of completed training including course outlines.
+BAS contractor shall provide three locations of successful installations of similar open protocol computer based systems.
+The system shall consist of a network of Building Controllers (BC), Advanced Application Controllers (AAC), Application Specific Controllers (ASC), and Smart Actuators (SA).
+The Building Automation System software shall employ object-oriented technology (OOT) for representation of all data and control devices within the system.
+This data shall reside on a BAS server for all database access.
+Systems requiring proprietary database and user interface programs shall not be acceptable.
+Systems employing a flat single tiered architecture shall not be acceptable.
+Maximum acceptable response time from any alarm occurrence (at the point of origin) to the point of annunciation shall not exceed 5 seconds for network connected user interfaces.
+Maximum acceptable response time from any alarm occurrence (at the point of origin) to the point of annunciation shall not exceed 60 seconds for remote or dial-up connected user interfaces.
+Each BC shall conform to BACnet Building Controller (B-BC) device profile as specified in ANSI/ASHRAE 135-2004, BACnet Annex L and shall be listed as a certified B-BC in the BACnet Testing Laboratories (BTL) Product Listing.
+Each AAC shall conform to BACnet Advanced Application Controller (B-AAC) device profile as specified in ANSI/ASHRAE 135-2004, BACnet Annex L and shall be listed as a certified B-AAC in the BACnet Testing Laboratories (BTL) Product Listing.
+Each ASC shall conform to BACnet Application Specific Controller (BASC) device profile as specified in ANSI/ASHRAE 135-2004, BACnet Annex L and shall be listed as a certified B-ASC in the BACnet Testing Laboratories (BTL) Product Listing.
+Each SA shall conform to BACnet Smart Actuator (B-SA) device profile as specified in ANSI/ASHRAE 135-2004, BACnet Annex L and shall be listed as a certified B-SA in the BACnet Testing Laboratories (BTL) Product Listing.
+Each SS shall conform to BACnet Smart Sensor (B-SS) device profile as specified in ANSI/ASHRAE 135-2004, BACnet Annex L and shall be listed as a certified B-SS in the BACnet Testing Laboratories (BTL) Product Listing.
+Each BC shall reside on or be connected to a BACnet network using ISO 8802-3 (Ethernet) Data Link/Physical layer protocol and BACnet/IP addressing.
+BACnet routing shall be performed by BCs or other BACnet device routers as necessary to connect BCs to networks of AACs and ASCs.
+Each AAC shall reside on a BACnet network using ISO 8802-3 (Ethernet) Data Link/Physical layer protocol with BACnet/IP addressing, or it shall reside on a BACnet network using the MS/TP Data Link/Physical layer protocol.
+Each ASC shall reside on a BACnet network using the MS/TP Data Link/Physical layer protocol.
+Each SA shall reside on a BACnet network using the MS/TP Data Link/Physical layer protocol.
+Each SS shall reside on a BACnet network using ISO 8802-3 (Ethernet) Data Link/Physical layer protocol with BACnet/IP addressing, or it shall reside on a BACnet network using MS/TP Data Link/Physical layer protocol.
+Each controller shall provide a service communication port for connection to a Portable Operator's Terminal.
+Connection shall be extended to space temperature sensor ports where shown on drawings.
+BC and ASC operating systems shall manage input and output communication signals to allow distributed controllers to share real and virtual object information and to allow for central monitoring and alarms.
+Each BC and AAC shall share data as required with each networked BC and AAC.
+Each piece of equipment specified in the sequence of operation shall be controlled by a single controller to provide stand-alone control in the event of communication failure.
+All I/O points specified for a piece of equipment shall be integral to its controller.
+ENVIRONMENT Controller hardware shall be suitable for anticipated ambient conditions.
+Controllers used outdoors or in wet ambient conditions shall be mounted in waterproof enclosures and shall be rated for operation at -29°„C to 60°„C (-20°„F to 140°„F).
+Controllers used in conditioned space shall be mounted in dust-protective enclosures and shall be rated for operation at 0°„C to 50°„C (32°„F to 120°„F).
+Controllers that perform scheduling shall have a real-time clock.
+Controllers shall have diagnostic LEDs for power, communication, and processor.
+Wires shall be connected to a field-removable modular terminal strip or to a termination card connected by a ribbon cable.
+Each BC and AAC shall continually check its processor and memory circuit status and shall generate an alarm on abnormal operation.
+System shall continuously check controller network and generate alarm for each controller that fails to respond.
+Controller memory shall support operating system, database, and programming requirements.
+Each BC and AAC shall retain BIOS and application programming for at least 72 hours in the event of power loss.
+Each ASC and SA shall use nonvolatile memory and shall retain BIOS and application programming in the event of power loss.
+System shall automatically download dynamic control parameters following power loss.

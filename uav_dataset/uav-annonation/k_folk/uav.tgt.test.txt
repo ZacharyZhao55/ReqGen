@@ -1,0 +1,10 @@
+If requested the Single UAV Flight Plan Scheduler shall unassign the flight plan assigned to a UAV that is awaiting execution.
+If a UAV has pending flight plans then when it reaches the final waypoint of its current flight plan the Single UAV Flight Plan Scheduler shall execute the next assigned flight plan.
+When a UAV's current flight is cancelled the Single UAV Flight Plan Scheduler shall in turn cancel all scheduled flight plans for that UAV.
+The UI Middleware shall provide an interface for registering UI clients.
+The UI Middleware shall only assign one control client at a time for each UAV.
+If a command is issued by the Vaadin UI for an UAV the Vaadin UI shall request control of that UAV.
+When the Real Time Flight UI is loaded a map shall be displayed.
+The Real Time Flight UI shall display the location of active UAVs as icons on the map.
+When a stationary or moving object is within the proximity of a UAV the Object Avoidance system shall issue evasive directives to the UAV
+If a UAV takes evasive actions the system will ensure that it will eventually reach its destination

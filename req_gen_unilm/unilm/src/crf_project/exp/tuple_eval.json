@@ -1,0 +1,217 @@
+[
+  {
+    "data_id": "1",
+    "prePath": "/Users/tuanz_lu/PycharmProjects/Pytorch-learning/json_data/gannt/E_data.json",
+    "total": "118",
+    "correct_num": "91",
+    "val_accuracy: ": "0.7711864406779662",
+    "agent": {
+      "agent_error": "5",
+      "accuracy": "0.9523809523809523",
+      "correct_num": "100",
+      "total": "105"
+    },
+    "operation": {
+      "operation_error": "2",
+      "accuracy": "0.9830508474576272",
+      "correct_num": "116",
+      "total": "118"
+    },
+    "input": {
+      "input_error": "5",
+      "accuracy": "0.9541284403669725",
+      "correct_num": "104",
+      "total": "109"
+    },
+    "output": {
+      "output_error": "20",
+      "accuracy": "0.7916666666666666",
+      "correct_num": "76",
+      "total": "96"
+    },
+    "restriction": {
+      "restriction_error": "0",
+      "accuracy": "1.0",
+      "correct_num": "83",
+      "total": "83"
+    },
+    "event": {
+      "event_error": "1",
+      "accuracy": "0.9285714285714286",
+      "correct_num": "13",
+      "total": "14"
+    }
+  },
+  {
+    "data_id": "2",
+    "prePath": "/Users/tuanz_lu/PycharmProjects/Pytorch-learning/json_data/gannt/A_data.json",
+    "total": "116",
+    "correct_num": "78",
+    "val_accuracy: ": "0.6724137931034483",
+    "agent": {
+      "agent_error": "6",
+      "accuracy": "0.9411764705882353",
+      "correct_num": "96",
+      "total": "102"
+    },
+    "operation": {
+      "operation_error": "0",
+      "accuracy": "1.0",
+      "correct_num": "116",
+      "total": "116"
+    },
+    "input": {
+      "input_error": "7",
+      "accuracy": "0.9357798165137615",
+      "correct_num": "102",
+      "total": "109"
+    },
+    "output": {
+      "output_error": "26",
+      "accuracy": "0.74",
+      "correct_num": "74",
+      "total": "100"
+    },
+    "restriction": {
+      "restriction_error": "1",
+      "accuracy": "0.9852941176470589",
+      "correct_num": "67",
+      "total": "68"
+    },
+    "event": {
+      "event_error": "4",
+      "accuracy": "0.8518518518518519",
+      "correct_num": "23",
+      "total": "27"
+    }
+  },
+  {
+    "data_id": "3",
+    "prePath": "/Users/tuanz_lu/PycharmProjects/Pytorch-learning/json_data/gannt/B_data.json",
+    "total": "116",
+    "correct_num": "96",
+    "val_accuracy: ": "0.8275862068965517",
+    "agent": {
+      "agent_error": "3",
+      "accuracy": "0.9714285714285714",
+      "correct_num": "102",
+      "total": "105"
+    },
+    "operation": {
+      "operation_error": "1",
+      "accuracy": "0.9913793103448276",
+      "correct_num": "115",
+      "total": "116"
+    },
+    "input": {
+      "input_error": "7",
+      "accuracy": "0.9357798165137615",
+      "correct_num": "102",
+      "total": "109"
+    },
+    "output": {
+      "output_error": "12",
+      "accuracy": "0.8709677419354839",
+      "correct_num": "81",
+      "total": "93"
+    },
+    "restriction": {
+      "restriction_error": "0",
+      "accuracy": "1.0",
+      "correct_num": "81",
+      "total": "81"
+    },
+    "event": {
+      "event_error": "3",
+      "accuracy": "0.88",
+      "correct_num": "22",
+      "total": "25"
+    }
+  },
+  {
+    "data_id": "4",
+    "prePath": "/Users/tuanz_lu/PycharmProjects/Pytorch-learning/json_data/gannt/C_data.json",
+    "total": "116",
+    "correct_num": "96",
+    "val_accuracy: ": "0.8275862068965517",
+    "agent": {
+      "agent_error": "7",
+      "accuracy": "0.9339622641509434",
+      "correct_num": "99",
+      "total": "106"
+    },
+    "operation": {
+      "operation_error": "0",
+      "accuracy": "1.0",
+      "correct_num": "116",
+      "total": "116"
+    },
+    "input": {
+      "input_error": "4",
+      "accuracy": "0.9642857142857143",
+      "correct_num": "108",
+      "total": "112"
+    },
+    "output": {
+      "output_error": "11",
+      "accuracy": "0.8877551020408163",
+      "correct_num": "87",
+      "total": "98"
+    },
+    "restriction": {
+      "restriction_error": "0",
+      "accuracy": "1.0",
+      "correct_num": "66",
+      "total": "66"
+    },
+    "event": {
+      "event_error": "2",
+      "accuracy": "0.9259259259259259",
+      "correct_num": "25",
+      "total": "27"
+    }
+  },
+  {
+    "data_id": "5",
+    "prePath": "/Users/tuanz_lu/PycharmProjects/Pytorch-learning/json_data/gannt/D_data.json",
+    "total": "116",
+    "correct_num": "94",
+    "val_accuracy: ": "0.8103448275862069",
+    "agent": {
+      "agent_error": "2",
+      "accuracy": "0.9801980198019802",
+      "correct_num": "99",
+      "total": "101"
+    },
+    "operation": {
+      "operation_error": "1",
+      "accuracy": "0.9913793103448276",
+      "correct_num": "115",
+      "total": "116"
+    },
+    "input": {
+      "input_error": "7",
+      "accuracy": "0.9357798165137615",
+      "correct_num": "102",
+      "total": "109"
+    },
+    "output": {
+      "output_error": "16",
+      "accuracy": "0.8461538461538461",
+      "correct_num": "88",
+      "total": "104"
+    },
+    "restriction": {
+      "restriction_error": "1",
+      "accuracy": "0.9864864864864865",
+      "correct_num": "73",
+      "total": "74"
+    },
+    "event": {
+      "event_error": "3",
+      "accuracy": "0.8571428571428571",
+      "correct_num": "18",
+      "total": "21"
+    }
+  }
+]

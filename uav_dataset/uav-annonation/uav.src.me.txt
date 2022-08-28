@@ -1,0 +1,99 @@
+request schedule
+schedule waypoint
+schedule
+client
+client
+command vaadinui icon
+display
+uav location active icon
+avoidance
+
+command avoidance
+obstacle avoidance
+request activation log
+uav activation manage
+
+uav vehicle core
+schedule
+uav activation drone manage
+uav vehicle core
+waypoint command location flight manager manage
+waypoint location manage
+manage
+manage
+altitude
+coordinates alternate
+coordinates
+coordinates
+command flightmanager manage
+flightmanager manage mode
+waypoint command active flightmanager manage
+altitude
+mission
+request mission active
+request schedule
+schedule uav
+schedule uav
+schedule waypoint
+request schedule
+waypoint altitude
+mission
+vehiclecore
+uav vehiclecore
+schedule uav activation manage
+request uav activation manage
+uav manage
+approximate
+command altitude
+command location goto
+command altitude
+battery
+log
+command activitylogger log message
+uav active list
+list
+command log
+
+uav active
+request mission
+vaadinui icon parameter
+location
+routeassignmentui
+notify log routeassignmentui
+request routeassignmentui
+active routeassignmentui
+uav 
+notify log routeassignmentui
+waypoint media intermediate
+waypoint altitude
+waypoint
+request log
+route uav
+route uav
+list
+uav
+active flightplan
+users uav
+users uav
+users uav
+users uav
+client log message dronologyruntimemonitor
+client log message dronologyruntimemonitor
+log message dronologyruntimemonitor
+GCS uav
+log GCS
+mode message GCS
+command log GCS
+uav log GCS
+uav command GCS
+message
+uav GCS
+location GCS uav
+GCS uav
+mission uav
+maplayer
+waypoint coordinates altitude
+uav vehiclecore
+waypoint vehiclecore flightplan
+schedule manage list flightplan
+client notification

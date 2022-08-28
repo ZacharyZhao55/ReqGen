@@ -1,0 +1,174 @@
+[
+  {
+    "data_id": "1",
+    "prePath": "/root/Desktop/crf_project/crf_project/json_data/GANNT.json",
+    "total": "93",
+    "correct_num": "38",
+    "val_accuracy: ": "0.40860215053763443",
+    "agent": {
+      "agent_error": "0",
+      "accuracy": "1.0",
+      "correct_num": "80",
+      "total": "80"
+    },
+    "operation": {
+      "operation_error": "33",
+      "accuracy": "0.6451612903225806",
+      "correct_num": "60",
+      "total": "93"
+    },
+    "input": {
+      "input_error": "21",
+      "accuracy": "0.7469879518072289",
+      "correct_num": "62",
+      "total": "83"
+    },
+    "output": {
+      "output_error": "38",
+      "accuracy": "0.5365853658536586",
+      "correct_num": "44",
+      "total": "82"
+    },
+    "restriction": {
+      "restriction_error": "1",
+      "accuracy": "0.9090909090909091",
+      "correct_num": "10",
+      "total": "11"
+    },
+    "event": {
+      "event_error": "3",
+      "accuracy": "0.6666666666666666",
+      "correct_num": "6",
+      "total": "9"
+    }
+  },
+  {
+    "data_id": "2",
+    "prePath": "/Users/tuanz_lu/PycharmProjects/Pytorch-learning/json_data/GANNT.json",
+    "total": "93",
+    "correct_num": "38",
+    "val_accuracy: ": "0.40860215053763443",
+    "agent": {
+      "agent_error": "0",
+      "accuracy": "1.0",
+      "correct_num": "80",
+      "total": "80"
+    },
+    "operation": {
+      "operation_error": "33",
+      "accuracy": "0.6451612903225806",
+      "correct_num": "60",
+      "total": "93"
+    },
+    "input": {
+      "input_error": "21",
+      "accuracy": "0.7469879518072289",
+      "correct_num": "62",
+      "total": "83"
+    },
+    "output": {
+      "output_error": "38",
+      "accuracy": "0.5365853658536586",
+      "correct_num": "44",
+      "total": "82"
+    },
+    "restriction": {
+      "restriction_error": "1",
+      "accuracy": "0.9090909090909091",
+      "correct_num": "10",
+      "total": "11"
+    },
+    "event": {
+      "event_error": "3",
+      "accuracy": "0.6666666666666666",
+      "correct_num": "6",
+      "total": "9"
+    }
+  },
+  {
+    "data_id": "3",
+    "prePath": "/Users/tuanz_lu/PycharmProjects/Pytorch-learning/json_data/GANNT.json",
+    "total": "93",
+    "correct_num": "38",
+    "val_accuracy: ": "0.40860215053763443",
+    "agent": {
+      "agent_error": "0",
+      "accuracy": "1.0",
+      "correct_num": "80",
+      "total": "80"
+    },
+    "operation": {
+      "operation_error": "33",
+      "accuracy": "0.6451612903225806",
+      "correct_num": "60",
+      "total": "93"
+    },
+    "input": {
+      "input_error": "21",
+      "accuracy": "0.7469879518072289",
+      "correct_num": "62",
+      "total": "83"
+    },
+    "output": {
+      "output_error": "38",
+      "accuracy": "0.5365853658536586",
+      "correct_num": "44",
+      "total": "82"
+    },
+    "restriction": {
+      "restriction_error": "1",
+      "accuracy": "0.9090909090909091",
+      "correct_num": "10",
+      "total": "11"
+    },
+    "event": {
+      "event_error": "3",
+      "accuracy": "0.6666666666666666",
+      "correct_num": "6",
+      "total": "9"
+    }
+  },
+  {
+    "data_id": "4",
+    "prePath": "/Users/tuanz_lu/PycharmProjects/Pytorch-learning/json_data/GANNT.json",
+    "total": "93",
+    "correct_num": "21",
+    "val_accuracy: ": "0.22580645161290322",
+    "agent": {
+      "agent_error": "45",
+      "accuracy": "0.4375",
+      "correct_num": "35",
+      "total": "80"
+    },
+    "operation": {
+      "operation_error": "33",
+      "accuracy": "0.6451612903225806",
+      "correct_num": "60",
+      "total": "93"
+    },
+    "input": {
+      "input_error": "18",
+      "accuracy": "0.7831325301204819",
+      "correct_num": "65",
+      "total": "83"
+    },
+    "output": {
+      "output_error": "36",
+      "accuracy": "0.5609756097560976",
+      "correct_num": "46",
+      "total": "82"
+    },
+    "restriction": {
+      "restriction_error": "1",
+      "accuracy": "0.9090909090909091",
+      "correct_num": "10",
+      "total": "11"
+    },
+    "event": {
+      "event_error": "6",
+      "accuracy": "0.3333333333333333",
+      "correct_num": "3",
+      "total": "9"
+    }
+  }
+]

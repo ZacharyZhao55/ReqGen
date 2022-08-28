@@ -1,0 +1,4446 @@
+[
+  {
+    "#": "FR-1",
+    "*": "functional",
+    ":": "A special indication shall be shown on the dmi.",
+    "operation": {
+      "operation": "show"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "special indication"
+        },
+        {
+          "entity": "dmi"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "special indication"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "on the dmi"
+      ]
+    }
+  },
+  {
+    "#": "FR-2",
+    "*": "functional",
+    ":": "A train shall be supervised to its static and dynamic train speed profiles.",
+    "operation": {
+      "operation": "supervise"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "train"
+        },
+        {
+          "entity": "its static and dynamic train speed profiles"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "train"
+        },
+        {
+          "entity": "its static and dynamic train speed profiles"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-3",
+    "*": "functional",
+    ":": "Actual speed shall be indicated on the dmi.",
+    "operation": {
+      "operation": "indicate"
+    },
+    "input": {
+      "()": [
+         {
+          "entity": "actual speed"
+        },
+        {
+          "entity": "dmi"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "actual speed"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "on the dmi"
+      ]
+    }
+  },
+  {
+    "#": "FR-4",
+    "*": "functional",
+    ":": "Actual speed shall still be shown on the dmi.",
+    "operation": {
+      "operation": "show"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "actual speed"
+        },
+        {
+          "entity": "dmi"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "actual speed"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "still",
+        "on the dmi"
+      ]
+    }
+  },
+  {
+    "#": "FR-5",
+    "*": "functional",
+    ":": "After releasing the emergency brake, etcs will provide the supervision appertaining when roll away protection was initiated.",
+    "event": {
+      "()": [
+        {
+          "#": "5-condition",
+          "*": "condition",
+          "agent": {
+            "entity": "roll away protection"
+          },
+          "operation": {
+            "operation": "initiate"
+          }
+        }
+      ]
+    },
+    "agent": {
+      "entity": "etcs"
+    },
+    "operation": {
+      "operation": "provide"
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "supervision appertaining"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "after releasing the emergency brake"
+      ]
+    }
+  },
+  {
+    "#": "FR-6",
+    "*": "functional",
+    ":": "After the acknowledgement, the driver shall be able to continue the movement.",
+    "agent": {
+      "entity": "driver"
+    },
+    "operation": {
+      "operation": "be able to continue"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "movement"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "movement"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "after the acknowledgement"
+      ]
+    }
+  },
+  {
+    "#": "FR-7",
+    "*": "functional",
+    ":": "An etcs equipped traction unit shall be capable of being moved in shunting without train data track data or movement authority.",
+    "agent": {
+      "entity": "etcs equipped traction unit"
+    },
+    "operation": {
+      "operation": "be capable of being moved"
+    },
+    "restriction": {
+      "()": [
+        "without train data track data or movement authority"
+      ]
+    }
+  },
+  {
+    "#": "FR-8",
+    "*": "functional",
+    ":": "At start up the on board equipment shall perform an automatic self-test.",
+    "agent": {
+      "entity": "on board equipment"
+    },
+    "operation": {
+      "operation": "perform"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "automatic self-test"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "automatic self-test"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "at start up"
+      ]
+    }
+  },
+  {
+    "#": "FR-9",
+    "*": "functional",
+    ":": "Before entering an occupied track, a driver acknowledgement shall be requested.",
+    "operation": {
+      "operation": "request"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "driver acknowledgement"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "driver acknowledgement"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "before entering an occupied track"
+      ]
+    }
+  },
+  {
+    "#": "FR-10",
+    "*": "functional",
+    ":": "Default values shall be harmonised values permanently stored in all ertms/etcs on board equipment.",
+    "agent": {
+      "entity": "default values"
+    },
+    "operation": {
+      "operation": "be"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "harmonised values"
+        },
+        {
+          "entity": "ertms/etcs"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "harmonised values"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-11",
+    "*": "functional",
+    ":": "During the transition period between two operational states, the supervision provided shall at least ensure the same protection provided by the least restrictive state.",
+    "agent": {
+      "entity": "supervision"
+    },
+    "operation": {
+      "operation": "ensure provide"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "same protection"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "same protection"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "during the transition period between two operational states",
+        "least restrictive state"
+      ]
+    }
+  },
+  {
+    "#": "FR-12",
+    "*": "functional",
+    ":": "Etcs is required to be functional to a maximum train speed of 500 km/h.",
+    "agent": {
+      "entity": "Etcs"
+    },
+    "operation": {
+      "operation": "require"
+    },
+    "restriction": {
+      "()": [
+        "maximum train speed of 500 km/h"
+      ]
+    }
+  },
+  {
+    "#": "FR-13",
+    "*": "functional",
+    ":": "Etcs shall be able to supervise train and shunting movements.",
+    "agent": {
+      "entity": "etcs"
+    },
+    "operation": {
+      "operation": "be able to supervise"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "train and shunting movements"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "train and shunting movements"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-14",
+    "*": "functional",
+    ":": "Etcs shall be compatible with existing national systems listed in the ccs tsi such that it does not interfere with the national systems and is not interfered with by the national systems.",
+    "agent": {
+      "entity": "etcs"
+    },
+    "operation": {
+      "operation": "be compatible with"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "existing national systems listed in the ccs tsi"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-15",
+    "*": "functional",
+    ":": "Etcs shall calculate the permitted speed for the train for all locations of the authorised movement.",
+    "agent": {
+      "entity": "etcs"
+    },
+    "operation": {
+      "operation": "calculate"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "permitted speed"
+        },
+        {
+          "entity": "train"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "permitted speed"
+        },
+        {
+          "entity": "train"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-16",
+    "*": "functional",
+    ":": "Etcs shall supervise shunting movement to a permitted national speed value.",
+    "agent": {
+      "entity": "etcs"
+    },
+    "operation": {
+      "operation": "supervise"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "shunting movement"
+        },
+        {
+          "entity": "permitted national speed value"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "shunting movement"
+        },
+        {
+          "entity": "permitted national speed value"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-17",
+    "*": "functional",
+    ":": "Exit from shunting shall take place when the driver selects exit from shunting.",
+    "event": {
+      "()": [
+        {
+          "#": "17-condition",
+          "*": "condition",
+          "agent": {
+            "entity": "driver"
+          },
+          "operation": {
+            "operation": "select"
+          },
+          "restriction": {
+            "()": [
+              "from shunting"
+            ]
+          }
+        }
+      ]
+    },
+    "agent": {
+      "entity": "exit from shunting"
+    },
+    "operation": {
+      "operation": "take place"
+    }
+  },
+  {
+    "#": "FR-18",
+    "*": "functional",
+    ":": "For transitions to and from national operation, the etcs shall request an acknowledgement by the driver.",
+    "agent": {
+      "entity": "etcs"
+    },
+    "operation": {
+      "operation": "request"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "acknowledgement"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "acknowledgement"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "by the driver"
+      ]
+    }
+  },
+  {
+    "#": "FR-19",
+    "*": "functional",
+    ":": "Full supervision shall provide supervision of speed and distance.",
+    "agent": {
+      "entity": "full supervision"
+    },
+    "operation": {
+      "operation": "provide"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "supervision of speed and distance"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-20",
+    "*": "functional",
+    ":": "If acknowledgement is specified, the driver shall acknowledge transfer from full supervision to partial supervision within 5 seconds.",
+    "event": {
+      "()": [
+        {
+          "#": "20-condition",
+          "*": "condition",
+          "agent": {
+            "entity": "acknowledgement"
+          },
+          "operation": {
+            "operation": "specify"
+          }
+        }
+      ]
+    },
+    "agent": {
+      "entity": "driver"
+    },
+    "operation": {
+      "operation": "acknowledge"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "transfer from full supervision"
+        },
+        {
+          "entity": "partial supervision"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "transfer from full supervision"
+        },
+        {
+          "entity": "partial supervision"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "within 5 seconds"
+      ]
+    }
+  },
+  {
+    "#": "FR-21",
+    "*": "functional",
+    ":": "If an etcs equipped train passes a level transition to a line fitted with more than one level, the onboard shall switch to the highest level according to the priority given by trackside for which it is equipped.",
+    "event": {
+      "()": [
+        {
+          "#": "21-condition",
+          "*": "condition",
+          "agent": {
+            "entity": "etcs equipped train"
+          },
+          "operation": {
+            "operation": "pass"
+          },
+          "input": {
+            "()": [
+              {
+                "entity": "level transition"
+              }
+            ]
+          },
+          "restriction": {
+            "()": [
+              "with more than one level"
+            ]
+          }
+        }
+      ]
+    },
+    "agent": {
+      "entity": "onboard"
+    },
+    "operation": {
+      "operation": "switch"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "highest level"
+        },
+        {
+          "entity": "priority"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "highest level"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "according to the priority given by trackside"
+      ]
+    }
+  },
+  {
+    "#": "FR-22",
+    "*": "functional",
+    ":": "If an etcs equipped train passes a level transition to one or more levels for which it is not equipped, etcs shall initiate a brake application.",
+    "event": {
+      "()": [
+        {
+          "#": "22-condition",
+          "*": "condition",
+          "agent": {
+            "entity": "etcs equipped train"
+          },
+          "operation": {
+            "operation": "pass"
+          },
+          "input": {
+            "()": [
+              {
+                "entity": "level transition"
+              },
+              {
+                "entity": "one or more levels which not equipped"
+              }
+            ]
+          },
+          "restriction": {
+            "()": [
+              "for which it is not equipped"
+            ]
+          }
+        }
+      ]
+    },
+    "agent": {
+      "entity": "etcs"
+    },
+    "operation": {
+      "operation": "initiate"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "brake application"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "brake application"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-23",
+    "*": "functional",
+    ":": "If the responsibility for the driver increases, the etcs shall seek an acknowledgement from the driver whether the train is stationary or not.",
+    "event": {
+      "()": [
+        {
+          "#": "23-condition",
+          "*": "condition",
+          "agent": {
+            "entity": "responsibility for the driver"
+          },
+          "operation": {
+            "operation": "increase"
+          },
+          "restriction": {
+            "()": [
+              "for the driver"
+            ]
+          }
+        }
+      ]
+    },
+    "agent": {
+      "entity": "etcs"
+    },
+    "operation": {
+      "operation": "seek"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "driver"
+        },
+        {
+          "entity": "train"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "acknowledgement from the driver"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-24",
+    "*": "functional",
+    ":": "If decided by a national value, the driver may release the etcs emergency brake when the actual speed is below the permitted speed.",
+    "event": {
+      "()": [
+        {
+          "#": "24-condition-1",
+          "*": "condition",
+          "agent": {
+            "entity": "national value"
+          },
+          "operation": {
+            "operation": "decide"
+          },
+          "restriction": {
+            "()": [
+              "by a national value"
+            ]
+          }
+        },
+        {
+          "#": "24-condition-2",
+          "*": "condition",
+          "agent": {
+            "entity": "actual speed"
+          },
+          "operation": {
+            "operation": "be below"
+          },
+          "restriction": {
+            "()": [
+              "below the permitted speed"
+            ]
+          }
+        }
+      ]
+    },
+    "agent": {
+      "entity": "driver"
+    },
+    "operation": {
+      "operation": "release"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "etcs emergency brake"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "etcs emergency brake"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-25",
+    "*": "functional",
+    ":": "If supervised by an rbc, it shall be possible to command an emergency stop to all trains in a particular area or to a specific train.",
+    "event": {
+      "()": [
+        {
+          "#": "25-condition",
+          "*": "condition",
+          "agent": {
+            "entity": "rbc"
+          },
+          "operation": {
+            "operation": "supervise"
+          }
+        }
+      ]
+    },
+    "operation": {
+      "operation": "be possible to command"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "emergency stop"
+        },
+        {
+          "entity": "trains in a particular area"
+        },
+        {
+          "entity": "specific train"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "emergency stop"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-26",
+    "*": "functional",
+    ":": "If the onboard fails to contact the rbc when awakening, the driver shall be asked to enter the rbc contact details.",
+    "event": {
+      "()": [
+        {
+          "#": "26-condition",
+          "*": "condition",
+          "agent": {
+            "entity": "onboard"
+          },
+          "operation": {
+            "operation": "fail to contact"
+          }
+        }
+      ]
+    },
+    "operation": {
+      "operation": "ask to enter"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "driver"
+        },
+        {
+          "entity": "rbc contact details"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "rbc contact details"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-27",
+    "*": "functional",
+    ":": "If the release speed is calculated on board, it shall ensure that the train will stop before reaching the danger point.",
+    "event": {
+      "()": [
+        {
+          "#": "27-condition",
+          "*": "condition",
+          "operation": {
+            "operation": "calculate"
+          },
+          "input": {
+            "()": [
+              {
+                "entity": "release speed"
+              }
+            ]
+          },
+          "restriction": {
+            "()": [
+              "on board"
+            ]
+          }
+        }
+      ]
+    },
+    "operation": {
+      "operation": "ensure stop"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "train"
+        },
+        {
+          "entity": "danger point"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "train"
+        },
+        {
+          "entity": "danger point"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "before reaching the danger point"
+      ]
+    }
+  },
+  {
+    "#": "FR-28",
+    "*": "functional",
+    ":": "If the train is equipped with only one operational radio, passing from one rbc to another shall still be possible but might result in a performance penalty.",
+    "event": {
+      "()": [
+        {
+          "#": "28-condition",
+          "*": "condition",
+          "operation": {
+            "operation": "equip"
+          },
+          "input": {
+            "()": [
+              {
+                "entity": "train"
+              },
+              {
+                "entity": "only one operational radio"
+              }
+            ]
+          },
+          "restriction": {
+            "()": [
+              "only"
+            ]
+          }
+        }
+      ]
+    },
+    "agent": {
+      "entity": "passing from one rbc to another"
+    },
+    "operation": {
+      "operation": "be possible result in"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "passing from one rbc to another"
+        },
+        {
+          "entity": "performance penalty"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "with only one operational radio",
+        "from one rbc to another"
+      ]
+    }
+  },
+  {
+    "#": "FR-29",
+    "*": "functional",
+    ":": "If the train is equipped with two operational radios, there shall be no performance penalty as a result of a transition from one rbc to another.",
+    "event": {
+      "()": [
+        {
+          "#": "29-condition",
+          "*": "condition",
+          "operation": {
+            "operation": "equip"
+          },
+          "input": {
+            "()": [
+              {
+                "entity": "train"
+              },
+              {
+                "entity": "two operational radios"
+              }
+            ]
+          },
+          "output": {
+            "()": [
+              {
+                "entity": "train"
+              }
+            ]
+          },
+          "restriction": {
+            "()": [
+              "with two operational radios"
+            ]
+          }
+        }
+      ]
+    },
+    "operation": {
+      "operation": "there be not"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "performance penalty"
+        },
+        {
+          "entity": "transition from one rbc to another"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "performance penalty"
+        },
+        {
+          "entity": "transition from one rbc to another"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-30",
+    "*": "functional",
+    ":": "If the train or the shunting movement exceeds the permitted ceiling speed by a certain harmonised margin, the trainborne equipment shall execute a brake intervention until the actual speed does not exceed permitted speed.",
+    "event": {
+      "()": [
+        {
+          "#": "30-condition",
+          "*": "condition",
+          "agent": {
+            "entity": "train or the shunting movement"
+          },
+          "operation": {
+            "operation": "exceed"
+          },
+          "input": {
+            "()": [
+              {
+                "entity": "permitted ceiling speed"
+              },
+              {
+                "entity": "certain harmonised margin"
+              }
+            ]
+          },
+          "restriction": {
+            "()": [
+              "by a certain harmonised margin"
+            ]
+          }
+        }
+      ]
+    },
+    "agent": {
+      "entity": "trainborne equipment"
+    },
+    "operation": {
+      "operation": "execute"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "brake intervention"
+        },
+        {
+          "entity": "permitted ceiling speed"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "brake intervention"
+        },
+        {
+          "entity": "permitted ceiling speed"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "until the actual speed does not exceed permitted speed"
+      ]
+    }
+  },
+  {
+    "#": "FR-31-1",
+    "*": "functional",
+    ":": "If there are failures of the trainborne equipment which compromise the safety of train supervision, the etcs trainborne equipment shall immediately command the brake and bring the train to a stop.",
+    "event": {
+      "()": [
+        {
+          "#": "31-condition",
+          "*": "condition",
+          "input": {
+            "()": [
+              {
+                "entity": "failures of the trainborne equipment"
+              },
+              {
+                "entity": "safety of train supervision"
+              }
+            ]
+          },
+          "restriction": {
+            "()": [
+              "which compromise the safety of train supervision"
+            ]
+          }
+        }
+      ]
+    },
+    "agent": {
+      "entity": "etcs trainborne equipment"
+    },
+    "operation": {
+      "operation": "command bring"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "brake"
+        },
+        {
+          "entity": "train"
+        },
+        {
+          "entity": "stop"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "brake"
+        },
+        {
+          "entity": "train"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "immediately"
+      ]
+    }
+  },
+  {
+    "#": "FR-32",
+    "*": "functional",
+    ":": "In case the transition has to be acknowledged and the driver fails to acknowledge as required, the etcs shall initiate a brake application.",
+    "event": {
+      "()": [
+        {
+          "#": "32-condition-1",
+          "*": "condition",
+          "operation": {
+            "operation": "have to be acknowledged"
+          },
+          "input": {
+            "()": [
+              {
+                "entity": "transition"
+              }
+            ]
+          }
+        },
+        {
+          "#": "32-condition-2",
+          "*": "condition",
+          "agent": {
+            "entity": "driver"
+          },
+          "operation": {
+            "operation": "fail to acknowledge"
+          }
+        }
+      ]
+    },
+    "agent": {
+      "entity": "etcs"
+    },
+    "operation": {
+      "operation": "initiate"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "brake application"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "brake application"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-33",
+    "*": "functional",
+    ":": "In partial supervision the train shall be supervised according to train speed and distance data available.",
+    "operation": {
+      "operation": "supervise"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "train"
+        },
+        {
+          "entity": "train speed and distance data available"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "in partial supervision"
+      ]
+    }
+  },
+  {
+    "#": "FR-34",
+    "*": "functional",
+    ":": "Information received shall not influence the traction unit with in-operative cabs.",
+    "agent": {
+      "entity": "information received"
+    },
+    "operation": {
+      "operation": "not influence"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "traction unit with in-operative cabs"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-35",
+    "*": "functional",
+    ":": "Information shall be shown on the dmi.",
+    "operation": {
+      "operation": "show"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "information"
+        },
+        {
+          "entity": "dmi"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "on the dmi"
+      ]
+    }
+  },
+  {
+    "#": "FR-36",
+    "*": "functional",
+    ":": "Isolation of the etcs trainborne equipment shall disconnect the etcs trainborne equipment from the vehicle braking system.",
+    "agent": {
+      "entity": "isolation of the etcs trainborne equipment"
+    },
+    "operation": {
+      "operation": "disconnect"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "etcs trainborne equipment"
+        },
+        {
+          "entity": "vehicle braking system"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "etcs trainborne equipment"
+        },
+        {
+          "entity": "vehicle braking system"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "from the vehicle braking system"
+      ]
+    }
+  },
+  {
+    "#": "FR-37",
+    "*": "functional",
+    ":": "It shall also be possible to allow the driver to change the adhesion conditions.",
+    "operation": {
+      "operation": "be possible to allow"
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "adhesion conditions"
+        },
+        {
+          "entity": "driver"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-38",
+    "*": "functional",
+    ":": "It shall be possible to command an immediate train stop.",
+    "operation": {
+      "operation": "be possible to command"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "immediate train stop"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "immediate train stop"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-39",
+    "*": "functional",
+    ":": "It shall be possible to drive the train backwards in a supervised way according to information received from trackside.",
+    "operation": {
+      "operation": "be possible to drive"
+    },
+    "restriction": {
+      "()": [
+        "backwards",
+        "in a supervised way"
+      ]
+    }
+  },
+  {
+    "#": "FR-40",
+    "*": "functional",
+    ":": "It shall be possible to manually select shunting from stand by operation, full supervision operation or partial supervision operation.",
+    "operation": {
+      "operation": "be possible to select"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "shunting"
+        },
+        {
+          "entity": "stand by operation"
+        },
+        {
+          "entity": "full supervision operation"
+        },
+        {
+          "entity": "partial supervision operation"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "manually"
+      ]
+    }
+  },
+  {
+    "#": "FR-41",
+    "*": "functional",
+    ":": "It shall be possible to order a train trip when passing a stop signal.",
+    "event": {
+      "()": [
+        {
+          "#": "41-condition",
+          "*": "condition",
+          "operation": {
+            "operation": "pass"
+          },
+          "input": {
+            "()": [
+              {
+                "entity": "stop signal"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "operation": {
+      "operation": "be possible to order"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "train trip"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "train trip"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-42",
+    "*": "functional",
+    ":": "It shall be possible to revoke a movement authority that has already been issued to a train in a co-operative way between rbc and train.",
+    "operation": {
+      "operation": "be possible to revoke"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "movement authority"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "movement authority"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "in a co-operative way between rbc and train"
+      ]
+    }
+  },
+  {
+    "#": "FR-43",
+    "*": "functional",
+    ":": "It shall be possible to send fixed text messages from track to train.",
+    "operation": {
+      "operation": "be possible to send"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "fixed text messages"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "fixed text messages"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "from track to train"
+      ]
+    }
+  },
+  {
+    "#": "FR-44",
+    "*": "functional",
+    ":": "It shall be possible to send information on adhesion conditions from trackside.",
+    "operation": {
+      "operation": "be possible to send"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "information on adhesion conditions"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "information on adhesion conditions"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "from trackside"
+      ]
+    }
+  },
+  {
+    "#": "FR-45",
+    "*": "functional",
+    ":": "It shall be possible to send plain text messages from track to train.",
+    "operation": {
+      "operation": "be possible to send"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "plain text messages"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "plain text messages"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "from track to train"
+      ]
+    }
+  },
+  {
+    "#": "FR-46",
+    "*": "functional",
+    ":": "It shall be possible to use multiple traction units without isolating the etcs trainborne equipment on traction unit.",
+    "operation": {
+      "operation": "be possible to use"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "multiple traction units"
+        },
+        {
+          "entity": "etcs trainborne equipment on traction unit"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "without isolating the etcs trainborne equipment"
+      ]
+    }
+  },
+  {
+    "#": "FR-47",
+    "*": "functional",
+    ":": "It shall be possible to use tandem traction units without isolating the etcs trainborne equipment on the tandem traction unit.",
+    "operation": {
+      "operation": "be possible to use"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "tandem traction units"
+        },
+        {
+          "entity": "etcs trainborne equipment on the tandem traction unit"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "without isolating the etcs trainborne equipment"
+      ]
+    }
+  },
+  {
+    "#": "FR-48",
+    "*": "functional",
+    ":": "On demand the position of the front end of the train at the time of the demand shall be indicated on the dmi, this shall be possible while the train is moving or stationary.",
+    "event": {
+      "()": [
+        {
+          "#": "48-condition",
+          "*": "condition",
+          "agent": {
+            "entity": "train"
+          },
+          "operation": {
+            "operation": "be move or stationary"
+          }
+        }
+      ]
+    },
+    "operation": {
+      "operation": "indicate be possible"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "position of the front end of the train"
+        },
+        {
+          "entity": "dmi"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "position of the front end of the train"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-49",
+    "*": "functional",
+    ":": "On lines fitted with rbc, the etcs trainborne equipment shall be able to transmit the location of the entire train to the rbc.",
+    "agent": {
+      "entity": "etcs trainborne equipment"
+    },
+    "operation": {
+      "operation": "be able to transmit"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "location of the entire train"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "location of the entire train"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "on lines fitted with rbc"
+      ]
+    }
+  },
+  {
+    "#": "FR-50",
+    "*": "functional",
+    ":": "On request of the rbc, the driver shall have the possibility to confirm that the track ahead of him until the end of the on sight section is clear.",
+    "agent": {
+      "entity": "driver"
+    },
+    "operation": {
+      "operation": "have confirm"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "possibility"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "possibility"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "until the end of the on sight section is clear"
+      ]
+    }
+  },
+  {
+    "#": "FR-51",
+    "*": "functional",
+    ":": "Once received onboard, the national values shall remain valid even if the onboard equipment is switched off.",
+    "event": {
+      "()": [
+        {
+          "#": "51-condition",
+          "*": "condition",
+          "agent": {
+            "entity": "onboard equipment"
+          },
+          "operation": {
+            "operation": "receive switch"
+          }
+        }
+      ]
+    },
+    "agent": {
+      "entity": "national values"
+    },
+    "operation": {
+      "operation": "remain"
+    },
+    "restriction": {
+      "()": [
+        "even if the onboard equipment is switched off"
+      ]
+    }
+  },
+  {
+    "#": "FR-52",
+    "*": "functional",
+    ":": "Operation of the train trip shall be indicated on the dmi.",
+    "operation": {
+      "operation": "indicate"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "operation of the train trip"
+        },
+        {
+          "entity": "dmi"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "operation of the train trip"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "on the dmi"
+      ]
+    }
+  },
+  {
+    "#": "FR-53",
+    "*": "functional",
+    ":": "Partial supervision shall be indicated on the dmi.",
+    "operation": {
+      "operation": "indicate"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "partial supervision"
+        },
+        {
+          "entity": "dmi"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "partial supervision"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "on the dmi"
+      ]
+    }
+  },
+  {
+    "#": "FR-54",
+    "*": "functional",
+    ":": "Permission received shall be indicated to the driver.",
+    "operation": {
+      "operation": "indicate"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "permission received"
+        },
+        {
+          "entity": "driver"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "permission received"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-55",
+    "*": "functional",
+    ":": "Reversing shall be supervised to a distance and speed set as national values.",
+    "operation": {
+      "operation": "supervise"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "reversing"
+        },
+        {
+          "entity": "distance and speed set"
+        },
+        {
+          "entity": "national values"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "reversing"
+        },
+        {
+          "entity": "distance and speed set"
+        },
+        {
+          "entity": "national values"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "as national values"
+      ]
+    }
+  },
+  {
+    "#": "FR-56",
+    "*": "functional",
+    ":": "Route unsuitability shall be indicated on the dmi.",
+    "operation": {
+      "operation": "indicate"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "route unsuitability"
+        },
+        {
+          "entity": "dmi"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "route unsuitability"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-57",
+    "*": "functional",
+    ":": "Standardised output interfaces shall enable transmission of information recorded to other media for investigation.",
+    "agent": {
+      "entity": "standardised output interfaces"
+    },
+    "operation": {
+      "operation": "enable"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "transmission of information"
+        },
+        {
+          "entity": "other media for investigation"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "for investigation"
+      ]
+    }
+  },
+  {
+    "#": "FR-58",
+    "*": "functional",
+    ":": "Stored train data shall be offered to the driver to be confirmed when data entry starts.",
+    "event": {
+      "()": [
+        {
+          "#": "58-condition",
+          "*": "condition",
+          "agent": {
+            "entity": "data entry"
+          },
+          "operation": {
+            "operation": "start"
+          }
+        }
+      ]
+    },
+    "operation": {
+      "operation": "offer"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "stored train data"
+        },
+        {
+          "entity": "driver"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "stored train data"
+        },
+        {
+          "entity": "driver"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-59",
+    "*": "functional",
+    ":": "The ceiling speed value for the unfitted operation shall be determined by the lower value out of.",
+    "agent": {
+      "entity": "lower value"
+    },
+    "operation": {
+      "operation": "determine"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "unfitted operation"
+        },
+        {
+          "entity": "lower value"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "ceiling speed value for the unfitted operation"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "by the lower value out of"
+      ]
+    }
+  },
+  {
+    "#": "FR-60",
+    "*": "functional",
+    ":": "The character set used shall support different languages.",
+    "agent": {
+      "entity": "character set used"
+    },
+    "operation": {
+      "operation": "support"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "different languages"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-61",
+    "*": "functional",
+    ":": "The current application level shall be indicated on the dmi.",
+    "operation": {
+      "operation": "indicate"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "current application level"
+        },
+        {
+          "entity": "dmi"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "current application level"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "on the dmi"
+      ]
+    }
+  },
+  {
+    "#": "FR-62",
+    "*": "functional",
+    ":": "The current operational status shall be indicated to the driver on the dmi.",
+    "operation": {
+      "operation": "indicate"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "current operational status"
+        },
+        {
+          "entity": "driver"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "current operational status"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "on the dmi"
+      ]
+    }
+  },
+  {
+    "#": "FR-63",
+    "*": "functional",
+    ":": "The distance supervised can be extended from the trackside.",
+    "operation": {
+      "operation": "extend"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "distance supervised"
+        },
+         {
+          "entity": "trackside"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "distance supervised"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "from the trackside"
+      ]
+    }
+  },
+  {
+    "#": "FR-64",
+    "*": "functional",
+    ":": "The dmi shall display information from national train control systems, which may mean displaying the information shown by the national system.",
+    "agent": {
+      "entity": "dmi"
+    },
+    "operation": {
+      "operation": "display"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "information from national train control systems"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "information from national train control systems"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-65",
+    "*": "functional",
+    ":": "The dmi shall indicate the result of the self-test.",
+    "agent": {
+      "entity": "dmi"
+    },
+    "operation": {
+      "operation": "indicate"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "result of the self-test"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "result of the self-test"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-66",
+    "*": "functional",
+    ":": "The driver shall acknowledge the level transitions, if requested from trackside and the driver does not acknowledge after the transition.",
+    "event": {
+      "()": [
+        {
+          "#": "66-condition-1",
+          "*": "condition",
+          "agent": {
+            "entity": "driver"
+          },
+          "operation": {
+            "operation": "request"
+          },
+          "input": {
+            "()": [
+              {
+                "entity": "trackside"
+              }
+            ]
+          },
+          "restriction": {
+            "()": [
+              "after the transition"
+            ]
+          }
+        },
+        {
+          "#": "66-condition-2",
+          "*": "condition",
+          "agent": {
+            "entity": "driver"
+          },
+          "operation": {
+            "operation": "not acknowledge"
+          },
+          "input": {
+            "()": [
+              {
+                "entity": "transition"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "agent": {
+      "entity": "driver"
+    },
+    "operation": {
+      "operation": "acknowledge"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "level transitions"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "level transitions"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-67",
+    "*": "functional",
+    ":": "The driver shall be able to confirm the train integrity to the rbc manually.",
+    "agent": {
+      "entity": "driver"
+    },
+    "operation": {
+      "operation": "be able to confirm"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "train integrity"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "train integrity"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "manually"
+      ]
+    }
+  },
+  {
+    "#": "FR-68",
+    "*": "functional",
+    ":": "The driver shall be able to consult train data when the train is stationary or moving.",
+    "event": {
+      "()": [
+        {
+          "#": "68-condition-2",
+          "*": "condition",
+          "agent": {
+            "entity": "train"
+          },
+          "operation": {
+            "operation": "be stationary or move"
+          }
+        }
+      ]
+    },
+    "agent": {
+      "entity": "driver"
+    },
+    "operation": {
+      "operation": "be able to consult"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "train data"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "train data"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-69",
+    "*": "functional",
+    ":": "The driver shall be able to override the function when the train is stationary.",
+    "event": {
+      "()": [
+        {
+          "#": "69-condition",
+          "*": "condition",
+          "agent": {
+            "entity": "train"
+          },
+          "operation": {
+            "operation": "be stationary"
+          }
+        }
+      ]
+    },
+    "agent": {
+      "entity": "driver"
+    },
+    "operation": {
+      "operation": "be able to override"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "function"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "function"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-70",
+    "*": "functional",
+    ":": "The driver shall be able to release an etcs emergency brake application when stationary.",
+    "event": {
+      "()": [
+        {
+          "#": "70-condition",
+          "*": "condition",
+          "operation": {
+            "operation": "stationary"
+          }
+        }
+      ]
+    },
+    "agent": {
+      "entity": "driver"
+    },
+    "operation": {
+      "operation": "be able to release"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "etcs emergency brake application"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "etcs emergency brake application"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-71",
+    "*": "functional",
+    ":": "The driver shall be able to select train data entry on the dmi.",
+    "agent": {
+      "entity": "driver"
+    },
+    "operation": {
+      "operation": "be able to select"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "train data entry"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "train data entry"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "on the dmi"
+      ]
+    }
+  },
+  {
+    "#": "FR-72",
+    "*": "functional",
+    ":": "The driver shall be able to use the reversing function without needing to re-confirm the train data.",
+    "agent": {
+      "entity": "driver"
+    },
+    "operation": {
+      "operation": "be able to use"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "reversing function"
+        },
+        {
+          "entity": "train data"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "train data"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "without needing to re-confirm the train data"
+      ]
+    }
+  },
+  {
+    "#": "FR-73",
+    "*": "functional",
+    ":": "The driver shall have the possibility to select the language, which does not concern non pre-defined texts sent from the trackside.",
+    "agent": {
+      "entity": "driver"
+    },
+    "operation": {
+      "operation": "have select"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "language"
+        },
+        {
+          "entity": "possibility"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "language"
+        },
+        {
+          "entity": "possibility"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-74",
+    "*": "functional",
+    ":": "The driver shall know the distance to the next point defining the indicated braking curve and the permitted speed allowed, which shall be shown to the driver in a way that is understandable and logical.",
+    "agent": {
+      "entity": "driver"
+    },
+    "operation": {
+      "operation": "know"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "distance to the next point"
+        },
+        {
+          "entity": "driver"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "distance to the next point"
+        },
+        {
+          "entity": "permitted speed allowed"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-75",
+    "*": "functional",
+    ":": "The driver shall select an override control according to the permission received.",
+    "agent": {
+      "entity": "driver"
+    },
+    "operation": {
+      "operation": "select"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "override control"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "override control"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "according to the permission received"
+      ]
+    }
+  },
+  {
+    "#": "FR-76",
+    "*": "functional",
+    ":": "The emergency brake shall be applied until the traction unit is stationary.",
+    "operation": {
+      "operation": "apply"
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "emergency brake"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "until the traction unit is stationary"
+      ]
+    }
+  },
+  {
+    "#": "FR-77",
+    "*": "functional",
+    ":": "The emergency stop shall be indicated to the driver on the dmi.",
+    "operation": {
+      "operation": "indicate"
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "emergency stop"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "on the dmi"
+      ]
+    }
+  },
+  {
+    "#": "FR-78",
+    "*": "functional",
+    ":": "The entry of driver identification and the selection of the language shall be possible.",
+    "agent": {
+      "entity": "entry of driver identification and the selection of the language"
+    },
+    "operation": {
+      "operation": "be possible"
+    }
+  },
+  {
+    "#": "FR-79",
+    "*": "functional",
+    ":": "The etcs onboard shall be capable of receiving information about pantograph and power supply from the trackside.",
+    "agent": {
+      "entity": "etcs onboard"
+    },
+    "operation": {
+      "operation": "be capable of receiving"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "information"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "from the trackside"
+      ]
+    }
+  },
+  {
+    "#": "FR-80",
+    "*": "functional",
+    ":": "The etcs onboard shall be capable of receiving information regarding air tightness from the trackside.",
+    "agent": {
+      "entity": "etcs onboard"
+    },
+    "operation": {
+      "operation": "be capable of receiving"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "information"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "from the trackside"
+      ]
+    }
+  },
+  {
+    "#": "FR-81",
+    "*": "functional",
+    ":": "The etcs onboard shall be capable of receiving national values from the trackside to adapt to national requirements.",
+    "agent": {
+      "entity": "etcs onboard"
+    },
+    "operation": {
+      "operation": "be capable of receiving adapt"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "national values from the trackside"
+        },
+         {
+          "entity": "national requirements"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "national requirements"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "from the trackside"
+      ]
+    }
+  },
+  {
+    "#": "FR-82",
+    "*": "functional",
+    ":": "The etcs onboard shall be capable of receiving track description from the trackside.",
+    "agent": {
+      "entity": "etcs onboard"
+    },
+    "operation": {
+      "operation": "be capable of receiving"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "track description"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "from the trackside"
+      ]
+    }
+  },
+  {
+    "#": "FR-83",
+    "*": "functional",
+    ":": "The etcs onboard shall be capable of sending to the trackside train integrity information detected by a system outside etcs.",
+    "agent": {
+      "entity": "etcs onboard"
+    },
+    "operation": {
+      "operation": "be capable of sending"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "etcs"
+        },
+        {
+          "entity": "trackside train integrity information"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-84",
+    "*": "functional",
+    ":": "The etcs trainborne equipment shall calculate the static train speed profile on the basis of infrastructure data and train data.",
+    "agent": {
+      "entity": "etcs trainborne equipment"
+    },
+    "operation": {
+      "operation": "calculate"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "static train speed profile"
+        },
+        {
+          "entity": "infrastructure data"
+        },
+        {
+          "entity": "train data"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "static train speed profile"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-85",
+    "*": "functional",
+    ":": "The etcs trainborne equipment shall be able to determine the location of the entire train.",
+    "agent": {
+      "entity": "etcs trainborne equipment"
+    },
+    "operation": {
+      "operation": "be able to determine"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "location of the entire train"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "location of the entire train"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-86",
+    "*": "functional",
+    ":": "The etcs trainborne equipment shall be capable of being isolated.",
+    "agent": {
+      "entity": "etcs trainborne equipment"
+    },
+    "operation": {
+      "operation": "be capable of isolating"
+    }
+  },
+  {
+    "#": "FR-87",
+    "*": "functional",
+    ":": "The etcs trainborne equipment shall be capable of receiving information from the national train control systems by means of the stm.",
+    "agent": {
+      "entity": "etcs trainborne equipment"
+    },
+    "operation": {
+      "operation": "be capable of receiving"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "information from the national train control systems"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "by means of the stm"
+      ]
+    }
+  },
+  {
+    "#": "FR-88",
+    "*": "functional",
+    ":": "The etcs trainborne equipment shall be capable of supervising the following operational states.",
+    "agent": {
+      "entity": "etcs trainborne equipment"
+    },
+    "operation": {
+      "operation": "be capable of supervising"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "following operational states"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "following operational states"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-89",
+    "*": "functional",
+    ":": "The etcs trainborne equipment shall indicate the information regarding pantograph and power supply on the dmi.",
+    "agent": {
+      "entity": "etcs trainborne equipment"
+    },
+    "operation": {
+      "operation": "indicate"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "information regarding pantograph and power supply"
+        },
+        {
+          "entity": "dmi"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "information regarding pantograph and power supply"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "on the dmi"
+      ]
+    }
+  },
+  {
+    "#": "FR-90",
+    "*": "functional",
+    ":": "The etcs trainborne equipment shall transmit its own train identification to the rbc.",
+    "agent": {
+      "entity": "etcs trainborne equipment"
+    },
+    "operation": {
+      "operation": "transmit"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "its own train identification"
+        },
+        {
+          "entity": "rbc"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "its own train identification"
+        },
+        {
+          "entity": "rbc"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-91",
+    "*": "functional",
+    ":": "The following data may be entered manually by the driver or from train memory.",
+    "agent": {
+      "entity": "driver"
+    },
+    "operation": {
+      "operation": "enter"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "following data"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "following data"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "manually by the driver from train memory"
+      ]
+    }
+  },
+  {
+    "#": "FR-92",
+    "*": "functional",
+    ":": "The following data may be entered manually by the driver provided by external sources.",
+    "operation": {
+      "operation": "enter"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "following data"
+        },
+        {
+          "entity": "external sources"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "following data"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "manually",
+        "by the driver provided by external sources"
+      ]
+    }
+  },
+  {
+    "#": "FR-93",
+    "*": "functional",
+    ":": "The following train data shall be sent from the on board to the trackside.",
+    "operation": {
+      "operation": "send"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "following train data"
+        },
+        {
+          "entity": "trackside"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "following train data"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "from the on board to the trackside"
+      ]
+    }
+  },
+  {
+    "#": "FR-94",
+    "*": "functional",
+    ":": "The information regarding lowering and raising of the pantograph and opening/closing of the circuit breaker shall be provided separately and in combinations.",
+    "operation": {
+      "operation": "provide"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "information regarding lowering and raising of the pantograph and opening/closing of the circuit breaker"
+        },
+        {
+          "entity": "combinations"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "information regarding lowering and raising of the pantograph and opening/closing of the circuit breaker"
+        },
+        {
+          "entity": "combinations"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "separately",
+        "in combinations"
+      ]
+    }
+  },
+  {
+    "#": "FR-95",
+    "*": "functional",
+    ":": "The new target location shall be checked for acceptance by the on board.",
+    "operation": {
+      "operation": "check"
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "new target location"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "by the on board"
+      ]
+    }
+  },
+  {
+    "#": "FR-96",
+    "*": "functional",
+    ":": "The occurrence of a failure shall be displayed on the dmi.",
+    "operation": {
+      "operation": "display"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "occurrence of a failure"
+        },
+        {
+          "entity": "dmi"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "occurrence of a failure"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "on the dmi"
+      ]
+    }
+  },
+  {
+    "#": "FR-97",
+    "*": "functional",
+    ":": "The on board shall be capable of sending train data to the trackside after confirmation by the driver or when entering the rbc area.",
+    "event": {
+      "()": [
+        {
+          "#": "97-condition",
+          "*": "condition",
+          "operation": {
+            "operation": "enter"
+          },
+          "input": {
+            "()": [
+              {
+                "entity": "rbc area"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "agent": {
+      "entity": "on board"
+    },
+    "operation": {
+      "operation": "be capable of sending"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "train data"
+        },
+        {
+          "entity": "trackside"
+        },
+        {
+          "entity": "rbc area"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "train data"
+        },
+        {
+          "entity": "trackside"
+        },
+        {
+          "entity": "rbc area"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-98",
+    "*": "functional",
+    ":": "The on board shall supervise the train against a ceiling speed.",
+    "agent": {
+      "entity": "on board"
+    },
+    "operation": {
+      "operation": "supervise"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "train"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "train"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "against a ceiling speed"
+      ]
+    }
+  },
+  {
+    "#": "FR-99",
+    "*": "functional",
+    ":": "The onboard equipment shall display plain text messages as received.",
+    "agent": {
+      "entity": "onboard equipment"
+    },
+    "operation": {
+      "operation": "display"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "plain text messages"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "plain text messages"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "as received"
+      ]
+    }
+  },
+  {
+    "#": "FR-100",
+    "*": "functional",
+    ":": "The release speed shall be indicated on the dmi.",
+    "operation": {
+      "operation": "indicate"
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "release speed"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "on the dmi"
+      ]
+    }
+  },
+  {
+    "#": "FR-101",
+    "*": "functional",
+    ":": "The retention period for the recorded data will be different and two levels are foreseen.",
+    "agent": {
+      "entity": "retention period for the recorded data"
+    },
+    "operation": {
+      "operation": "be different"
+    }
+  },
+  {
+    "#": "FR-102",
+    "*": "functional",
+    ":": "The roll away/reverse movement intervention shall be indicated on the dmi.",
+    "operation": {
+      "operation": "indicate"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "roll away/reverse movement intervention"
+        },
+        {
+          "entity": "dmi"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "roll away/reverse movement intervention"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "on the dmi"
+      ]
+    }
+  },
+  {
+    "#": "FR-103",
+    "*": "functional",
+    ":": "The supervised shunting speed shall be indicated to the driver on request.",
+    "operation": {
+      "operation": "indicate"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "supervised shunting speed"
+        },
+        {
+          "entity": "driver"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "supervised shunting speed"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-104",
+    "*": "functional",
+    ":": "The supervised speed shall not be shown on the dmi.",
+    "operation": {
+      "operation": "not show"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "supervised speed"
+        },
+        {
+          "entity": "dmi"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "supervised speed"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "on the dmi"
+      ]
+    }
+  },
+  {
+    "#": "FR-105",
+    "*": "functional",
+    ":": "The target distance shall not be shown on the dmi unless selected by the driver.",
+    "operation": {
+      "operation": "not show"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "target distance"
+        },
+        {
+          "entity": "dmi"
+        },
+        {
+          "entity": "driver"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "target distance"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "on the dmi",
+        "unless selected by the driver"
+      ]
+    }
+  },
+  {
+    "#": "FR-106",
+    "*": "functional",
+    ":": "The target distance to be displayed on the dmi shall be based on the most restrictive braking curve.",
+    "agent": {
+      "entity": "target distance to be displayed on the dmi"
+    },
+    "operation": {
+      "operation": "display base on"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "target distance"
+        },
+        {
+          "entity": "dmi"
+        },
+        {
+          "entity": "most restrictive braking curve"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "target distance"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "on the dmi"
+      ]
+    }
+  },
+  {
+    "#": "FR-107",
+    "*": "functional",
+    ":": "The test shall require no action on the part of the driver.",
+    "agent": {
+      "entity": "test"
+    },
+    "operation": {
+      "operation": "require"
+    },
+    "restriction": {
+      "()": [
+        "on the part of the driver"
+      ]
+    }
+  },
+  {
+    "#": "FR-108-1",
+    "*": "functional",
+    ":": "The train shall be supervised to a ceiling speed as a minimum.",
+    "operation": {
+      "operation": "supervise"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "train"
+        },
+        {
+          "entity": "ceiling speed"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "train"
+        },
+        {
+          "entity": "ceiling speed"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "as a minimum"
+      ]
+    }
+  },
+  {
+    "#": "FR-108",
+    "*": "functional",
+    ":": "The supervised speed shall not be shown on the dmi unless selected by the driver.",
+    "agent": {
+      "entity": "supervised speed"
+    },
+    "operation": {
+      "operation": "not show"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "supervised speed"
+        },
+        {
+          "entity": "dmi"
+        },
+        {
+          "entity": "driver"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "supervised speed"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "on the dmi",
+        "unless selected by the driver"
+      ]
+    }
+  },
+  {
+    "#": "FR-109",
+    "*": "functional",
+    ":": "The train shall be supervised according to train speed data available.",
+    "agent": {
+      "entity": "train"
+    },
+    "operation": {
+      "operation": "supervise"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "train"
+        },
+        {
+          "entity": "train speed data available"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "train"
+        },
+        {
+          "entity": "train speed data available"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-110",
+    "*": "functional",
+    ":": "The train shall have the capability of being supervised to a ceiling speed.",
+    "operation": {
+      "operation": "supervise"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "ceiling speed"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+         {
+          "entity": "capability"
+        },
+        {
+          "entity": "ceiling speed"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-111",
+    "*": "functional",
+    ":": "The train shall leave partial supervision when the trainborne equipment is not operative any longer when shunting is selected or when full supervision is available.",
+    "event": {
+      "()": [
+        {
+          "#": "111-condition-1",
+          "*": "condition",
+          "agent": {
+            "entity": "trainborne equipment"
+          },
+          "operation": {
+            "operation": "be not operative"
+          },
+          "restriction": {
+            "()": [
+              "any longer"
+            ]
+          }
+        },
+        {
+          "#": "111-condition-2",
+          "*": "condition",
+          "operation": {
+            "operation": "select"
+          },
+          "input": {
+            "()": [
+              {
+                "entity": "shunting"
+              }
+            ]
+          }
+        },
+        {
+          "#": "111-condition-3",
+          "*": "condition",
+          "agent": {
+            "entity": "supervision"
+          },
+          "operation": {
+            "operation": "be available"
+          }
+        }
+      ]
+    },
+    "agent": {
+      "entity": "train"
+    },
+    "operation": {
+      "operation": "leave"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "partial supervision"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "partial supervision"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-113",
+    "*": "functional",
+    ":": "The trainborne equipment shall remain in full supervision when the trainborne equipment is not active any longer when shunting is selected or when partial supervision information is received.",
+    "event": {
+      "()": [
+        {
+          "#": "113-condition-1",
+          "*": "condition",
+          "agent": {
+            "entity": "trainborne equipment"
+          },
+          "operation": {
+            "operation": "be not active"
+          },
+          "restriction": {
+            "()": [
+              "any longer"
+            ]
+          }
+        },
+        {
+          "#": "113-condition-2",
+          "*": "condition",
+          "operation": {
+            "operation": "select"
+          },
+          "input": {
+            "()": [
+              {
+                "entity": "shunting"
+              }
+            ]
+          }
+        },
+        {
+          "#": "113-condition-3",
+          "*": "condition",
+          "operation": {
+            "operation": "receive"
+          },
+          "input": {
+            "()": [
+              {
+                "entity": "partial supervision information"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "agent": {
+      "entity": "trainborne equipment"
+    },
+    "operation": {
+      "operation": "remain"
+    },
+    "restriction": {
+      "()": [
+        "in full supervision"
+      ]
+    }
+  },
+  {
+    "#": "FR-114",
+    "*": "functional",
+    ":": "There shall be no discrepancy between the speed shown to the driver and the speed used for supervision of movement authorities and speed limits function.",
+    "operation": {
+      "operation": "there be"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "discrepancy"
+        },
+        {
+          "entity": "movement authorities and speed limits function"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "discrepancy"
+        },
+        {
+          "entity": "movement authorities and speed limits function"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-115-2",
+    "*": "functional",
+    ":": "This ceiling speed shall not be shown continually on the dmi but may be shown momentarily when selected by the driver.",
+    "event": {
+      "()": [
+        {
+          "#": "115-condition",
+          "*": "condition",
+          "agent": {
+            "entity": "driver"
+          },
+          "operation": {
+            "operation": "select"
+          }
+        }
+      ]
+    },
+    "operation": {
+      "operation": "not be show may be show"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "ceiling speed"
+        },
+        {
+          "entity": "dmi"
+        },
+         {
+          "entity": "driver"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "ceiling speed"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "momentarily",
+        "on the dmi"
+      ]
+    }
+  },
+  {
+    "#": "FR-116",
+    "*": "functional",
+    ":": "This static train speed profile shall also respect maximum line speed and track speed and special speed levels for special classes of trains.",
+    "agent": {
+      "entity": "static train speed profile"
+    },
+    "operation": {
+      "operation": "respect"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "maximum line speed and track speed and special speed levels"
+        },
+        {
+          "entity": "special classes of trains"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "maximum line speed and track speed and special speed levels"
+        },
+        {
+          "entity": "special classes of trains"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-117",
+    "*": "functional",
+    ":": "To prevent unauthorised use of the function, permission shall be obtained from the rbc if the train is operating under the control of the rbc.",
+    "event": {
+      "()": [
+        {
+          "#": "117-condition",
+          "*": "condition",
+          "agent": {
+            "entity": "train"
+          },
+          "operation": {
+            "operation": "operate"
+          },
+          "restriction": {
+            "()": [
+              "under the control of the rbc"
+            ]
+          }
+        }
+      ]
+    },
+    "operation": {
+      "operation": "obtain"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "permission"
+        },
+        {
+          "entity": "rbc"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "permission"
+        },
+        {
+          "entity": "rbc"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "from the rbc"
+      ]
+    }
+  },
+  {
+    "#": "FR-118",
+    "*": "functional",
+    ":": "Train data may be entered automatically from a railway management system or from train memory.",
+    "operation": {
+      "operation": "enter"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "train data"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "train data"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "automatically",
+        "from a railway management system or from train memory"
+      ]
+    }
+  },
+  {
+    "#": "FR-119-1",
+    "*": "functional",
+    ":": "Trains equipped for ertms/etcs application level 3 shall be able to run on lines equipped with ertms/etcs application level 3 2 1 and 0.",
+    "agent": {
+      "entity": "trains equipped for ertms/etcs application level 3"
+    },
+    "operation": {
+      "operation": "be able to run"
+    }
+  },
+  {
+    "#": "FR-119",
+    "*": "functional",
+    ":": "Trains equipped for ertms/etcs application level 2 shall be able to run on lines equipped with ertms/etcs application level 2 1 and 0.",
+    "agent": {
+      "entity": "trains equipped for ertms/etcs application level 2"
+    },
+    "operation": {
+      "operation": "be able to run"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "lines equipped with ertms/etcs application level 2 1 and 0"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "lines equipped with ertms/etcs application level 2 1 and 0"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-119-3",
+    "*": "functional",
+    ":": "Trains equipped for ertms/etcs application level 1 shall be able to run on lines equipped with ertms/etcs application level 1 and 0.",
+    "agent": {
+      "entity": "trains equipped for ertms/etcs application level 1"
+    },
+    "operation": {
+      "operation": "be able to run"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "lines equipped with ertms/etcs application level 1 and 0"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "lines equipped with ertms/etcs application level 1 and 0"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-120",
+    "*": "functional",
+    ":": "Transferring to full supervision shall occur automatically when a movement authority and all other necessary information is received through track-to-train transmission.",
+    "event": {
+      "()": [
+        {
+          "#": "120-condition",
+          "*": "condition",
+          "operation": {
+            "operation": "receive"
+          },
+          "input": {
+            "()": [
+              {
+                "entity": "movement authority"
+              },
+              {
+                "entity": "all other necessary information"
+              },
+              {
+                "entity": "track-to-train transmission"
+              }
+            ]
+          },
+          "restriction": {
+            "()": [
+              "through track-to-train transmission"
+            ]
+          }
+        }
+      ]
+    },
+    "agent": {
+      "entity": "transferring to full supervision"
+    },
+    "operation": {
+      "operation": "occur"
+    },
+    "restriction": {
+      "()": [
+        "automatically"
+      ]
+    }
+  },
+  {
+    "#": "FR-121",
+    "*": "functional",
+    ":": "Unfitted operation shall be possible if ordered by trackside.",
+    "event": {
+      "()": [
+        {
+          "#": "121-condition",
+          "*": "condition",
+          "operation": {
+            "operation": "order"
+          },
+          "restriction": {
+            "()": [
+              "by trackside"
+            ]
+          }
+        }
+      ]
+    },
+    "agent": {
+      "entity": "unfitted operation"
+    },
+    "operation": {
+      "operation": "be possible"
+    }
+  },
+  {
+    "#": "FR-122",
+    "*": "functional",
+    ":": "Unfitted operation shall be possible if selected by the driver at start up.",
+    "event": {
+      "()": [
+        {
+          "#": "122-condition",
+          "*": "condition",
+          "agent": {
+            "entity": "driver"
+          },
+          "operation": {
+            "operation": "select"
+          },
+          "restriction": {
+            "()": [
+              "at start up"
+            ]
+          }
+        }
+      ]
+    },
+    "agent": {
+      "entity": "unfitted operation"
+    },
+    "operation": {
+      "operation": "be possible"
+    }
+  },
+  {
+    "#": "FR-123",
+    "*": "functional",
+    ":": "Visual and acoustic warnings to the driver about possible intervention from etcs shall be given to enable the driver to react and avoid intervention.",
+    "operation": {
+      "operation": "give"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "visual and acoustic warnings"
+        },
+        {
+          "entity": "driver"
+        },
+        {
+          "entity": "possible intervention"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "visual and acoustic warnings"
+        },
+        {
+          "entity": "driver"
+        },
+        {
+          "entity": "possible intervention"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "about possible intervention from etcs"
+      ]
+    }
+  },
+  {
+    "#": "FR-124",
+    "*": "functional",
+    ":": "When changing to a higher speed level, the rear end of the train shall respect the static train speed profile.",
+    "event": {
+      "()": [
+        {
+          "#": "124-condition",
+          "*": "condition",
+          "operation": {
+            "operation": "change"
+          },
+          "input": {
+            "()": [
+              {
+                "entity": "higher speed level"
+              }
+            ]
+          },
+          "output": {
+            "()": [
+              {
+                "entity": "higher speed level"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "agent": {
+      "entity": "rear end of the train"
+    },
+    "operation": {
+      "operation": "respect"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "static train speed profile"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "static train speed profile"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-125",
+    "*": "functional",
+    ":": "When changing to a lower speed level, the front end of the train shall respect the dynamic train speed profile.",
+    "event": {
+      "()": [
+        {
+          "#": "125-condition",
+          "*": "condition",
+          "operation": {
+            "operation": "change"
+          },
+          "input": {
+            "()": [
+              {
+                "entity": "lower speed level"
+              }
+            ]
+          },
+          "output": {
+            "()": [
+              {
+                "entity": "lower speed level"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "agent": {
+      "entity": "front end of the train"
+    },
+    "operation": {
+      "operation": "respect"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "dynamic train speed profile"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "dynamic train speed profile"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-126",
+    "*": "functional",
+    ":": "When the etcs trainborne equipment is isolated, the system shall not show any etcs information other than the fact that the system is isolated.",
+    "event": {
+      "()": [
+        {
+          "#": "126-condition",
+          "*": "condition",
+          "operation": {
+            "operation": "isolate"
+          },
+          "input": {
+            "()": [
+              {
+                "entity": "etcs trainborne equipment"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "agent": {
+      "entity": "system"
+    },
+    "operation": {
+      "operation": "not show"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "etcs information"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "etcs information"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-127",
+    "*": "functional",
+    ":": "When the plain text message appears on the dmi, the driver shall be alerted.",
+    "event": {
+      "()": [
+        {
+          "#": "127-condition",
+          "*": "condition",
+          "agent": {
+            "entity": "plain text message"
+          },
+          "operation": {
+            "operation": "appear"
+          },
+          "restriction": {
+            "()": [
+              "on the dmi"
+            ]
+          }
+        }
+      ]
+    },
+    "agent": {
+      "entity": "driver"
+    },
+    "operation": {
+      "operation": "alert"
+    }
+  },
+  {
+    "#": "FR-128",
+    "*": "functional",
+    ":": "When the traction unit has come to a standstill, the driver shall be able to release the emergency brake.",
+    "event": {
+      "()": [
+        {
+          "#": "128-condition",
+          "*": "condition",
+          "agent": {
+            "entity": "traction unit"
+          },
+          "operation": {
+            "operation": "come"
+          }
+        }
+      ]
+    },
+    "agent": {
+      "entity": "driver"
+    },
+    "operation": {
+      "operation": "be able to release"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "emergency brake"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "emergency brake"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-129",
+    "*": "functional",
+    ":": "When the traction unit is stationary, the driver shall be required to acknowledge the train trip condition.",
+    "event": {
+      "()": [
+        {
+          "#": "129-condition",
+          "*": "condition",
+          "agent": {
+            "entity": "traction unit"
+          },
+          "operation": {
+            "operation": "be stationary"
+          }
+        }
+      ]
+    },
+    "agent": {
+      "entity": "driver"
+    },
+    "operation": {
+      "operation": "be required to acknowledge"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "train trip condition"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "train trip condition"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-130-1",
+    "*": "functional",
+    ":": "When the train is stationary, the release speed calculation shall be based on the distance to the danger point.",
+    "event": {
+      "()": [
+        {
+          "#": "130-condition",
+          "*": "condition",
+          "agent": {
+            "entity": "train"
+          },
+          "operation": {
+            "operation": "be stationary"
+          }
+        }
+      ]
+    },
+    "agent": {
+      "entity": "release speed calculation"
+    },
+    "operation": {
+      "operation": "be based on"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "distance to the danger point"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-130-2",
+    "*": "functional",
+    ":": "When the train is stationary, the condition for this change shall be defined for each target as infrastructure data.",
+    "event": {
+      "()": [
+        {
+          "#": "130-condition",
+          "*": "condition",
+          "agent": {
+            "entity": "train"
+          },
+          "operation": {
+            "operation": "be stationary"
+          }
+        }
+      ]
+    },
+    "operation": {
+      "operation": "define"
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "condition for this change"
+        },
+        {
+          "entity": "infrastructure data"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "as infrastructure data"
+      ]
+    }
+  },
+  {
+    "#": "FR-131",
+    "*": "functional",
+    ":": "When the train passes the stop signal, the train trip function shall be suppressed.",
+    "event": {
+      "()": [
+        {
+          "#": "131-condition",
+          "*": "condition",
+          "agent": {
+            "entity": "train"
+          },
+          "operation": {
+            "operation": "pass"
+          },
+          "input": {
+            "()": [
+              {
+                "entity": "stop signal"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "operation": {
+      "operation": "suppress"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "train trip function"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "train trip function"
+        }
+      ]
+    }
+  },
+  {
+    "#": "FR-132",
+    "*": "functional",
+    ":": "Where failure to apply the full service brake is detected, the emergency brake shall stop the train in rear of the danger point.",
+    "event": {
+      "()": [
+        {
+          "#": "132-condition",
+          "*": "condition",
+          "operation": {
+            "operation": "detect"
+          },
+          "input": {
+            "()": [
+              {
+                "entity": "full service brake"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "agent": {
+      "entity": "emergency brake"
+    },
+    "operation": {
+      "operation": "stop"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "train"
+        },
+        {
+          "entity": "danger point"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "train"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "in rear of the danger point"
+      ]
+    }
+  },
+  {
+    "#": "FR-133",
+    "*": "functional",
+    ":": "Within the braking curve area, a warning shall be given to the driver to enable him to react and avoid intervention from etcs equipment at least 5 sec before the intervention.",
+    "operation": {
+      "operation": "give"
+    },
+    "input": {
+      "()": [
+        {
+          "entity": "braking curve area"
+        },
+        {
+          "entity": "driver"
+        },
+        {
+          "entity": "intervention from etcs equipment"
+        }
+      ]
+    },
+    "output": {
+      "()": [
+        {
+          "entity": "warning"
+        },
+        {
+          "entity": "driver"
+        },
+        {
+          "entity": "intervention from etcs equipment"
+        }
+      ]
+    },
+    "restriction": {
+      "()": [
+        "within the braking curve area",
+        "to react and avoid intervention from etcs equipment",
+        "at least 5 sec before the intervention"
+      ]
+    }
+  }
+]

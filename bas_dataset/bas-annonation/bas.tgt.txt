@@ -1,0 +1,464 @@
+All devices shall be ULC, UL or FM listed and labeled for the specific use, application and environment to which they are applied.
+The BAS shall comply with NFPA 90A Air Conditioning and 90B Warm Air Heating, Air Conditioning.
+All electronic equipment shall conform to the requirements of CSA for electromagnetic emissions standards and placed in approved locations such that it does not interfere with building equipment or computers.
+Communication lines shall be protected against incorrect wiring, static transients and induced magnetic interference.
+Bus connected devices shall be AC coupled, or equivalent so that any single device failure will not disrupt or halt bus communication.
+Contractor shall provide license for the site.
+License shall be OPEN and on the name of the City of Toronto.
+Installer shall have an established working relationship with Control System Manufacturer.
+Installer shall have successfully completed Control System Manufacturer's control system training.
+Upon request, Installer shall present record of completed training including course outlines.
+BAS contractor shall provide three locations of successful installations of similar open protocol computer based systems.
+The system shall consist of a network of Building Controllers (BC), Advanced Application Controllers (AAC), Application Specific Controllers (ASC), and Smart Actuators (SA).
+The Building Automation System software shall employ object-oriented technology (OOT) for representation of all data and control devices within the system.
+This data shall reside on a BAS server for all database access.
+Systems requiring proprietary database and user interface programs shall not be acceptable.
+Systems employing a flat single tiered architecture shall not be acceptable.
+Maximum acceptable response time from any alarm occurrence (at the point of origin) to the point of annunciation shall not exceed 5 seconds for network connected user interfaces.
+Maximum acceptable response time from any alarm occurrence (at the point of origin) to the point of annunciation shall not exceed 60 seconds for remote or dial-up connected user interfaces.
+Each BC shall conform to BACnet Building Controller (B-BC) device profile as specified in ANSI/ASHRAE 135-2004, BACnet Annex L and shall be listed as a certified B-BC in the BACnet Testing Laboratories (BTL) Product Listing.
+Each AAC shall conform to BACnet Advanced Application Controller (B-AAC) device profile as specified in ANSI/ASHRAE 135-2004, BACnet Annex L and shall be listed as a certified B-AAC in the BACnet Testing Laboratories (BTL) Product Listing.
+Each ASC shall conform to BACnet Application Specific Controller (BASC) device profile as specified in ANSI/ASHRAE 135-2004, BACnet Annex L and shall be listed as a certified B-ASC in the BACnet Testing Laboratories (BTL) Product Listing.
+Each SA shall conform to BACnet Smart Actuator (B-SA) device profile as specified in ANSI/ASHRAE 135-2004, BACnet Annex L and shall be listed as a certified B-SA in the BACnet Testing Laboratories (BTL) Product Listing.
+Each SS shall conform to BACnet Smart Sensor (B-SS) device profile as specified in ANSI/ASHRAE 135-2004, BACnet Annex L and shall be listed as a certified B-SS in the BACnet Testing Laboratories (BTL) Product Listing.
+Each BC shall reside on or be connected to a BACnet network using ISO 8802-3 (Ethernet) Data Link/Physical layer protocol and BACnet/IP addressing.
+BACnet routing shall be performed by BCs or other BACnet device routers as necessary to connect BCs to networks of AACs and ASCs.
+Each AAC shall reside on a BACnet network using ISO 8802-3 (Ethernet) Data Link/Physical layer protocol with BACnet/IP addressing, or it shall reside on a BACnet network using the MS/TP Data Link/Physical layer protocol.
+Each ASC shall reside on a BACnet network using the MS/TP Data Link/Physical layer protocol.
+Each SA shall reside on a BACnet network using the MS/TP Data Link/Physical layer protocol.
+Each SS shall reside on a BACnet network using ISO 8802-3 (Ethernet) Data Link/Physical layer protocol with BACnet/IP addressing, or it shall reside on a BACnet network using MS/TP Data Link/Physical layer protocol.
+Each controller shall provide a service communication port for connection to a Portable Operator's Terminal.
+Connection shall be extended to space temperature sensor ports where shown on drawings.
+BC and ASC operating systems shall manage input and output communication signals to allow distributed controllers to share real and virtual object information and to allow for central monitoring and alarms.
+Each BC and AAC shall share data as required with each networked BC and AAC.
+Each piece of equipment specified in the sequence of operation shall be controlled by a single controller to provide stand-alone control in the event of communication failure.
+All I/O points specified for a piece of equipment shall be integral to its controller.
+ENVIRONMENT Controller hardware shall be suitable for anticipated ambient conditions.
+Controllers used outdoors or in wet ambient conditions shall be mounted in waterproof enclosures and shall be rated for operation at -29°C to 60°C (-20°F to 140°F).
+Controllers used in conditioned space shall be mounted in dust-protective enclosures and shall be rated for operation at 0°C to 50°C (32°F to 120°F).
+Controllers that perform scheduling shall have a real-time clock.
+Controllers shall have diagnostic LEDs for power, communication, and processor.
+Wires shall be connected to a field-removable modular terminal strip or to a termination card connected by a ribbon cable.
+Each BC and AAC shall continually check its processor and memory circuit status and shall generate an alarm on abnormal operation.
+System shall continuously check controller network and generate alarm for each controller that fails to respond.
+Controller memory shall support operating system, database, and programming requirements.
+Each BC and AAC shall retain BIOS and application programming for at least 72 hours in the event of power loss.
+Each ASC and SA shall use nonvolatile memory and shall retain BIOS and application programming in the event of power loss.
+System shall automatically download dynamic control parameters following power loss.
+Controllers shall be able to operate at 90% to 110% of nominal voltage rating and shall perform an orderly shutdown below 80% nominal voltage.
+Operation shall be protected against electrical noise of.
+In the event of the loss of normal power, there shall be an orderly shutdown of all controllers to prevent the loss of database or operating system software.
+Non-volatile memory shall be incorporated for all controller configuration data, and battery back-up shall be provided to support the real-time clock and all volatile memory for a minimum of 72 hours.
+Upon restoration of normal power, the controller shall automatically resume full operation without manual intervention.
+The controllers shall incorporate random start sequences to ensure a power spike does not result.
+Controller memory shall not be lost during a power failure.
+The user shall have the capability of loading or re-loading all software via the OWS or the local terminal port.
+All operator devices, either network resident or connected via dial-up modems, shall have the ability to access all point status and application report data, or execute control functions for any and all other devices via the local area network.
+Access to data shall be based upon logical identification of building equipment.
+Shorting an input or output point to itself, to another point, or to ground shall cause no controller damage.
+Input or output point contact with up to 24 V for any duration shall cause no controller damage.
+Binary inputs shall monitor the on and off signal from a remote device.
+Binary inputs shall provide a wetting current of at least 12 mA and shall be protected against contact bounce and noise.
+Binary inputs shall sense dry contact closure without application of power external to the controller.
+Pulse accumulation inputs shall conform to binary input requirements and shall accumulate up to 10 pulses per second.
+Analog inputs shall monitor low-voltage (0-10 Vdc), current (4-20 mA), or resistance (thermistor or RTD) signals.
+Analog inputs shall be compatible with and field configurable to commonly available sensing devices.
+Binary outputs shall send an on-or-off signal for on and off control.
+Building Controller binary outputs shall have three-position (on-off-auto) override switches and status lights.
+Outputs shall be selectable for normally open or normally closed operation.
+Analog outputs shall send a modulating 0-10 Vdc or 4-20 mA signal as required to properly control output devices.
+Each Building Controller analog output shall have a two-position (auto-manual) switch, a manually adjustable potentiometer, and status lights.
+Analog outputs shall not drift more than 0.
+Inputs and outputs that can be designated as either binary or analog in software shall conform to the provisions of this section that are appropriate for their designated use.
+Power Supplies: Control transformers shall be UL listed.
+DC power supply output shall match output current and voltage requirements.
+Unit shall be full-wave rectifier type with output ripple of 5.
+Regulation shall be 1.
+Unit shall have built-in over-voltage and over-current protection and shall be able to withstand 150% current overload for at least three seconds without trip-out or failure.
+Unit shall operate between 0°C and 50°C (32°F and 120°F).
+EM/RF shall meet FCC Class B and VDE 0871 for Class B and MILSTD 810C for shock and vibration.
+Line voltage units shall be UL recognized and CSA listed.
+Mechanical or electronic stall protection shall prevent actuator damage throughout the actuator's rotation.
+Actuators used for power-failure and safety applications shall have an internal mechanical spring-return mechanism or an uninterruptible power supply (UPS).
+Proportional actuators shall accept a 0-10 Vdc or a 0-20 mA control signal and shall have a 2-10 Vdc or 4-20 mA operating range.
+24 Vac and 24 Vdc actuators shall operate on Class 2 wiring.
+Operators shall be able to manually position each actuator when the actuator is not powered.
+Non-spring-return actuators shall have an external manual gear release.
+Low-voltage space thermostats shall be 24 V, bimetaloperated, mercury-switch type, with adjustable or fixed anticipation heater, concealed setpoint adjustment, 13°C-30°C (55°F-85°F) setpoint range, 1°C (2°F) maximum differential, and vented ABS plastic cover.
+Line-voltage space thermostats shall be bimetal-actuated, open-contact type or bellows-actuated, enclosed, snap-switch type or equivalent solid-state type, with heat anticipator, UL listing for electrical rating, concealed setpoint adjustment, 13°C- 30°C (55°F-85°F) setpoint range, 1°C (2°F) maximum differential, and vented ABS plastic cover.
+Low-limit airstream thermostats shall be UL listed, vapor pressure type.
+Element shall be at least 6 m (20 ft) long.
+Element shall sense temperature in each 30 cm (1 ft) section and shall respond to lowest sensed temperature.
+Low-limit thermostat shall be manual reset only.
+Temperature sensors shall be Resistance Temperature Device (RTD) or thermistor (10K).
+Duct sensors shall be single point or averaging.
+Averaging sensors shall be a minimum of 1.
+Well pressure rating shall be consistent with system pressure it will be immersed in.
+Well shall withstand pipe design flow velocities.
+Space sensors shall have setpoint adjustment, override switch, display, and communication port.
+Duct and room sensors shall have a sensing range of 20%-80%.
+Duct sensors shall have a sampling chamber.
+Outdoor air humidity sensors shall have a sensing range of 20%-95% RH and shall be suitable for ambient conditions of 40°C-75°C (40°F-170°F).
+Humidity sensors shall not drift more than 1% of full scale annually.
+Flow-proving switches shall be paddle (water service only) or differential pressure type (air or water service).
+Switches shall be UL listed, SPDT snap-acting, and pilot duty rated (125 VA minimum).
+Paddle switches shall have adjustable sensitivity and NEMA 1 enclosure unless otherwise specified.
+Differential pressure switches shall have scale range and differential suitable for intended application and NEMA 1 enclosure unless otherwise specified.
+Control relays shall be plug-in type, UL listed, and shall have dust cover and LED "energized" indicator.
+Contact rating, configuration, and coil voltage shall be suitable for application.
+Time delay relays shall be solid-state plug-in type, UL listed, and shall have adjustable time delay.
+Delay shall be adjustable ±100% from setpoint shown.
+Contact rating, configuration, and coil voltage shall be suitable for application.
+Unless implemented in control software, override timers shall be spring-wound line voltage, UL Listed, with contact rating and configuration required by application.
+AC current transmitters shall be self-powered, combination split-core current transformer type with built-in rectifier and high-gain servo amplifier with 4-20 mA two-wire output.
+Full-scale unit ranges shall be 10 A, 20 A, 50 A, 100 A, 150 A, and 200 A, with internal zero and span adjustment.
+Unit accuracy shall be ±1% full-scale at 500 ohm maximum burden.
+Transmitter shall meet or exceed ANSI/ISA S50.
+requirements and shall be UL/CSA recognized.
+Unit shall be split-core type for clamp-on installation on existing wiring.
+AC current transformers shall be UL/CSA recognized and shall be completely encased (except for terminals) in approved plastic material.
+Transformers shall be available in various current ratios and shall be selected for ±1% accuracy at 5 A full-scale output.
+AC voltage transmitters shall be self-powered single-loop (two-wire) type, 4-20 mA output with zero and span adjustment.
+Adjustable full-scale unit ranges shall be 100-130 Vac, 200-250 Vac, 250-330 Vac, and 400- 600 Vac.
+Unit accuracy shall be ±1% full-scale at 500 ohm maximum burden.
+Transmitters shall meet or exceed ANSI/ISA S50.
+AC voltage transformers shall be UL/CSA recognized, 600 Vac rated, and shall have built-in fuse protection.
+Transformers shall be suitable for ambient temperatures of 4°C-55°C (40°F-130°F) and shall provide ±0.
+Windings (except for terminals) shall be completely enclosed with metal or plastic.
+Power monitors shall be three-phase type and shall have three-phase disconnect and shorting switch assembly, UL listed voltage transformers, and UL listed split-core current transformers.
+Power monitors shall provide selectable output: rate pulse for kWh reading or 4-20 mA for kW reading.
+Power monitors shall operate with 5 A current inputs and maximum error of ±2% at 1.
+Current-operated switches shall be self-powered, solid-state with adjustable trip current.
+Transducers shall have linear output signal and field-adjustable zero and span.
+Continuous operating conditions of positive or negative pressure 50% greater than calibrated span shall not damage transducer sensing elements.
+Water pressure transducer diaphragm shall be stainless steel with minimum proof pressure of 1000 kPa (150 psi).
+Transducer shall have 4-20 mA output, suitable mounting provisions, and block and bleed valves.
+Water differential pressure transducer diaphragm shall be stainless steel with minimum proof pressure of 1000 kPa (150 psi).
+Differential pressure switches (air or water service) shall be UL listed, SPDT snap-acting, pilot duty rated (125 VA minimum) and shall have scale range and differential suitable for intended application and NEMA 1 enclosure unless otherwise specified.
+The network LAN shall utilize BACnet/IP (ASHRAE standard SPC-135A-2004 - Annex L) for communication between BCs.
+The OWS shall communicate to the BCs utilizing standard Ethernet to IEEE 802.
+The network shall include provisions for automatically reconfiguring itself to allow all operational equipment to perform their designated functions as effectively as possible in the event of single or multiple failures.
+Commonly available, multiple sourced, networking components shall be used to allow the system to coexist with other networking applications such as office automation.
+Synchronization of the real-time clocks in all BC panels shall be provided.
+The BC LAN shall be a 100 Megabits/sec Ethernet network supporting BACnet, Java, XML, HTTP, and CORBA IIOP for maximum flexibility for integration of building data with enterprise information systems and providing support for multiple Building Controllers (BCs), user workstations and where specified, a local server.
+Local connections shall be via an Ethernet LAN.
+It shall be possible to provide access to all Building Control Units (BC) via a single connection to the server.
+Global Data Access: The server shall provide complete access to distributed data defined anywhere in the system.
+Distributed Control: The server shall provide the ability to execute global control strategies based on control and data objects in any Building Control Unit (BC) in the network, local or remote.
+The server shall include a master clock service for its subsystems and provide time synchronization for all Building Control Units (BC).
+The server shall accept time synchronization messages from trusted precision Atomic Clock Internet sites and update its master clock based on this data.
+The server shall provide scheduling for all Building Control Units and their underlying field control devices.
+The server shall provide demand limiting that operates across all Building Control Units.
+Each demand program shall be capable of supporting separate demand shedding lists for effective demand control.
+The server shall implement the BACnet Command Prioritization scheme (16 levels) for safe and effective contention resolution of all commands issued to Building Control Units.
+Systems not employing this prioritization shall not be accepted.
+Each Building Control Unit supported by the server shall have the ability to archive its log data, alarm data and database to the server, automatically.
+Archiving options shall be user-defined including archive time and archive frequency.
+The server shall provide central alarm management for all Building Control Units supported by the server.
+The server shall provide central management of log data for all Network Control Units supported by the server.
+Log data shall include process logs, runtime and event counter logs, audit logs and error logs.
+BAS contractor shall obtain and pay for the police clearance certificates if required for the project.
+All work shall be performed at times acceptable to the Engineer/Construction Manager.
+Schedule shall show when all staff and sub-contractors shall be on-site.
+Full cooperation shall be shown with other sub-contractors to facilitate installations and to avoid delays in carrying out the work.
+Where, in the judgment of the Engineer/Construction Manager, the work could disrupt the normal operations in or around the building, contractor shall schedule work to eliminate or minimize interference, subject to owner’s approval.
+All personnel working on-site shall sign in as required by the Owner and shall wear company identification.
+Control and interlock wiring and installation shall comply with national and local electrical codes, and manufacturer's recommendations.
+CEC Class 1 (line voltage) wiring shall be UL listed in approved raceway as specified by CEC.
+Low-voltage wiring shall meet CEC Class 2 requirements.
+CEC Class 2 (current-limited) wires not in raceway but in concealed and accessible locations such as return air plenums shall be UL listed for the intended application.
+Boxes and panels containing high-voltage wiring and equipment shall not be used for low-voltage wiring except for the purpose of interfacing the two through relays and transformers.
+Raceways and pull boxes shall not be hung on or attached to ductwork, electrical raceways, piping, or ceiling suspension systems.
+Flexible metal raceways and liquid-tight flexible metal raceways shall not exceed 1 m (3 ft) in length and shall be supported at each end.
+All equipment and systems installed under this Contract shall be grounded, isolated, or conditioned as required to permit equipment to continue to function normally, without interruption, in the event of radio frequency interference (RFI), electromagnetic interference (EMI), power surges/dips or other electrical anomalies.
+It shall be the responsibility of the Contractor or his Sub-contractor to ensure that any coring of holes through the walls or floors will not penetrate existing conduits, cables or mechanical equipment in or under the floor slabs or walls.
+He shall be responsible to take any and all action as deemed necessary by the Project Manager to correct any such penetrations at his cost.
+No coring shall be undertaken unless the Project Manager gives permission.
+Communication wiring shall be low-voltage Class 2 wiring and shall comply with Article 25 (Electrical Work).
+Each run of communication wiring shall be a continuous length without splices when that length is commercially available.
+Runs longer than commercially available lengths shall have as few splices as possible using commercially available lengths.
+Indoor control panels shall be fully enclosed NEMA 1 construction with hinged door key-lock latch and removable sub-panels.
+A common key shall open each control panel and sub-panel.
+Field connection terminals shall be UL listed for 600 V service, individually identified per control and interlock drawings, with adequate clearance for field wiring.
+Each local panel shall have a control power source power switch (on-off) with overcurrent protection.
+Labels shall use white lettering (12-point type or larger) on a red background.
+Warning labels shall read as follows.
+Labels shall use white lettering (12-point type or larger) on a red background.
+Warning labels shall read as follows.
+Manufacturers' nameplates and UL or CSA labels shall be visible and legible after equipment is installed.
+Label identifiers shall match record documents.
+The BAS contractor shall submit a preliminary design document for review.
+Information shall be submitted for all material and equipment the contractor proposes to furnish under terms of this contract work.
+Submittals for each manufactured item shall be manufacturer's descriptive literature (equipment specification), equipment drawings, diagrams, performance and characteristic curves, and catalog cuts, and shall include the manufacturer's name, trade name, catalog model or number, nameplate data, size layout dimension, capacity, specification reference, applicable specification references, and all other information necessary to establish contract compliance.
+Each BC shall contain a minimum of 20% spare resource capacity.
+The BC shall provide a throughput capable of transmitting all BAS LAN data connected to it within 10 seconds.
+Each AAC and ASC shall have a minimum of 10% spare capacity for each point type for future point connection.
+This work shall include field testing and adjustment of the complete BAS, and on-site final operational acceptance test of the complete operational BAS.
+The Engineer shall be advised at least 14 days in advance of the dates of all tests and may attend at his discretion.
+If the Engineer witnesses the test, such tests shall be subject to his approval prior to the release of equipment.
+If the Engineer elects not to witness the tests, the contractor shall provide performance certification.
+Acceptance of tests by the Engineer and Project Manager shall not relieve the contractor of responsibility for the complete system meeting the requirements of these specifications after installation.
+Static testing shall include point-by-point testing of the entire system and completion of Component Test Sheets.
+The contractor shall forward proposed Test Sheets at the shop drawing review stage.
+These Component Test Sheets shall be completed during the contractor’s own testing and verification procedure that is done prior to the request for a final inspection.
+The completed Component Test Sheets shall then be returned to the Engineer for review and approval.
+The Contractor shall be on site with test equipment during this verification process.
+The test procedures shall include the following.
+DI status shall be verified at the POT and OWS for ON and OFF status.
+All digital alarm inputs shall be proven using actual field conditions where possible or be jumpered at the field device for testing with the approval of the Engineer.
+Verification at the OWS shall be completed for ON and OFF status, software DISABLE indicator and OVERRIDEN indicator 32.
+All temperature sensors shall be calibrated using a hand held meter with equal or better accuracy.
+Selected temperature sensors chosen by the Engineer shall be verified by spraying with a cold spray or other means to ensure response and to test the low temperature alarm condition.
+All pressure sensing devices and analog output feedback shall be verified using a device with equal or better accuracy to ensure correct calibration.
+All CTs shall be set to accurately reflect motor status, including removing belts on belt driven equipment.
+All other devices shall be verified using appropriate devices of equal or better accuracy.
+AI points shall be tested by sending a command from the PWS or OWS to incrementally stroke the field device from full CLOSED to full OPEN and measuring the signal at the field device.
+The increments of the test shall be no larger than 10% of the output span.
+The AO feedback requirement shall also be tested by failing the field device and verifying that the alarm registers 32.
+Each output shall be exercised over the full output capability of the panel.
+Field device hysteresis shall be measured at a minimum of three output levels for each direction of travel.
+Output increments shall not exceed 2% of span for this test 33.
+Where materials or equipment are specified to conform to requirements of the standards of organizations, such as the Canadian Standards Association (CSA) that use a label or listing as method of indicating compliance, proof of such conformance shall be submitted and approved, indexed and cross-referenced with the specification.
+In lieu of the label or listing, the contractor shall submit a certificate from a testing organization adequately equipped and competent to perform such services, and approved by the Engineer, stating that the item has been tested in accordance with the specified organization's test methods and that the item conforms to the specified organization's standard or code.
+For materials whose compliance with organizational standards or specifications is not regulated by an organization using its own listing or label as proof of compliance, a certificate from the manufacturer shall be furnished to the Engineer stating that the material complies with the applicable referenced standard or specification.
+Final acceptance shall commence only after satisfactory completion of start-up, verification of performance and the 30-day test period described earlier.
+When the Contractor has satisfied himself as to proper system operation he shall advise the BAS Commissioning Engineer/Consultant to establish a date for Final Acceptance.
+Documentation shall consist of 4 hard copies and one soft copy for all information described below 35.
+Soft copy text files shall be in MS-Word.
+Each instruction and reference manual shall be bound in hardback, 3 ring, binders or an approved equivalent shall be provided to the Engineer.
+One complete set of manuals shall be furnished prior to the time that the system or equipment tests are performed, and the remaining manuals shall be furnished at acceptance.
+The identification of each manual's contents shall be inscribed on the cover and spine.
+The manuals shall include the names, addresses and telephone numbers of each subcontractor installing equipment systems and of the local representatives for each item of equipment and each system.
+The manuals shall have a table of contents and be assembled to conform to the table of contents with the tab sheets placed before instructions covering the subject.
+Additionally, each manual shall contain a comprehensive index of all manuals submitted in accordance with this paragraph.
+Operational Requirements: This document shall describe in concise terms, all the functional and operational requirements for the system and its functions that have been implemented.
+It shall be written using common terminology for building operation staff and shall not presume knowledge of digital computers, electronics or in-depth control theory.
+Step-by-step instructions for system startup, back-up equipment operation, and execution of all system functions and operating modes shall be provided.
+This shall include calibration, maintenance, and repair or replacement of all system hardware.
+Test Procedures and Reports: The test implementation shall be recorded with a description of the test exercise script of events and documented as test procedures.
+The procedures record and the results of these exercises shall be conveniently bound and documented together.
+This shall include all information required to ensure necessary coordination of hardware and software changes, data link or message format/content changes, and sensor or control changes in the event system modification are required, and to fully document such new system configurations.
+The Contractor shall provide the services of competent instructors who will provide instruction to designated personnel in the adjustment, operation and maintenance, including pertinent safety requirements, of the equipment and system specified.
+The training shall be oriented towards the system installed rather than being a general "canned" training course.
+Instructors shall be thoroughly familiar with all aspects of the subject matter they are to teach.
+The number of person-days (eight hours) of instruction furnished shall be as specified below as a minimum.
+A training manual shall be provided for each trainee that describes in detail the data included in each training program.
+All equipment and material required for classroom training shall be provided by the contractor.
+Contractor shall give a minimum two-year warranty for parts and labor on all equipment and materials installed and shall select materials and equipment where the Manufacturer gives the same warranty arrangements.
+Warranty shall commence on the date of the Engineers issuance of the Certificate of Substantial Completion.
+The Contractor shall agree to make good at his own expense any equipment that fails to operate due to poor workmanship, manufacturing defect or improper installation.
+Any repairs shall be made at the convenience of the Engineer during normal working hours, unless deemed an emergency.
+A log of each loop tested and each control sequence verified shall be reviewed with the owner.
+Response to an emergency call shall be 2 hours maximum on Mon.
+Environmental Conditions: The OWS and its immediate associated devices shall be able to operate properly under environmental conditions of 10 deg.
+OWS shall be provided by the City's IT department.
+BAS contractor shall NOT include the cost of the computer for the pricing of the project.
+The OWS shall be provided for centralized system control, information management, alarm management and data base management functions.
+All real time control functions shall be resident in the standalone Building Control Unit (BC) and local controllers (AACs and ASCs).
+specific and shall be provided by the City's IT department.
+City's project manager shall consult with the district operation manager/supervisor to determine if a laptop is required for the project.
+Any computer on the BAS LAN shall be capable of displaying the systems in a graphical and dynamic format utilizing a standard web browser.
+Screen refresh shall be automatic.
+BAS contractor shall coordinate with the City's IT department through the project manager to discuss minimum requirement of the workstation's (computer) hardware, software (operating system) to ensure BAS system will meet or exceed the performance requirement of this specifications.
+Connection to the BAS LAN network shall be via an Ethernet network interface card, 100 Mbps.
+Industry-standard hardware shall meet or exceed DDC system manufacturer's recommended specifications.
+Hard disk shall have sufficient memory to store system software, one year of data for trended points specified by the conusltant's sequence of operation and the points list.
+Workstations shall be with a minimum of:.
+If the site doesn’t have a printer available then City's IT department shall provide a desktop printer.
+Printer Specifications- For Guidance only: The printer shall be a bubble jet or inkjet printer, 1440 x1440 dpi resolution, internal 1MB buffer memory, minimum 8 ppm in black.
+Operator shall be able to create, edit, debug, and download custom programs.
+System shall be fully operable while custom programs are edited, compiled, and downloaded.
+Language shall be graphically based or English language oriented.
+If graphically based, language shall use function blocks arranged in a logic diagram that clearly shows control logic flow.
+Function blocks shall directly provide functions listed below, and operators shall be able to create custom or compound function blocks.
+If English language oriented, language shall be based on the syntax of BASIC, FORTRAN, C, or PASCAL, and shall allow for free-form programming that is not column-oriented or "fill-in-the-blanks.
+Tool shall provide a full-screen, cursor-and-mouse-driven programming environment that incorporates word processing features such as cut and paste.
+Operators shall be able to insert, add, modify, and delete custom programming code, and to copy blocks of code to a file library for reuse in other control programs.
+Operator shall be able to develop independently executing program modules that can disable, enable and exchange data with other program modules.
+Operator shall be able to step through the program observing intermediate values and results.
+Operator shall be able to adjust input variables to simulate actual operating conditions.
+Operator shall be able to adjust each step's time increment to.
+Debugger shall provide error messages for syntax and for execution errors.
+Operator shall be able to program conditional logic using compound Boolean (AND, OR, and NOT) and relational (EQUAL, LESS THAN, GREATER THAN, NOT EQUAL) comparisons.
+Language shall support floating-point addition, subtraction, multiplication, division, and square root operations, as well as absolute value calculation and programmatic selection of minimum and maximum values from a list of values.
+Variables: Operator shall be able to use variable values in program conditional statements and mathematical functions.
+Operator shall be able to use predefined variables to represent time of day, day of the week, month of the year, and date.
+Other predefined variables or simple control logic shall provide elapsed time in seconds, minutes, hours, and days.
+Operator shall be able to start, stop, and reset elapsed time variables using the program language.
+Operator shall be able to use predefined variables to represent status and results of Controller Software and shall be able to enable, disable, and change setpoints of Controller Software as described in Controller Software section.
+The software shall provide the ability to perform system programming and graphic display engineering as part of a complete software package.
+Access to the programming functions and features of the software shall be through password access as assigned by the system administrator.
+The object shall provide the capability of monitoring a demand value and predicting (by use of a sliding window prediction algorithm) the demand at the end of the user defined interval period (1-60 minutes).
+This object shall also accommodate a utility meter time sync pulse for fixed interval demand control.
+Upon a prediction that will exceed the user defined demand limit (supply a minimum of 6 per day), the demand limiting object shall issue shed commands to either turn off user specified loads or modify equipment set points to effect the desired energy reduction.
+If the list of equipment is not enough to reduce the demand to below the set point, a message shall be displayed on the users screen (as an alarm) instructing the user to take manual actions to maintain the desired demand.
+The shed lists are specified by the user and shall be selectable to be shed in either a fixed or rotating order to control which equipment is shed the most often.
+Upon suitable reductions in demand, the demand-limiting object shall restore the equipment that was shed in the reverse order in which it was shed.
+Each sheddable object shall have a minimum and maximum shed time property to effect both equipment protection and occupant comfort.
+A library of control, application, and graphic objects shall be provided to enable the creation of all applications and user interface screens.
+Graphical User Interface screens shall be created in the same fashion.
+Systems requiring separate software tools or processes to create applications and user interface displays shall not be acceptable.
+Objects shall be linked by a graphical linking scheme by dragging a link from one object to another.
+Linked objects shall maintain their connections to other objects regardless of where they are positioned on the page and shall show link identification for links to objects on other pages for easy identification.
+The software shall provide the ability to view the logic in a monitor mode.
+When on-line, the monitor mode shall provide the ability to view the logic in real time for easy diagnosis of the logic execution.
+When off-line (debug), the monitor mode shall allow the user to set values to inputs and monitor the logic for diagnosing execution before it is applied to the system.
+All programming shall be done in real-time.
+Systems requiring the uploading, editing, and downloading of database objects shall not be allowed.
+The system shall support object duplication within a customer’s database.
+All links, other than to the hardware, shall be maintained during duplication.
+The user shall be able to pick a graphical function block from the menu and place on the screen.
+Programming tools shall place lines connecting appropriate function blocks together automatically.
+Function blocks shall be downloaded to controller without any reentry of data.
+The programming tools shall include a test mode.
+Test mode shall show user real-time data on top of graphical display of selected function blocks.
+Data shall be updated realtime with no interaction by the user.
+Function blocks shall be animated to show status of data inputs and outputs.
+Animation shall show change of status on logic devices and countdown of timer devices in graphical format.
+The BAS software shall employ browser-like functionality for ease of navigation.
+It shall include a tree view (similar to Windows Explorer) for quick viewing of, and access to, the hierarchical structure of the database.
+In addition, menu-pull downs, and toolbars shall employ buttons, commands and navigation to permit the operator to perform tasks with a minimum knowledge of the HVAC Control System and basic computing skills.
+Graphic screens shall be developed using any drawing package capable of generating a GIF, BMP, or JPG file format.
+Use of proprietary graphic file formats shall not be acceptable.
+In addition to, or in lieu of a graphic background, the GUI shall support the use of scanned pictures.
+Graphic screens shall have the capability to contain objects for text, real-time values, animation, colour spectrum objects, logs, graphs, HTML or XML document links, schedule objects, hyperlinks to other URLs, and links to other graphic screens.
+Graphics shall support layering and each graphic object shall be configurable for assignment to one a layer.
+A minimum of six layers shall be supported.
+Modifying common application objects, such as schedules, calendars, and set points shall be accomplished in a graphical manner.
+Holidays shall be set by using a graphical calendar, without requiring any keyboard entry from the operator.
+Commands to start and stop binary objects shall be done by right-clicking the selected object and selecting the appropriate command from the pop-up menu.
+No entry of text shall be required.
+Right-clicking the selected object and using a graphical slider to adjust the value shall make adjustments to analog objects, such as set points.
+On-line help shall be available for all applications and shall provide the relevant data for that particular screen.
+Additional help information shall be available through the use of hypertext.
+All system documentation and help files shall be in HTML format.
+Each operator shall be required to log on to that system with a user name and password in order to view, edit add, or delete data.
+System security shall be selectable for each operator.
+The system administrator shall have the ability to set passwords and security levels for all other operators.
+Each operator password shall be able to restrict the operators’ access for viewing and/or changing each system application, full screen editor, and object.
+Each operator shall automatically be logged off of the system if no keyboard or mouse activity is detected.
+auto log-off time shall be set per operator password.
+All system security data shall be stored in an encrypted format.
+The system shall automatically monitor the operation of all workstations, printers, modems, network connections, building management panels, and controllers.
+The failure of any device shall be annunciated to the operator.
+The system shall be provided with a dedicated alarm window or console.
+When the Alarm Console is enabled, a separate alarm notification window will supersede all other windows on the desktop and shall not be capable of being minimized or closed by the operator.
+Alarm notification windows or banners that can be minimized or closed by the operator shall not be acceptable.
+Operator’s workstation software shall contain an easy-to-operate system; allowing configuration of system-wide controllers, including management and display of the controller programming.
+This system shall provide the capability to configure controller binary and analog inputs/outputs.
+The system shall be capable of utilizing third-party Windows-based programs for such things as spreadsheet analysis, graphing, charting, custom report generation, and graphics design packages.
+Graphics generation shall be done using standard Windows packages.
+No proprietary graphics generation software shall be needed.
+The operator's console shall provide facilities for manual entries and visual displays enabling an operator to enter information into the system and obtain displays and logs of system information.
+All requests for status, analog, graphic displays, logs, and control shall be selected from the operator's console.
+The operator interface shall minimize the use of typewriter style keyboard by implementing a mouse or similar pointing device and "point and click" approach to command selection.
+It shall be possible for the OWS operator to initiate analog and digital output commands.
+Where the BAS software normally originates these outputs, the provision shall exist for the operator to terminate automatic BAS control of any particular output and to originate a manual analog or digital output command.
+The provision shall exist for the operator to return analog or digital output command functions to automatic BAS software control.
+It shall be possible for the OWS operator to place any computed system setpoint to a computed basis or manual value as and when required.
+All above functions shall operate under the password protection system.
+The descriptions shall be alterable from the OWS console with the system on-line.
+Upon operator's request, the system shall present the condition of any single point, any system, and area or the whole system on printer or CRT.
+The output device shall be by operator's choice.
+Analog values and status displayed on the CRT shall be updated whenever new values are received.
+Points in alarm shall be flagged by blinking, inverse video different colour, bracketed, or by some other means to differentiate them from points not in alarm.
+System shall report values with minimum end-to-end accuracy listed in Table 1.
+Control loops shall maintain measured variable at setpoint within tolerances listed in Table 2.
+Access shall be limited to operator’s terminal functions unless user is logged on.
+Each user shall have an individual User ID, User Name and Password.
+User ID shall be 8 characters, User Name shall be 29 characters, and Password shall be 8 characters long.
+Each system user shall be allowed individual assignment of only those control functions and menu items to which that user requires access.
+All passwords, user names, and access assignments shall be adjustable online at the operators terminal.
+Each user shall also have a set security level, which defines access to displays and individual objects the user may control.
+System shall include 10 separate and distinct security levels for assignment to users.
+System shall periodically gather historically recorded selected samples of object data stored in the field equipment (global controllers, field controllers) and archive the information on the operator’s workstation (server) hard disk.
+Archived files shall be appended with new sample data, allowing samples to be accumulated over several years.
+Systems that write over archived data shall not be allowed, unless limited file size is specified.
+Logged data shall be stored in spreadsheet format.
+Operator shall be able to scroll through all trendlog data.
+System shall automatically open archive files as needed to display archived data when operator scrolls through the data vertically.
+All trendlog information shall be displayed in standard engineering units.
+Software shall be included that is capable of graphing the trend logged object data.
+Software shall be capable of creating two-axis (x,y) graphs that display up to six object types at the same time in different colours.
+Graphs shall show object type value relative to time.
+Operator shall be able to change trend log setup information.
+All operations shall be password protected.
+System shall be capable of periodically gathering energy log data stored in the field equipment and archive the information on the operator workstation's hard disk.
+Log data shall include both instantaneous and accumulated values.
+Archive files shall be appended with the new data, allowing data to be accumulated over several years.
+Systems that write over archived data shall not be allowed unless limited file size is specified.
+System shall automatically open archive files as needed to display archived data when operator scrolls through the data.
+System software shall be provided that is capable of graphing the energy log data.
+Software shall be capable of creating two-axis (x,y) graph that show recorded data, relative to time.
+All data shall be stored in comma-delimited file format for direct use by third-party spreadsheet or other database programs.
+Operation of system shall not be affected by this operation.
+In other words, it shall stay completely online.
+Operator shall be able to change the energy log setup information as well.
+All operations shall be password protected.
+The operator’s workstation shall display all data associated with the project.
+The operator’s terminal software shall accept Windows BITMAP (*.
+Graphic files shall be created using scanned, full colour photographs of system.
+Operator’s terminal shall display all data using 3-D graphic representations of all mechanical equipment.
+A graphic with 20 dynamic points shall display with current data within 10 seconds.
+A graphic with 20 dynamic points shall update with current data within 8 seconds and shall automatically refresh every 15 seconds 5.
+System shall be capable of displaying graphic file, text, and dynamic object data together on each display.
+Information shall be labelled with descriptors and shall be shown with the appropriate engineering units.
+All information on any display shall be dynamically updated without any action by the user.
+Terminal shall allow user to change all field-resident BAS functions associated with the project, such as setpoints, weekly schedules, exception schedules, etc.
+This shall be done without any reference to object addresses or other numeric/mnemonic indications.
+All displays shall be generated and customized in such a manner that they fit the project as specified.
+Canned displays shall not be acceptable.
+Displays shall use standard English for labelling and readout.
+The installing contractor without factory dependency or assistance shall support all graphics and DDC programming locally.
+Binary objects shall be displayed as ON/OFF/NULL or with customized text.
+Text shall be justified left, right or centre as selected by the user.
+Each binary object displayed in this manner shall be assigned up to three bitmap files for display when the point is ON, OFF or in alarm.
+Animated graphic objects shall be displayed as a sequence of multiple bitmaps to simulate motion.
+The operator shall be able to click on an animated graphical object or switch it from the OFF position to ON, or ON to OFF.
+System shall be supplied with a library of standard bitmaps, which may be used unaltered or modified by the operator.
+Systems that do not allow customisation or creation of new bitmap objects by the operator (or with third-party software) shall not be allowed.
+Analog objects shall be displayed with operator modifiable units.
+Analog output objects, when selected with the mouse, shall be displayed as a prompted dialog (text only) box.
+Selection for display type shall be individual for each object.
+All editing and area assignment shall be created or modified online using simple icon tools.
+A customized menu label (push-button) shall be used for display selection.
+Menu items on a display shall allow penetration to lower level displays or additional menus.
+A mouse, or other form of digitizer, shall be used to move the pointer arrow to the desired item for selection of new display or to allow the operator to make changes to object data.
+Entire system shall operate without dependency on the operator's terminal.
+Operator’s terminal shall provide audible, visual, and printed means of alarm indication.
+The alarm dialog box shall always become the top dialog box regardless of the application(s), currently running (such as a word processor).
+Printout of alarms shall be sent to the assigned terminal and port.
+System shall provide log of alarm messages.
+Alarm log shall be archived to the hard disk of the system operator’s terminal.
+Each entry shall include a description of the event-initiating object generating the alarm, time and date of alarm occurrence, time and date of object state return to normal, and time and date of alarm acknowledgement.
+Alarm messages shall be in user-definable text English (or other specified language) and shall be entered either at the operator’s terminal or via remote communication.
+Operator’s terminal display of weekly schedules shall show all information in easy-to-read 7-day (weekly) format for each schedule.
+Exception schedules (non-normal schedules, such as holidays or special events) shall display all dates that are an exception to the weekly schedules.
+These speciality schedules shall be displayed at the operator’s terminal in a format similar to the weekly schedules, again allowing easy data entry.
+User shall be able to scroll easily through the months for each year as a minimum.
+At the operator’s terminal, the system user shall be able to change all information for a given weekly or exception schedule if logged on with the appropriate security access.
+If display output (CRT) is requested, it shall be scrollable; scroll bars will be used to allow easy and flexible movement within the report.
+Dynamic Reports: To allow operator to request a display of the dynamic value for the user specified points which shall indicate the status at the time the request was entered and updated at an operator modifiable scan frequency.
+Summary Report: To permit the display or printing the dynamic value for the user specified points which shall indicate the status at the time the CLM was entered.
+Historical Data Collection: Provision shall be made to ensure historical data is not lost.
+The run time shall continue to accumulate until reset individually by means of suitable operator selection.
+The system shall be capable of supporting at least 100 simultaneous users using a standard Web browser such as Internet Explorer.
+Systems requiring additional software to be resident on the client machine to enable a standard Web browser, or manufacturer-specific browsers shall not be acceptable.
+The Web browser software shall run on any operating system and system configuration that is supported by the Web browser.
+The Web browser shall provide the same view of the system, in terms of graphics, schedules, calendars, logs, etc.
+Systems that require different views or that require different means of interacting with objects such as schedules, or logs, shall not be permitted.
+User log-on identification and password shall be required.
+If an unauthorized user attempts access, a blank web page shall be displayed.
+Security using Java authentication and encryption techniques to prevent unauthorized access shall be implemented.
+Graphical screens developed for the GUI shall be the same screens used for the Web browser client.
+Any animated graphical objects supported by the Software shall be supported by the Web browser interface.
+HTML programming shall not be required to display system graphics or data on a Web page.
+HTML editing of the Web page shall be allowed if the user desires a specific look or format.
+Storage of the graphical screens shall be in the Network Control Unit (NCU), without requiring any graphics to be stored on the client machine.
+Real-time values displayed on a Web page shall update automatically without requiring a manual refresh of the Web page.
+User’s shall have administrator-defined access privileges.
+Holidays shall be set by using a graphical calendar, without requiring any keyboard entry from the operator.
+Commands to start and stop binary objects shall be done by rightclicking the selected object and selecting the appropriate command from the pop-up menu.
+The system shall provide the capability to specify a user’s home page (as determined by the logon user identification).
+From the home page, links to other views, or pages in the system shall be possible, if allowed by the system administrator.
+Graphic screens on the Web Browser client shall support hypertext links to other locations on the Internet or on Intranet sites, by specifying the Uniform Resource Locator (URL) for the desired link.

@@ -1,0 +1,47 @@
+devices ULC UL FM use application environment
+BAS NFPA 90A Air Conditioning 90B Heating
+equipment requirements CSA emissions standards locations building computers
+Communication lines wiring transients interference
+Bus devices AC device failure bus communication
+Contractor license site
+License name City Toronto
+Installer working relationship Control System Manufacturer
+Installer Control System Manufacturer control system training
+request Installer record training course
+BAS contractor locations installations protocol computer systems
+system network Building Controllers BC Advanced Application AAC ASC Smart Actuators SA
+Building Automation System software technology OOT representation data control devices system
+data BAS server database access
+Systems proprietary database user interface programs
+Systems architecture
+Maximum response time alarm occurrence point origin annunciation seconds network user interfaces
+Maximum response time alarm occurrence point origin annunciation seconds user interfaces
+BC BACnet Building Controller B-BC device profile ANSI/ASHRAE Annex Testing Laboratories BTL Product Listing
+AAC BACnet Advanced Application Controller B-AAC device profile ANSI/ASHRAE Annex Testing Laboratories BTL Product Listing
+ASC BACnet Application Controller BASC device profile ANSI/ASHRAE Annex B-ASC Testing Laboratories BTL Product Listing
+SA BACnet Actuator B-SA device profile ANSI/ASHRAE Annex Testing Laboratories BTL Product Listing
+SS BACnet Smart Sensor B-SS device profile ANSI/ASHRAE Annex Testing Laboratories BTL Product Listing
+BC BACnet network ISO Ethernet Data layer protocol BACnet/IP
+BACnet BCs device routers networks AACs ASCs
+AAC BACnet network ISO Ethernet Data layer protocol BACnet/IP MS/TP
+ASC BACnet network MS/TP Data layer protocol
+SA BACnet network MS/TP Data layer protocol
+SS BACnet network ISO Ethernet Data layer protocol BACnet/IP MS/TP
+controller service communication port connection Portable Operator Terminal
+Connection space temperature sensor ports drawings
+BC ASC systems input output communication signals controllers object information monitoring alarms
+BC AAC data
+piece equipment sequence operation controller control event communication failure
+I/O points piece equipment controller
+ENVIRONMENT Controller hardware conditions
+Controllers outdoors conditions enclosures operation 
+Controllers space enclosures operation 
+Controllers scheduling clock
+Controllers LEDs power communication processor
+Wires strip termination card ribbon cable
+BC AAC processor memory circuit status alarm operation
+System controller network alarm
+Controller memory system database programming requirements
+BC AAC BIOS application programming hours event power loss
+ASC SA memory BIOS application programming event power loss
+System control parameters power loss

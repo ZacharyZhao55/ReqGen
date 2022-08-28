@@ -1,0 +1,10 @@
+Flight Plan awaiting execution
+Scheduler assigned flight plan
+current flight Flight Plan
+UI Middleware interface UI clients
+UI Middleware control client
+Vaadin UI control
+Real Time Flight UI map displayed
+Real Time Flight UI location active UAVs map
+object proximity Object Avoidance system evasive directives
+evasive actions destination

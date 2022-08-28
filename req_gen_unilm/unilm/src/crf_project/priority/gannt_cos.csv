@@ -1,0 +1,205 @@
+id,req1_id,req1,req2_id,req2,cosine,label
+1965,24,A graphic area GUI class provides function to draw dependency.,34,A graphic area GUI class provides a function to draw dependency.,1,0
+2034,25,A graphic area GUI class uses an object of task manager to add dependencies.,35,A graphic area GUI class uses an object of the task manager to add dependencies,1,0
+3243,46,GUI needs to provide ability to assign tasks to people.,47,GUI needs to provide ability to assign people to tasks.,1,3
+3705,57,When deleting a task,58,When deleting a task,1,3
+2480,32,Every time Start/End time of a subtask changes,33,Every time Start/End time for a task changes,0.896613197,1
+784,8,Task property GUI class provides interface and functions to add and remove human resource assignments.,77,A GUI of task property provides interface and functions to add and remove human resource assignments by using an object of the resource assignments collection class.,0.885118273,3
+83,0,A class is used to represent the dependency between one task and one human resource.,84,A human resource assignment class is used to represent the relationship between one task and one human resource.,0.852736932,3
+543,6,The human resource class can have objects of resource assignments which assigns this resource to tasks.,7,The human resource class provides functions to get the list of objects of resource assignments which assigns this resource to tasks.,0.836145756,3
+438,4,A collection of resource assignments provides functions to add and remove human resource assignments.,77,A GUI of task property provides interface and functions to add and remove human resource assignments by using an object of the resource assignments collection class.,0.819766948,3
+1675,20,A collection of dependency class is used to manage dependencies.,26,The task manager class uses an object of dependency collection class to manage dependencies.,0.818134318,6
+4022,67,"To remove tasks as subtasks, GanttTree2 class calls a method which dedent selected task nodes in GUI.",70,"To remove tasks as subtasks, a method which dedent selected task nodes in GUI is used.",0.814775755,3
+176,1,The dependency class provides functions to get the task and the human resource.,85,The human resource assignment class provides functions to get the task and the human resource.,0.791335401,3
+4118,71,The task tree model provides methods to remove relationship between selected tasks and their original parents.,72,The task tree model provides methods to add relationship between selected tasks and their new parents.,0.790519294,0
+3134,43,The holiday class provides functions to set the start/end date of the holiday.,82,The class for holidays provides functions to get the start/end date.,0.781066136,3
+1368,16,A dependency class contains a dependant task and a dependee task.,17,A dependency class provides functions to get the dependant task and the dependee task.,0.770116054,3
+2355,30,Application needs to keep track of the start and end times of the tasks.,31,Application needs to keep track of subtasks in a task.,0.748875271,0
+3510,52,The task class provides a public method SetStart() which allows to specify starting date for the task.,53,The task class provides a public method SetEnd() which allows to specify ending date for the task.,0.734481272,0
+133,1,The dependency class provides functions to get the task and the human resource.,42,The human resource class provides functions to change and to get holidays.,0.730916315,0
+4046,68,An object of a class is used to remove relationship between selected tasks and their original parents.,69,An object of a class is used to add relationship between selected tasks and their new parents.,0.722586603,0
+3941,64,"To add tasks as subtasks, a method which indent the selected task nodes in GUI and change them to be subtasks is used.",70,"To remove tasks as subtasks, a method which dedent selected task nodes in GUI is used.",0.720603281,3
+3087,42,The human resource class provides functions to change and to get holidays.,85,The human resource assignment class provides functions to get the task and the human resource.,0.692924141,0
+730,8,Task property GUI class provides interface and functions to add and remove human resource assignments.,23,A task property GUI class provides interface and functions to add and remove dependencies by using an object of the dependency collection.,0.684594396,6
+369,4,A collection of resource assignments provides functions to add and remove human resource assignments.,8,Task property GUI class provides interface and functions to add and remove human resource assignments.,0.677353378,3
+1939,23,A task property GUI class provides interface and functions to add and remove dependencies by using an object of the dependency collection.,77,A GUI of task property provides interface and functions to add and remove human resource assignments by using an object of the resource assignments collection class.,0.67614471,0
+3046,42,The human resource class provides functions to change and to get holidays.,44,The holiday class provides functions to get the duration of the holiday.,0.664603516,0
+3511,52,The task class provides a public method SetStart() which allows to specify starting date for the task.,54,The Task class provides a public method SetDuration() which allows to specify the duration of the task.,0.658235035,0
+3551,53,The task class provides a public method SetEnd() which allows to specify ending date for the task.,54,The Task class provides a public method SetDuration() which allows to specify the duration of the task.,0.657053927,0
+4346,86,GUI needs to provide ability to delete resources from a project.,90,GUI needs to provide ability to link tasks in a project.,0.655378612,0
+707,7,The human resource class provides functions to get the list of objects of resource assignments which assigns this resource to tasks.,85,The human resource assignment class provides functions to get the task and the human resource.,0.653213792,0
+170,1,The dependency class provides functions to get the task and the human resource.,79,The human resource class provides functions to set and get name,0.647903967,0
+3810,60,GUI should able to provide ability to change task name.,61,GUI should able to provide ability to change start/end date of a task.,0.642558064,0
+3844,61,GUI should able to provide ability to change start/end date of a task.,63,When the start/end date of a task are changed,0.639940976,2
+3183,44,The holiday class provides functions to get the duration of the holiday.,82,The class for holidays provides functions to get the start/end date.,0.63622544,0
+98,1,The dependency class provides functions to get the task and the human resource.,7,The human resource class provides functions to get the list of objects of resource assignments which assigns this resource to tasks.,0.62507708,0
+4048,68,An object of a class is used to remove relationship between selected tasks and their original parents.,71,The task tree model provides methods to remove relationship between selected tasks and their original parents.,0.624671472,3
+4271,79,The human resource class provides functions to set and get name,85,The human resource assignment class provides functions to get the task and the human resource.,0.614226677,0
+3084,42,The human resource class provides functions to change and to get holidays.,82,The class for holidays provides functions to get the start/end date.,0.612753712,3
+4073,69,An object of a class is used to add relationship between selected tasks and their new parents.,72,The task tree model provides methods to add relationship between selected tasks and their new parents.,0.610905451,3
+3096,43,The holiday class provides functions to set the start/end date of the holiday.,44,The holiday class provides functions to get the duration of the holiday.,0.607293781,3
+3047,42,The human resource class provides functions to change and to get holidays.,45,The human resource class provides a function to change the availability of the person based on holidays.,0.606606397,3
+4251,78,The human resource class contains name,79,The human resource class provides functions to set and get name,0.603162028,3
+278,3,A collection of resource assignments contains multiple objects of the human resource assignment class.,6,The human resource class can have objects of resource assignments which assigns this resource to tasks.,0.600098165,6
+3081,42,The human resource class provides functions to change and to get holidays.,79,The human resource class provides functions to set and get name,0.592340227,3
+367,4,A collection of resource assignments provides functions to add and remove human resource assignments.,6,The human resource class can have objects of resource assignments which assigns this resource to tasks.,0.591954328,0
+2831,38,GUI needs to provide ability to display critical path.,39,GUI needs to provide ability to make the changes affecting critical path updated.,0.588832657,0
+475,5,The task class uses an object of the assignments collection class to manage its assignments.,26,The task manager class uses an object of dependency collection class to manage dependencies.,0.5833645,0
+3938,64,"To add tasks as subtasks, a method which indent the selected task nodes in GUI and change them to be subtasks is used.",67,"To remove tasks as subtasks, GanttTree2 class calls a method which dedent selected task nodes in GUI.",0.582848324,3
+613,6,The human resource class can have objects of resource assignments which assigns this resource to tasks.,77,A GUI of task property provides interface and functions to add and remove human resource assignments by using an object of the resource assignments collection class.,0.579806571,3
+526,5,The task class uses an object of the assignments collection class to manage its assignments.,77,A GUI of task property provides interface and functions to add and remove human resource assignments by using an object of the resource assignments collection class.,0.579786717,3
+621,6,The human resource class can have objects of resource assignments which assigns this resource to tasks.,85,The human resource assignment class provides functions to get the task and the human resource.,0.578246682,0
+3336,48,GUI needs to provide ability to show utilization of a person.,49,GUI needs to provide ability to show whether a person is underutilized and overbooked.,0.577976571,6
+3135,43,The holiday class provides functions to set the start/end date of the holiday.,83,The class for holidays also provides a function to check if a special date is in holiday.,0.577066568,0
+108,1,The dependency class provides functions to get the task and the human resource.,17,A dependency class provides functions to get the dependant task and the dependee task.,0.571859792,5
+2343,29,The algorithm class provides functions to modify the start or end date of the tasks.,82,The class for holidays provides functions to get the start/end date.,0.562829604,3
+368,4,A collection of resource assignments provides functions to add and remove human resource assignments.,7,The human resource class provides functions to get the list of objects of resource assignments which assigns this resource to tasks.,0.560409272,0
+3029,41,The human resource class contains the variable holidays.,78,The human resource class contains name,0.558475615,3
+276,3,A collection of resource assignments contains multiple objects of the human resource assignment class.,4,A collection of resource assignments provides functions to add and remove human resource assignments.,0.556464003,5
+968,11,A GUI class of human resource load distribution uses objects of a load distribution class to capture the hours each person is supposed to work.,12,The load distribution class provides functions to calculate the distribution based on tasks and human resources using task manager.,0.552716543,0
+4326,84,A human resource assignment class is used to represent the relationship between one task and one human resource.,85,The human resource assignment class provides functions to get the task and the human resource.,0.547101802,6
+664,7,The human resource class provides functions to get the list of objects of resource assignments which assigns this resource to tasks.,42,The human resource class provides functions to change and to get holidays.,0.546923838,0
+357,3,A collection of resource assignments contains multiple objects of the human resource assignment class.,85,The human resource assignment class provides functions to get the task and the human resource.,0.544928737,0
+699,7,The human resource class provides functions to get the list of objects of resource assignments which assigns this resource to tasks.,77,A GUI of task property provides interface and functions to add and remove human resource assignments by using an object of the resource assignments collection class.,0.538455873,3
+3184,44,The holiday class provides functions to get the duration of the holiday.,83,The class for holidays also provides a function to check if a special date is in holiday.,0.535987499,5
+1747,21,A collection of dependency class contains objects of dependency classes.,26,The task manager class uses an object of dependency collection class to manage dependencies.,0.532370151,3
+349,3,A collection of resource assignments contains multiple objects of the human resource assignment class.,77,A GUI of task property provides interface and functions to add and remove human resource assignments by using an object of the resource assignments collection class.,0.531707634,3
+187,2,A collection of resource assignments is used to manage the relationships between multiple human resources and a task.,5,The task class uses an object of the assignments collection class to manage its assignments.,0.524755745,0
+2025,25,A graphic area GUI class uses an object of task manager to add dependencies.,26,The task manager class uses an object of dependency collection class to manage dependencies.,0.52428894,3
+2101,26,The task manager class uses an object of dependency collection class to manage dependencies.,35,A graphic area GUI class uses an object of the task manager to add dependencies,0.52428894,3
+1743,21,A collection of dependency class contains objects of dependency classes.,22,A collection of dependency class provides functions to create,0.520588606,3
+185,2,A collection of resource assignments is used to manage the relationships between multiple human resources and a task.,3,A collection of resource assignments contains multiple objects of the human resource assignment class.,0.511547943,0
+366,4,A collection of resource assignments provides functions to add and remove human resource assignments.,5,The task class uses an object of the assignments collection class to manage its assignments.,0.509503081,0
+1888,23,A task property GUI class provides interface and functions to add and remove dependencies by using an object of the dependency collection.,26,The task manager class uses an object of dependency collection class to manage dependencies.,0.502424755,3
+279,3,A collection of resource assignments contains multiple objects of the human resource assignment class.,7,The human resource class provides functions to get the list of objects of resource assignments which assigns this resource to tasks.,0.501769534,3
+801,9,A GUI class uses an object of resource tree table model class to display the resource tree.,10,The resource tree table model provides functions to build subtrees based on dependencies.,0.500952313,0
+1177,13,GUI needs to provide ability to change length of a task.,60,GUI should able to provide ability to change task name.,0.497007497,0
+4305,82,The class for holidays provides functions to get the start/end date.,83,The class for holidays also provides a function to check if a special date is in holiday.,0.495610785,5
+1207,13,GUI needs to provide ability to change length of a task.,90,GUI needs to provide ability to link tasks in a project.,0.491392122,0
+469,5,The task class uses an object of the assignments collection class to manage its assignments.,20,A collection of dependency class is used to manage dependencies.,0.489771584,0
+1672,20,A collection of dependency class is used to manage dependencies.,23,A task property GUI class provides interface and functions to add and remove dependencies by using an object of the dependency collection.,0.487219719,3
+701,7,The human resource class provides functions to get the list of objects of resource assignments which assigns this resource to tasks.,79,The human resource class provides functions to set and get name,0.484808065,0
+1372,16,A dependency class contains a dependant task and a dependee task.,21,A collection of dependency class contains objects of dependency classes.,0.483504328,0
+1521,18,The dependency class also contains constraint to show the start date of the dependee task.,19,A class is used to represent the constraint that the start date of the dependee task should not be earlier than the end date of the dependent task.,0.482134949,3
+1163,13,GUI needs to provide ability to change length of a task.,46,GUI needs to provide ability to assign tasks to people.,0.48172979,0
+1164,13,GUI needs to provide ability to change length of a task.,47,GUI needs to provide ability to assign people to tasks.,0.48172979,3
+1369,16,A dependency class contains a dependant task and a dependee task.,18,The dependency class also contains constraint to show the start date of the dependee task.,0.481203416,0
+173,1,The dependency class provides functions to get the task and the human resource.,82,The class for holidays provides functions to get the start/end date.,0.477635879,0
+3811,60,GUI should able to provide ability to change task name.,62,GUI should able to provide ability to set progress on a task.,0.47755739,0
+2993,41,The human resource class contains the variable holidays.,42,The human resource class provides functions to change and to get holidays.,0.477011479,3
+1670,20,A collection of dependency class is used to manage dependencies.,21,A collection of dependency class contains objects of dependency classes.,0.475151766,0
+3045,42,The human resource class provides functions to change and to get holidays.,43,The holiday class provides functions to set the start/end date of the holiday.,0.474814493,3
+2357,30,Application needs to keep track of the start and end times of the tasks.,33,Every time Start/End time for a task changes,0.473801981,3
+4368,91,The fact of linking of one task to another should be captured as dependency between two tasks.,92,When two or more tasks are link,0.472072018,1
+1956,24,A graphic area GUI class provides function to draw dependency.,25,A graphic area GUI class uses an object of task manager to add dependencies.,0.471658411,3
+1966,24,A graphic area GUI class provides function to draw dependency.,35,A graphic area GUI class uses an object of the task manager to add dependencies,0.471658411,3
+2033,25,A graphic area GUI class uses an object of task manager to add dependencies.,34,A graphic area GUI class provides a function to draw dependency.,0.471658411,3
+2601,34,A graphic area GUI class provides a function to draw dependency.,35,A graphic area GUI class uses an object of the task manager to add dependencies,0.471658411,0
+2195,27,An object of the recalculating task schedule algorithm class is used to change the start/end date based on dependency changes.,63,When the start/end date of a task are changed,0.470318134,1
+97,1,The dependency class provides functions to get the task and the human resource.,6,The human resource class can have objects of resource assignments which assigns this resource to tasks.,0.465516327,3
+350,3,A collection of resource assignments contains multiple objects of the human resource assignment class.,78,The human resource class contains name,0.465166471,0
+3735,57,When deleting a task,88,When a resource is removed,0.464765303,1
+3770,58,When deleting a task,88,When a resource is removed,0.464765303,1
+1178,13,GUI needs to provide ability to change length of a task.,61,GUI should able to provide ability to change start/end date of a task.,0.462902445,5
+1887,23,A task property GUI class provides interface and functions to add and remove dependencies by using an object of the dependency collection.,25,A graphic area GUI class uses an object of task manager to add dependencies.,0.461695328,3
+1897,23,A task property GUI class provides interface and functions to add and remove dependencies by using an object of the dependency collection.,35,A graphic area GUI class uses an object of the task manager to add dependencies,0.461695328,3
+2718,36,The class of dependency collection provides a function to check if the new dependency will cause a loop,37,The class of dependency collection returns an exception if there is a loop.,0.459867958,1
+3924,63,When the start/end date of a task are changed,82,The class for holidays provides functions to get the start/end date.,0.459304721,3
+4257,78,The human resource class contains name,85,The human resource assignment class provides functions to get the task and the human resource.,0.458918053,0
+1757,21,A collection of dependency class contains objects of dependency classes.,36,The class of dependency collection provides a function to check if the new dependency will cause a loop,0.456734205,3
+3863,61,GUI should able to provide ability to change start/end date of a task.,82,The class for holidays provides functions to get the start/end date.,0.45540363,3
+3286,46,GUI needs to provide ability to assign tasks to people.,90,GUI needs to provide ability to link tasks in a project.,0.453093953,3
+3332,47,GUI needs to provide ability to assign people to tasks.,90,GUI needs to provide ability to link tasks in a project.,0.453093953,3
+1828,22,A collection of dependency class provides functions to create,36,The class of dependency collection provides a function to check if the new dependency will cause a loop,0.451206361,1
+3843,61,GUI should able to provide ability to change start/end date of a task.,62,GUI should able to provide ability to set progress on a task.,0.44478702,3
+2304,29,The algorithm class provides functions to modify the start or end date of the tasks.,43,The holiday class provides functions to set the start/end date of the holiday.,0.444542321,0
+796,8,Task property GUI class provides interface and functions to add and remove human resource assignments.,89,A GUI provides interface and functions to edit the properties of objects of the human resource class.,0.442919653,3
+186,2,A collection of resource assignments is used to manage the relationships between multiple human resources and a task.,4,A collection of resource assignments provides functions to add and remove human resource assignments.,0.440229077,3
+4246,77,A GUI of task property provides interface and functions to add and remove human resource assignments by using an object of the resource assignments collection class.,89,A GUI provides interface and functions to edit the properties of objects of the human resource class.,0.434790309,3
+2324,29,The algorithm class provides functions to modify the start or end date of the tasks.,63,When the start/end date of a task are changed,0.430744813,3
+277,3,A collection of resource assignments contains multiple objects of the human resource assignment class.,5,The task class uses an object of the assignments collection class to manage its assignments.,0.430549148,3
+446,4,A collection of resource assignments provides functions to add and remove human resource assignments.,85,The human resource assignment class provides functions to get the task and the human resource.,0.430450995,3
+3181,44,The holiday class provides functions to get the duration of the holiday.,80,A class is used to represent the holidays.,0.428577012,3
+614,6,The human resource class can have objects of resource assignments which assigns this resource to tasks.,78,The human resource class contains name,0.428250443,0
+2322,29,The algorithm class provides functions to modify the start or end date of the tasks.,61,GUI should able to provide ability to change start/end date of a task.,0.423522416,3
+1639,19,A class is used to represent the constraint that the start date of the dependee task should not be earlier than the end date of the dependent task.,63,When the start/end date of a task are changed,0.421807654,2
+259,2,A collection of resource assignments is used to manage the relationships between multiple human resources and a task.,77,A GUI of task property provides interface and functions to add and remove human resource assignments by using an object of the resource assignments collection class.,0.421611433,3
+3085,42,The human resource class provides functions to change and to get holidays.,83,The class for holidays also provides a function to check if a special date is in holiday.,0.419063459,3
+1203,13,GUI needs to provide ability to change length of a task.,86,GUI needs to provide ability to delete resources from a project.,0.41816369,0
+2193,27,An object of the recalculating task schedule algorithm class is used to change the start/end date based on dependency changes.,61,GUI should able to provide ability to change start/end date of a task.,0.417198856,3
+3710,57,When deleting a task,63,When the start/end date of a task are changed,0.415951491,2
+3745,58,When deleting a task,63,When the start/end date of a task are changed,0.415951491,2
+2356,30,Application needs to keep track of the start and end times of the tasks.,32,Every time Start/End time of a subtask changes,0.414544393,3
+455,5,The task class uses an object of the assignments collection class to manage its assignments.,6,The human resource class can have objects of resource assignments which assigns this resource to tasks.,0.413805796,0
+3739,57,When deleting a task,92,"When two or more tasks are link, there should be check conducted for potential collisions on the chart.",0.41197399,0
+3774,58,When deleting a task,92,"When two or more tasks are link, there should be check conducted for potential collisions on the chart.",0.41197399,0
+630,7,The human resource class provides functions to get the list of objects of resource assignments which assigns this resource to tasks.,8,Task property GUI class provides interface and functions to add and remove human resource assignments.,0.411589474,3
+1744,21,A collection of dependency class contains objects of dependency classes.,23,A task property GUI class provides interface and functions to add and remove dependencies by using an object of the dependency collection.,0.409416988,3
+544,6,The human resource class can have objects of resource assignments which assigns this resource to tasks.,8,Task property GUI class provides interface and functions to add and remove human resource assignments.,0.406763514,3
+3234,45,The human resource class provides a function to change the availability of the person based on holidays.,85,The human resource assignment class provides functions to get the task and the human resource.,0.406396696,0
+293,3,A collection of resource assignments contains multiple objects of the human resource assignment class.,21,A collection of dependency class contains objects of dependency classes.,0.404673225,0
+3631,55,To delete a task from the Calendar,57,"When deleting a task, the GanttProject class calls GanttTreeTableNode and DefaultMutableTreeNode classes to identify the parent of the deleted task.",0.402851317,2
+3632,55,To delete a task from the Calendar,58,"When deleting a task, the GanttProject class calls AdjustTaskBoundsAlgorithm and passes the parent of the deleted task as a parameter.",0.402851317,2
+135,1,The dependency class provides functions to get the task and the human resource.,44,The holiday class provides functions to get the duration of the holiday.,0.402415206,0
+1156,13,GUI needs to provide ability to change length of a task.,39,GUI needs to provide ability to make the changes affecting critical path updated.,0.402112311,0
+3965,65,A manager of task hierarchy provides functions to update the relationship between tasks.,66,The manager of task hierarchy provides a method to move a task node to a specific position.,0.402049876,0
+3132,43,The holiday class provides functions to set the start/end date of the holiday.,80,A class is used to represent the holidays.,0.40177935,3
+313,3,A collection of resource assignments contains multiple objects of the human resource assignment class.,41,The human resource class contains the variable holidays.,0.401535612,0
+792,8,Task property GUI class provides interface and functions to add and remove human resource assignments.,85,The human resource assignment class provides functions to get the task and the human resource.,0.40139978,3
+1155,13,GUI needs to provide ability to change length of a task.,38,GUI needs to provide ability to display critical path.,0.400595676,0
+356,3,A collection of resource assignments contains multiple objects of the human resource assignment class.,84,A human resource assignment class is used to represent the relationship between one task and one human resource.,0.399777423,0
+113,1,The dependency class provides functions to get the task and the human resource.,22,A collection of dependency class provides functions to create,0.396321836,0
+578,6,The human resource class can have objects of resource assignments which assigns this resource to tasks.,42,The human resource class provides functions to change and to get holidays.,0.396236546,0
+3036,41,The human resource class contains the variable holidays.,85,The human resource assignment class provides functions to get the task and the human resource.,0.396141924,0
+202,2,A collection of resource assignments is used to manage the relationships between multiple human resources and a task.,20,A collection of dependency class is used to manage dependencies.,0.39543743,0
+2226,28,The algorithm class provides functions to fulfill the constraints.,29,The algorithm class provides functions to modify the start or end date of the tasks.,0.395056649,5
+620,6,The human resource class can have objects of resource assignments which assigns this resource to tasks.,84,A human resource assignment class is used to represent the relationship between one task and one human resource.,0.393861144,0
+4242,77,A GUI of task property provides interface and functions to add and remove human resource assignments by using an object of the resource assignments collection class.,85,The human resource assignment class provides functions to get the task and the human resource.,0.391865842,3
+2161,27,An object of the recalculating task schedule algorithm class is used to change the start/end date based on dependency changes.,29,The algorithm class provides functions to modify the start or end date of the tasks.,0.389903508,5
+136,1,The dependency class provides functions to get the task and the human resource.,45,The human resource class provides a function to change the availability of the person based on holidays.,0.38969885,0
+1165,13,GUI needs to provide ability to change length of a task.,48,GUI needs to provide ability to show utilization of a person.,0.389663621,0
+1671,20,A collection of dependency class is used to manage dependencies.,22,A collection of dependency class provides functions to create,0.387634975,3
+4268,79,The human resource class provides functions to set and get name,82,The class for holidays provides functions to get the start/end date.,0.387079806,0
+169,1,The dependency class provides functions to get the task and the human resource.,78,The human resource class contains name,0.386997286,0
+3282,46,GUI needs to provide ability to assign tasks to people.,86,GUI needs to provide ability to delete resources from a project.,0.385572806,0
+3328,47,GUI needs to provide ability to assign people to tasks.,86,GUI needs to provide ability to delete resources from a project.,0.385572806,0
+1815,22,A collection of dependency class provides functions to create,23,A task property GUI class provides interface and functions to add and remove dependencies by using an object of the dependency collection.,0.382860872,3
+79,0,A class is used to represent the dependency between one task and one human resource.,80,A class is used to represent the holidays.,0.382353702,0
+3146,44,The holiday class provides functions to get the duration of the holiday.,45,The human resource class provides a function to change the availability of the person based on holidays.,0.382156991,3
+1211,14,User should be able to change the length of a task by dragging-and-dropping the bar on the GUI.,15,User should be able to change the length of a task via date picker control.,0.381244198,3
+4328,84,A human resource assignment class is used to represent the relationship between one task and one human resource.,87,An assignment of a resource to a task is captured as a relationship.,0.378909709,3
+4072,69,An object of a class is used to add relationship between selected tasks and their new parents.,71,The task tree model provides methods to remove relationship between selected tasks and their original parents.,0.37775972,0
+3131,43,The holiday class provides functions to set the start/end date of the holiday.,79,The human resource class provides functions to set and get name,0.376886744,0
+99,1,The dependency class provides functions to get the task and the human resource.,8,Task property GUI class provides interface and functions to add and remove human resource assignments.,0.376789411,3
+2882,38,GUI needs to provide ability to display critical path.,90,GUI needs to provide ability to link tasks in a project.,0.376782757,0
+2570,33,"Every time Start/End time for a task changes, the start/end time of one or more its subtasks need to change as well.",63,"When the start/end date of a task are changed, the start/end dates of the subtasks need to change accordingly.",0.376226209,6
+4049,68,An object of a class is used to remove relationship between selected tasks and their original parents.,72,The task tree model provides methods to add relationship between selected tasks and their new parents.,0.37581519,0
+1637,19,A class is used to represent the constraint that the start date of the dependee task should not be earlier than the end date of the dependent task.,61,GUI should able to provide ability to change start/end date of a task.,0.374167309,3
+449,4,A collection of resource assignments provides functions to add and remove human resource assignments.,88,"When a resource is removed, all the tasks where the resource is assigned need to be updated.",0.373839787,1
+127,1,The dependency class provides functions to get the task and the human resource.,36,The class of dependency collection provides a function to check if the new dependency will cause a loop,0.373109285,0
+4338,85,The human resource assignment class provides functions to get the task and the human resource.,89,A GUI provides interface and functions to edit the properties of objects of the human resource class.,0.372380299,3
+1842,22,A collection of dependency class provides functions to create,50,"To create a new task, an object of TaskManager class is passed to the class constructor.",0.370119322,0
+577,6,The human resource class can have objects of resource assignments which assigns this resource to tasks.,41,The human resource class contains the variable holidays.,0.369669385,0
+90,0,A class is used to represent the dependency between one task and one human resource.,91,The fact of linking of one task to another should be captured as dependency between two tasks.,0.369409208,0
+2838,38,GUI needs to provide ability to display critical path.,46,GUI needs to provide ability to assign tasks to people.,0.36937401,0
+2839,38,GUI needs to provide ability to display critical path.,47,GUI needs to provide ability to assign people to tasks.,0.36937401,0
+2832,38,GUI needs to provide ability to display critical path.,40,The system should be able to evaluate critical path in a project.,0.366977666,0
+1758,21,A collection of dependency class contains objects of dependency classes.,37,The class of dependency collection returns an exception if there is a loop.,0.366584189,0
+3377,48,GUI needs to provide ability to show utilization of a person.,90,GUI needs to provide ability to link tasks in a project.,0.366500545,0
+4336,85,The human resource assignment class provides functions to get the task and the human resource.,87,An assignment of a resource to a task is captured as a relationship.,0.364968255,0
+1523,18,The dependency class also contains constraint to show the start date of the dependee task.,21,A collection of dependency class contains objects of dependency classes.,0.363987521,0
+2995,41,The human resource class contains the variable holidays.,44,The holiday class provides functions to get the duration of the holiday.,0.363547977,3
+1131,13,GUI needs to provide ability to change length of a task.,14,User should be able to change the length of a task by dragging-and-dropping the bar on the GUI.,0.362838026,3
+3115,43,The holiday class provides functions to set the start/end date of the holiday.,63,When the start/end date of a task are changed,0.362774781,0
+1658,19,A class is used to represent the constraint that the start date of the dependee task should not be earlier than the end date of the dependent task.,82,The class for holidays provides functions to get the start/end date.,0.361795153,3
+4088,69,An object of a class is used to add relationship between selected tasks and their new parents.,87,An assignment of a resource to a task is captured as a relationship.,0.361475465,3
+3930,63,"When the start/end date of a task are changed, the start/end dates of the subtasks need to change accordingly.",88,"When a resource is removed, all the tasks where the resource is assigned need to be updated.",0.360322917,1
+2996,41,The human resource class contains the variable holidays.,45,The human resource class provides a function to change the availability of the person based on holidays.,0.359919529,0
+3113,43,The holiday class provides functions to set the start/end date of the holiday.,61,GUI should able to provide ability to change start/end date of a task.,0.359693565,0
+545,6,The human resource class can have objects of resource assignments which assigns this resource to tasks.,9,A GUI class uses an object of resource tree table model class to display the resource tree.,0.359646797,0
+3244,46,GUI needs to provide ability to assign tasks to people.,48,GUI needs to provide ability to show utilization of a person.,0.359293978,0
+3290,47,GUI needs to provide ability to assign people to tasks.,48,GUI needs to provide ability to show utilization of a person.,0.359293978,0
+3097,43,The holiday class provides functions to set the start/end date of the holiday.,45,The human resource class provides a function to change the availability of the person based on holidays.,0.358261837,3
+700,7,The human resource class provides functions to get the list of objects of resource assignments which assigns this resource to tasks.,78,"The human resource class contains name, phone, email, and holidays.",0.35807979,0
+1951,23,A task property GUI class provides interface and functions to add and remove dependencies by using an object of the dependency collection.,89,A GUI provides interface and functions to edit the properties of objects of the human resource class.,0.357913727,0
+4359,88,"When a resource is removed, all the tasks where the resource is assigned need to be updated.",92,"When two or more tasks are link, there should be check conducted for potential collisions on the chart.",0.35687736,0

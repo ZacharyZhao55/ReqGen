@@ -1,0 +1,157 @@
+request
+schedule
+waypoint
+waypoint is waypoint of fly zone
+schedule client client command
+vaadin ui
+icon
+command change parameter
+display uav
+location
+active
+icon avoidance command
+avoidance
+obstacle
+obstacle has spuer classes vector parameter
+vector parameter has spuer classes sensor parameter
+sensor parameter has spuer classes parameter
+parameter has drone
+activation
+loguav
+manage uav
+vehicle core schedule uav
+drone
+manage
+drone has inertial navigation system inertial navigation system
+uav
+vehicle core waypoint
+command
+flight manager
+manage altitude coordinates
+alternate
+coordinates has spuer classes remote parameter
+remote parameter has spuer classes parameter
+coordinates
+mode waypoint
+altitude mission
+mission has mission drone
+mission
+uav schedule
+schedule waypoint
+altitude
+vehicle core uav
+vehicle core schedule
+manage request
+manage approximate command
+goto
+battery
+battery has battery drone
+log command
+activity logger
+log
+message
+list command
+active request
+parameter
+location route assignment ui notify
+route assignment ui request
+route assignment ui active
+route assignment ui uav notify
+route assignment ui waypoint
+media
+intermediate
+media isstoredin mission
+log route
+uav route
+uav list uav active
+flight plan users
+uav users
+uav client
+dronology runtime monitor client
+dronology runtime monitor log
+dronology runtime monitor GCS
+uav log
+GCS mode
+GCS command
+GCS
+GCS uav
+message uav
+GCS location
+uav GCS
+uav mission
+map layer waypoint
+vehicle core
+flight plan
+schedule
+list
+flight plan client
+notification
+inferred command is triggered by alarm
+auxiliary command has spuer classes mission command
+mission command has spuer classes command
+command change parameter
+inferred command has spuer classes command
+command has spuer classes has required flight mode exactly 1 flight mode
+command has spuer classes change some parameter
+command has spuer classes has flight mode some flight mode
+command has spuer classes has flight phase exactly 1 flight phase
+command is command of mission
+mission command has sub classes first command
+mission command has sub classes last command
+inferred command has sub classes inferred waypoint
+inferred waypoint fly to waypoint
+navigation command has sub classes goto
+goto has spuer classes fly to exactly 1 waypoint
+goto fly to waypoint
+inferred command has sub classes inferred velocity command
+navigation command has sub classes ned velocity
+command has flight mode flight mode
+command has command line string
+command has command id int
+inferred velocity command has command v x float
+command has execution time date time stamp
+command has sub classes flight plan command
+auxiliary command has sub classes vehicle core
+auxiliary command has sub classes activation
+command has sub classes inferred command
+mission command has sub classes auxiliary command
+mission command has sub classes navigation command
+command hascommand mission
+command has flight phase flightphase
+inferred waypoint has spuer classes fly to exactly 1 waypoint
+inferred command triggers vehicle core
+navigation command has spuer classes mission command
+navigation command has sub classes vehicle core
+navigation command has sub classes activation
+command has sub classes mission command
+flight plan command has sub classes activation
+first command has spuer classes mission command
+first command has sub classes vehicle core
+first command has sub classes activation
+last command has spuer classes mission command
+last command has sub classes vehicle core
+last command has sub classes activation
+goto has spuer classes navigation command
+goto fly to inferred waypoint
+goto has sub classes activation
+homelocation has spuer classes waypoint
+waypoint iswaypointof flyzone
+waypoint isdestinationof inferred waypoint
+waypoint isdestinationof goto
+waypoint fly to inferred waypoint
+waypoint fly to goto
+waypoint haswaypoint flyzone
+waypoint has spuer classes point
+waypoint haslatlon string
+homelocation has sub classes activation
+waypoint has sub classes homelocation
+waypoint fly to activation
+inferred velocity command has spuer classes inferred command
+inferred waypoint fly to goto
+inferred velocity command has sub classes activation
+inferred waypoint has spuer classes inferred command
+inferred waypoint has sub classes activation
+ned velocity has spuer classes navigation command
+ned velocity has sub classes activation
+vehicle core has sub classes activation
+message has sub classes activation
