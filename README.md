@@ -14,5 +14,5 @@ In each dataset, include 4 files and 1 folder:
 *.src.me.5hop.txt: The knowledge of injection.  
 *.src.no.me.txt: The keywords-set of input.  
 *.tgt.txt: The target rquirement sentences of input.  
-*.structure.json: The semantic roles of keywords for syntax constrained decoding is provided by requirement analysts.
+*.structure.json: The semantic roles of keywords for syntax constrained decoding is provided by requirement analysts.  
 k_folk: The K-fold data
